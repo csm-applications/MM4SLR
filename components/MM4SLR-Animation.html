@@ -1,0 +1,146 @@
+<link rel="stylesheet" href="../assets/CSS/MM4SLR-Animation.css">
+
+<div class="container my-5">
+    <div class="mm4slr-grid">
+        <!-- Headers das Dimensões -->
+        <div class="mm4slr-headers d-flex justify-content-between">
+            <div class="header-level">Levels</div>
+            <div class="header-dimension">Knowledge Management</div>
+            <div class="header-dimension">Tool Support</div>
+            <div class="header-dimension">Validation & Reliability</div>
+            <div class="header-dimension">Collaboration & Communication</div>
+            <div class="header-dimension">Documentation & Reproducibility</div>
+            <div class="header-dimension">Coverage</div>
+            <div class="header-dimension">Efficiency</div>
+        </div>
+
+        <!-- Linhas de Níveis -->
+        <div class="mm4slr-rows">
+            <!-- Level 0 -->
+            <div class="mm4slr-row gradient-0" data-info="SLR processes are not executed; no systematization.">
+                <div class="level-label">Level 0 – Incomplete</div>
+                <div class="cells"
+                    data-info="Knowledge Management: No knowledge management; knowledge is created and discarded.">
+                </div>
+                <div class="cells" data-info="Tool Support: No tools are used."></div>
+                <div class="cells" data-info="Validation & Reliability: No quality control."></div>
+                <div class="cells"
+                    data-info="Collaboration & Communication: No formal communication among researchers."></div>
+                <div class="cells" data-info="Documentation & Reproducibility: Minimal or no documentation."></div>
+                <div class="cells" data-info="Coverage: No systematic scope criteria."></div>
+                <div class="cells" data-info="Efficiency: Processes are not optimized, time wasted."></div>
+            </div>
+
+            <!-- Level 1 -->
+            <div class="mm4slr-row gradient-1" data-info="Basic execution of processes; quality not guaranteed.">
+                <div class="level-label">Level 1 – Performed</div>
+                <div class="cells" data-info="Knowledge Management: Basic knowledge organization processes."></div>
+                <div class="cells" data-info="Tool Support: Simple tools used, without standardization."></div>
+                <div class="cells" data-info="Validation & Reliability: Limited review, reliability questionable.">
+                </div>
+                <div class="cells"
+                    data-info="Collaboration & Communication: Informal communication between researchers."></div>
+                <div class="cells" data-info="Documentation & Reproducibility: Partial documentation."></div>
+                <div class="cells" data-info="Coverage: Some coverage criteria applied."></div>
+                <div class="cells" data-info="Efficiency: Processes slightly better but still inefficient."></div>
+            </div>
+
+            <!-- Level 2 -->
+            <div class="mm4slr-row gradient-2" data-info="Well-defined and managed processes to ensure quality.">
+                <div class="level-label">Level 2 – Managed</div>
+                <div class="cells" data-info="Knowledge Management: Formal knowledge management; documented plans.">
+                </div>
+                <div class="cells" data-info="Tool Support: Standardized tools used for all tasks."></div>
+                <div class="cells" data-info="Validation & Reliability: Systematic and controlled reviews."></div>
+                <div class="cells" data-info="Collaboration & Communication: Structured communication within team.">
+                </div>
+                <div class="cells" data-info="Documentation & Reproducibility: Complete process documentation."></div>
+                <div class="cells" data-info="Coverage: Clear criteria for scope and study selection."></div>
+                <div class="cells" data-info="Efficiency: Processes planned and more efficient."></div>
+            </div>
+
+            <!-- Level 3 -->
+            <div class="mm4slr-row gradient-3" data-info="SLRs conducted proactively, focusing on quality.">
+                <div class="level-label">Level 3 – Defined</div>
+                <div class="cells" data-info="Knowledge Management: Knowledge continuously updated and reviewed."></div>
+                <div class="cells" data-info="Tool Support: Advanced tools integrated with processes."></div>
+                <div class="cells" data-info="Validation & Reliability: Rigorous quality control; independent reviews.">
+                </div>
+                <div class="cells" data-info="Collaboration & Communication: Clear and consistent communication."></div>
+                <div class="cells"
+                    data-info="Documentation & Reproducibility: Detailed and reproducible documentation."></div>
+                <div class="cells" data-info="Coverage: Complete and traceable study coverage."></div>
+                <div class="cells" data-info="Efficiency: Optimized processes, resources well utilized."></div>
+            </div>
+
+            <!-- Level 4 -->
+            <div class="mm4slr-row gradient-4"
+                data-info="Quantitatively managed processes; metrics and analysis applied.">
+                <div class="level-label">Level 4 – Quantitatively Managed</div>
+                <div class="cells" data-info="Knowledge Management: Metrics applied to measure knowledge."></div>
+                <div class="cells" data-info="Tool Support: Tools monitored and integrated with KPIs."></div>
+                <div class="cells" data-info="Validation & Reliability: Statistical control and quality metrics."></div>
+                <div class="cells" data-info="Collaboration & Communication: Communication tracked and measured."></div>
+                <div class="cells"
+                    data-info="Documentation & Reproducibility: Standardized documentation with metrics."></div>
+                <div class="cells" data-info="Coverage: Coverage quantitatively monitored."></div>
+                <div class="cells" data-info="Efficiency: Optimized and measured resource usage."></div>
+            </div>
+
+            <!-- Level 5 -->
+            <div class="mm4slr-row gradient-5"
+                data-info="Continuous improvement and optimization of processes for quality and efficiency.">
+                <div class="level-label">Level 5 – Optimizing</div>
+                <div class="cells" data-info="Knowledge Management: Continuous improvement and retention of knowledge.">
+                </div>
+                <div class="cells" data-info="Tool Support: Fully integrated tools with automated processes."></div>
+                <div class="cells" data-info="Validation & Reliability: Continuous assessment of quality metrics.">
+                </div>
+                <div class="cells"
+                    data-info="Collaboration & Communication: Seamless and optimized team collaboration."></div>
+                <div class="cells"
+                    data-info="Documentation & Reproducibility: Documentation continuously refined and verified."></div>
+                <div class="cells" data-info="Coverage: Dynamic and complete coverage of studies."></div>
+                <div class="cells" data-info="Efficiency: Processes continuously optimized for minimal resource use.">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Show level description on hover
+    document.querySelectorAll('.level-label').forEach(label => {
+        label.addEventListener('mouseenter', e => {
+            const info = e.target.parentElement.dataset.info;
+            showTooltip(info, e.target.parentElement);
+        });
+        label.addEventListener('mouseleave', hideTooltip);
+    });
+
+    // Show cell description on hover
+    document.querySelectorAll('.cells').forEach(cell => {
+        cell.addEventListener('mouseenter', e => {
+            const info = e.target.dataset.info;
+            showTooltip(info, e.target);
+        });
+        cell.addEventListener('mouseleave', hideTooltip);
+    });
+
+    const tooltip = document.createElement('div');
+    tooltip.className = 'mm4slr-tooltip';
+    document.body.appendChild(tooltip);
+
+    function showTooltip(text, element) {
+        tooltip.textContent = text;
+        const rect = element.getBoundingClientRect();
+        tooltip.style.top = `${rect.bottom + window.scrollY + 5}px`;
+        tooltip.style.left = `${rect.left + window.scrollX}px`;
+        tooltip.style.opacity = 1;
+    }
+
+    function hideTooltip() {
+        tooltip.style.opacity = 0;
+    }
+
+</script>
