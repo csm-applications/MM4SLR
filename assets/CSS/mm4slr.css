@@ -1,0 +1,54 @@
+.json-key {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.json-value {
+    margin-left: 20px;
+}
+
+.accordion-button::after {
+    transform: rotate(90deg);
+}
+
+pre {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+
+.kp-card {
+    margin-bottom: 15px;
+}
+
+.kp-title {
+    font-weight: 600;
+}
+
+.table-container {
+    margin-top: 10px;
+}
+
+.level-btn {
+    cursor: pointer;
+}
+
+.level-btn:hover {
+    opacity: 0.8;
+}
+
+.kp-btn {
+    cursor: pointer;
+}
+
+.kp-btn:hover {
+    opacity: 0.8;
+}
+
+.overlay {
+  transition: background-color 0.3s ease;
+  border-radius: 10px; /* opcional, combina com a imagem */
+}
+

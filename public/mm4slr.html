@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MM4SLR</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <div id="imports"></div>
+  <link rel="stylesheet" href="../assets/CSS/mm4slr.css">
+</head>
+
+<body class="bg-light" style="height: 100vh;">
+  <div id="header"></div>
+  <div class="container text-center mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 p-5 bg-white rounded shadow-sm">
+
+        <div class="image-container mb-4">
+          <img id="mainImage" width="100%" src="../assets/images/MM4SLR-main.png" alt="MM4SLR Logo">
+        </div>
+
+
+
+        <div class="m-5 p-4 bg-light rounded shadow-sm">
+          <div class="row">
+            <!-- DIMENSIONS -->
+            <div class="col-md-6 border-end">
+              <h4 class="mb-3">Dimensions</h4>
+              <div id="dimensionSelect" class="ms-2"></div>
+            </div>
+
+            <!-- LEVELS -->
+            <div class="col-md-6">
+              <h4 class="mb-3">Levels</h4>
+              <div id="levelsContainer" class="ms-2"></div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- KPs -->
+        <div id="kpContainer" class="text-start"></div>
+
+        <!-- KP Detail -->
+        <div id="kpDetail" class="card mt-4" style="display:none;">
+          <div class="card-body">
+            <h5 id="kpTitle" class="card-title"></h5>
+            <p id="kpDescription"></p>
+            <h6>Practice Instances:</h6>
+            <table class="table table-bordered">
+              <thead class="table-light">
+                <tr>
+                  <th>BibtexKey</th>
+                  <th>Text</th>
+                </tr>
+              </thead>
+              <tbody id="kpTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<div id="footer"></div>
+
+<script src="../assets/JS/mm4slr.js"></script>
+<script>
+  $("#imports").load("../components/imports.html");
+  $("#header").load("../components/header.html");
+  $("#footer").load("../components/footer.html");
+</script>
+
+</html>
