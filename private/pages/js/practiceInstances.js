@@ -87,24 +87,35 @@ $(document).ready(function () {
         $.get(`${apiUrl}/keypractice/${keyPracticeId}`, function (data) {
             const $tbody = $('#practiceInstanceTableBody');
             $tbody.empty();
-            console.log(apiUrl + keyPracticeId)
-            console.log(data)
+
             data.forEach(pi => {
-                $tbody.append(`
+                // Para cada Practice Instance, buscar a contagem de Text Passages
+                $.get(`${apiUrl}/${pi.id}/textpassages/count`, function (countData) {
+                    const passageCount = countData.count || 0;
+
+                    $tbody.append(`
                     <tr>
                         <td>${pi.id}</td>
                         <td>${pi.description}</td>
                         <td>
-                            <button class="btn btn-sm btn-outline-dark edit" data-id="${pi.id}"><i class="bi bi-pencil"></i></button>
-                            <button class="btn btn-sm btn-outline-dark delete" data-id="${pi.id}"><i class="bi bi-trash"></i></button>
-                            <button class="btn btn-sm btn-outline-success add-textpassage" data-id="${pi.id}">+</button>
-                            <button class="btn btn-sm btn-outline-dark manage-instances" 
-                                onclick="window.location.href='textpassages.html?practiceInstanceId=${pi.id}'">
-                                <i class="bi bi-grid-3x3-gap"></i>
-                            </button>
+                        <span class="badge bg-info text-dark">${passageCount}</span>
+                        
+                        </td>
+                        <td class="d-flex gap-2 justify-content-center">
+                        <button class="btn btn-sm btn-outline-dark edit" data-id="${pi.id}">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        <button class="btn btn-sm btn-outline-dark delete" data-id="${pi.id}">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                        <button class="btn btn-sm btn-outline-dark manage-textpassages" 
+                            onclick="window.location.href='textPassages.html?practiceInstanceId=${pi.id}'">
+                            <i class="bi bi-grid-3x3-gap"></i>
+                        </button>
                         </td>
                     </tr>
                 `);
+                });
             });
         }).fail(function (err) {
             alert('Erro ao carregar Practice Instances.');

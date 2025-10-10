@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MM4SLR - Controls</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <div id="imports"></div>
+  <script src="js/common.js"></script>
+  <link rel="stylesheet" href="CSS/controls.css">
+</head>
+
+
+<body class="bg-light" style="height: 100vh;">
+  <div id="header"></div>
+
+  <div class="container text-center mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6 p-5 bg-white rounded shadow-sm">
+        <h3 class="mb-4">Controls</h3>
+
+        <p>This page exports the database for a public JSON that will be displayed in the trasference material. Be careful, while clicking the data in folder will be overwritten!</p>
+
+        <button id="exportBtn" class="btn btn-primary btn-lg">Export to Public View</button>
+        <div id="status" class="mt-3"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <script src="JS/controls.js"></script>
+  <script>
+    $("#imports").load("../../../components/imports.html");
+    $("#header").load("components/header.html");
+    $("#footer").load("../../../components/footer.html");
+  </script>
+</body>
+
+</html>

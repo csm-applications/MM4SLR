@@ -52,3 +52,15 @@ export async function getTextPassagesByPracticeInstance(practiceinstance_id) {
   const db = getDB();
   return db.all('SELECT * FROM textpassage WHERE practiceinstance_id = ?', [practiceinstance_id]);
 }
+
+// Contar Text Passages
+export async function countTextPassagesForPracticeInstance(practiceInstanceId) {
+  const db = getDB();
+  const result = await db.get(
+    `SELECT COUNT(*) as count
+     FROM textpassage
+     WHERE practiceinstance_id = ?`,
+    [practiceInstanceId]
+  );
+  return result.count || 0;
+}

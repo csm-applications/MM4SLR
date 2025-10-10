@@ -24,7 +24,7 @@
           <input type="hidden" id="keyPracticeId" />
 
           <div class="mb-2">
-            <label for="keyPracticeDescription" class="form-label">Description</label>
+            <label for="keyPracticeDescription" class="form-label">KP Title</label>
             <textarea id="keyPracticeDescription" class="form-control" rows="2"></textarea>
           </div>
 
@@ -53,12 +53,23 @@
               <tr>
                 <th>ID</th>
                 <th>Description</th>
-                <th>Level</th>
-                <th>Dimension</th>
+                <th>
+                  Level
+                  <select id="filterLevel" class="form-select form-select-sm mt-1">
+                    <option value="">All Levels</option>
+                  </select>
+                </th>
+                <th>
+                  Dimension
+                  <select id="filterDimension" class="form-select form-select-sm mt-1">
+                    <option value="">All Dimensions</option>
+                  </select>
+                </th>
                 <th>Instances</th>
                 <th>Actions</th>
               </tr>
             </thead>
+
             <tbody id="keyPracticeTableBody"></tbody>
           </table>
         </div>

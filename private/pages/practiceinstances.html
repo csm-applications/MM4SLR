@@ -26,7 +26,7 @@
 
         <h3 class="mb-4">Practice Instances</h3>
 
-        <!-- Formulário de Practice Instance -->
+        <!-- Formulário -->
         <div class="mb-4 p-3 bg-light rounded shadow-sm text-start">
           <input type="hidden" id="practiceInstanceId" />
           <input type="hidden" id="practiceInstanceKeyPracticeId" />
@@ -37,19 +37,19 @@
             <textarea id="practiceInstanceDescription" class="form-control" rows="2"></textarea>
           </div>
 
-         
           <button id="savePracticeInstance" class="btn btn-primary">Save</button>
           <button id="resetPracticeInstance" class="btn btn-secondary">Reset</button>
         </div>
 
         <!-- Tabela de Practice Instances -->
         <div class="mb-4">
-          <table class="table table-bordered">
+          <table class="table table-bordered align-middle">
             <thead class="table-light">
               <tr>
-                <th>ID</th>
+                <th style="width: 5%;">ID</th>
                 <th>Description</th>
-                <th>Actions</th>
+                <th style="width: 15%;"># text passages</th>
+                <th style="width: 20%;">Actions</th>
               </tr>
             </thead>
             <tbody id="practiceInstanceTableBody">
@@ -62,42 +62,43 @@
     </div>
   </div>
 
-  <!-- Modal para criar Text Passage -->
-<div class="modal fade" id="textPassageModal" tabindex="-1" aria-labelledby="textPassageModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="textPassageModalLabel">Add Text Passage</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <input type="hidden" id="textPassageId">
-        <input type="hidden" id="textPassageKeyPracticeId">
-        <input type="hidden" id="textPassagePracticeInstanceId">
-
-        <div class="mb-3">
-          <label for="textPassageStudySelect" class="form-label">Select Study</label>
-          <select id="textPassageStudySelect" class="form-select"></select>
+  <!-- Modal: Text Passage -->
+  <div class="modal fade" id="textPassageModal" tabindex="-1" aria-labelledby="textPassageModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="textPassageModalLabel">Add Text Passage</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
-        <div class="mb-3">
-          <label for="textPassageText" class="form-label">Text Passage</label>
-          <textarea id="textPassageText" class="form-control" rows="4"></textarea>
+        <div class="modal-body">
+          <input type="hidden" id="textPassageId">
+          <input type="hidden" id="textPassageKeyPracticeId">
+          <input type="hidden" id="textPassagePracticeInstanceId">
+
+          <div class="mb-3">
+            <label for="textPassageStudySelect" class="form-label">Select Study</label>
+            <select id="textPassageStudySelect" class="form-select"></select>
+          </div>
+
+          <div class="mb-3">
+            <label for="textPassageText" class="form-label">Text Passage</label>
+            <textarea id="textPassageText" class="form-control" rows="4"></textarea>
+          </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" id="saveTextPassage" class="btn btn-primary">Save</button>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" id="saveTextPassage" class="btn btn-primary">Save</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
 
   <!-- Footer -->
   <div id="footer"></div>
 
-  <!-- Script específico -->
+  <!-- Scripts -->
   <script src="JS/practiceInstances.js"></script>
 
   <script>
@@ -105,9 +106,7 @@
     $("#imports").load("../../../components/imports.html");
     $("#header").load("components/header.html");
     $("#footer").load("../../../components/footer.html");
-
-   </script>
+  </script>
 
 </body>
-
 </html>

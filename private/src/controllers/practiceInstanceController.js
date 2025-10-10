@@ -4,11 +4,13 @@ import {
   getPracticeInstanceById,
   createPracticeInstance,
   updatePracticeInstance,
-  deletePracticeInstance
-} from '../models/practiceInstanceModel.js';
-import {
+  deletePracticeInstance,
   getPracticeInstancesByKeyPractice
 } from '../models/practiceInstanceModel.js';
+
+import { countTextPassagesForPracticeInstance } from '../models/textPassageModel.js';
+
+
 
 export async function listPracticeInstances(req, res) {
   try {
@@ -21,10 +23,8 @@ export async function listPracticeInstances(req, res) {
 
 export const listPracticeInstancesByKeyPractice = async (req, res) => {
   try {
-    const { keypracticeId } = req.params;
-
-    const instances = await getPracticeInstancesByKeyPractice(keypracticeId);
-
+    console.log(req.params)
+    const instances =  await getPracticeInstancesByKeyPractice(req, res);
     res.json(instances);
   } catch (err) {
     console.error('Erro ao buscar Practice Instances por Key Practice:', err);
@@ -88,5 +88,19 @@ export async function removePracticeInstance(req, res) {
     res.status(204).send();
   } catch (err) {
     res.status(400).json({ error: err.message });
+  }
+}
+
+export async function countTextPassagesByPracticeInstance(req, res) {
+  try {
+    const { id } = req.params;
+
+    // Chama a função do model que retorna a contagem
+    const count = await countTextPassagesForPracticeInstance(id);
+
+    res.json({ count });
+  } catch (err) {
+    console.error('Erro ao contar Text Passages:', err);
+    res.status(500).json({ error: 'Erro ao contar Text Passages.' });
   }
 }

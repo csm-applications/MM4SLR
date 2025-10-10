@@ -9,29 +9,29 @@ function populateDimensions(data) {
     const dimensionContainer = document.getElementById('dimensionSelect');
     dimensionContainer.innerHTML = '';
 
-    Object.keys(data).forEach(dim => {
+    data.Dimensions.forEach((dim, index) => {
         const div = document.createElement('div');
         div.className = "form-check text-start";
 
         const input = document.createElement('input');
         input.type = "checkbox";
         input.className = "form-check-input";
-        input.id = `dim-${dim}`;
-        input.value = dim;
+        input.id = `dim-${index}`;
+        input.value = dim.DimensionName;
 
         input.addEventListener('change', () => {
             if (input.checked) {
-                selectedDimensions.add(dim);
+                selectedDimensions.add(dim.DimensionName);
             } else {
-                selectedDimensions.delete(dim);
+                selectedDimensions.delete(dim.DimensionName);
             }
             showKPs();
         });
 
         const label = document.createElement('label');
         label.className = "form-check-label";
-        label.setAttribute("for", `dim-${dim}`);
-        label.textContent = dim;
+        label.setAttribute("for", `dim-${index}`);
+        label.textContent = dim.DimensionName;
 
         div.appendChild(input);
         div.appendChild(label);
@@ -39,16 +39,24 @@ function populateDimensions(data) {
     });
 }
 
-// 2. Construir o mapa de níveis dinamicamente
+// 2. Construir o mapa de níveis dinamicamente (agora inclui study_id)
 function buildLevelMap(data) {
     levelMap = {};
-    Object.keys(data).forEach(dimension => {
-        const dimData = data[dimension];
-        Object.keys(dimData).forEach(category => {
-            const entry = dimData[category];
-            const level = `Level ${entry.level}`;
+    data.Dimensions.forEach(dim => {
+        dim.keyPractices.forEach(kp => {
+            const level = `Level ${kp.level_id}`;
             if (!levelMap[level]) levelMap[level] = [];
-            levelMap[level].push({ category, dimension, instances: entry.practice_instances });
+
+            levelMap[level].push({
+                kpName: kp.description,
+                dimension: dim.DimensionName,
+                instances: kp.practiceInstances.map(pi => ({
+                    practice_instance: pi.description,
+                    text: pi.textPassages.map(tp => tp.text).join(' | '),
+                    study_ids: pi.textPassages.map(tp => tp.study_id).join('; '),
+                    study_titles: pi.textPassages.map(tp => tp.study_title).join('; ')
+                }))
+            });
         });
     });
 }
@@ -95,23 +103,26 @@ function showKPs() {
 
     let kpsToShow = [];
 
-    if (selectedDimensions.size > 0) {
-        selectedDimensions.forEach(dim => {
-            const dimData = jsonData[dim];
-            Object.keys(dimData).forEach(category => {
-                const entry = dimData[category];
-                if (selectedLevels.size === 0 || selectedLevels.has(`Level ${entry.level}`)) {
-                    kpsToShow.push({ category, dimension: dim, instances: entry.practice_instances });
+    jsonData.Dimensions.forEach(dim => {
+        if (selectedDimensions.size === 0 || selectedDimensions.has(dim.DimensionName)) {
+            dim.keyPractices.forEach(kp => {
+                const level = `Level ${kp.level_id}`;
+                if (selectedLevels.size === 0 || selectedLevels.has(level)) {
+                    kpsToShow.push({
+                        kpName: kp.description,
+                        dimension: dim.DimensionName,
+                        category: kp.description,
+                        instances: kp.practiceInstances.map(pi => ({
+                            practice_instance: pi.description,
+                            text: pi.textPassages.map(tp => tp.text).join(' | '),
+                            study_ids: pi.textPassages.map(tp => tp.study_id).join('; '),
+                            study_titles: pi.textPassages.map(tp => tp.study_title).join('; ')
+                        }))
+                    });
                 }
             });
-        });
-    } else if (selectedLevels.size > 0) {
-        selectedLevels.forEach(level => {
-            if (levelMap[level]) {
-                kpsToShow = kpsToShow.concat(levelMap[level]);
-            }
-        });
-    }
+        }
+    });
 
     if (kpsToShow.length === 0) return;
 
@@ -123,8 +134,8 @@ function showKPs() {
     const ul = document.createElement('ul');
     ul.className = "list-group text-start";
 
-    kpsToShow.forEach(({ category, dimension, instances }) => {
-        createKPItem(ul, category, instances, dimension, category);
+    kpsToShow.forEach(({ kpName, instances, dimension, category }) => {
+        createKPItem(ul, kpName, instances, dimension, category);
     });
 
     kpContainer.appendChild(ul);
@@ -140,7 +151,7 @@ function createKPItem(container, kpName, instances, dimension, category) {
     container.appendChild(li);
 }
 
-// 6. Mostrar detalhes de um KP
+// 6. Mostrar detalhes de um KP (agora mostra study_id corretamente)
 function showKPDetail(kpName, instances, dimension, category) {
     const detail = document.getElementById('kpDetail');
     detail.style.display = 'block';
@@ -161,12 +172,11 @@ function showKPDetail(kpName, instances, dimension, category) {
     instances.forEach(inst => {
         const tr = document.createElement('tr');
         tr.innerHTML = `
-    <td title="${inst.text}">${inst.bibtexkey}</td>
-    <td title="${"("+ inst.bibtexkey + ")" + " " + inst.text}">${inst.practice_instance}</td>
-  `;
+            <td title="${inst.study_titles}">${inst.study_ids}</td>
+            <td title="${inst.text}">${inst.practice_instance}</td>
+        `;
         tbody.appendChild(tr);
     });
-
 }
 
 // 7. Inicialização

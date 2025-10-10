@@ -30,42 +30,45 @@ $(document).ready(function () {
   // ------------------------------
   // CARREGAR KEY PRACTICES COM CONTAGEM DE INSTANCES
   // ------------------------------
-  function loadKeyPractices() {
+  function loadKeyPractices(filters = {}) {
     $.get(apiUrl, function (data) {
       const $tbody = $('#keyPracticeTableBody');
       $tbody.empty();
 
       data.forEach(kp => {
+        // Filtro
+        if (filters.level && kp.level_id != filters.level) return;
+        if (filters.dimension && kp.dimension_id != filters.dimension) return;
 
-        // Buscar contagem de instances associadas a esta Key Practice
-        $.get(`${apiUrl}/${kp.id}/instances/count`, function(countData) {
+        $.get(`${apiUrl}/${kp.id}/instances/count`, function (countData) {
           const instanceCount = countData.count || 0;
 
           $tbody.append(`
-            <tr>
-              <td>${kp.id}</td>
-              <td>${kp.description}</td>
-              <td>${kp.level_name || ''}</td>
-              <td>${kp.dimension_name || ''}</td>
-              <td>${instanceCount}</td>
-              <td class="d-flex gap-2">
-                <button class="btn btn-sm btn-outline-dark edit" data-id="${kp.id}">
-                  <i class="bi bi-pencil"></i>
-                </button>
-                <button class="btn btn-sm btn-outline-dark delete" data-id="${kp.id}">
-                  <i class="bi bi-trash"></i>
-                </button>
-                <button class="btn btn-sm btn-outline-dark manage-instances" 
-                  onclick="window.location.href='practiceInstances.html?kpId=${kp.id}'">
-                  <i class="bi bi-grid-3x3-gap"></i>
-                </button>
-              </td>
-            </tr>
-          `);
+          <tr>
+            <td>${kp.id}</td>
+            <td>${kp.description}</td>
+            <td>${kp.level_name || ''}</td>
+            <td>${kp.dimension_name || ''}</td>
+            <td>${instanceCount}</td>
+            <td class="d-flex gap-2">
+              <button class="btn btn-sm btn-outline-dark edit" data-id="${kp.id}">
+                <i class="bi bi-pencil"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-dark delete" data-id="${kp.id}">
+                <i class="bi bi-trash"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-dark manage-instances" 
+                onclick="window.location.href='practiceInstances.html?kpId=${kp.id}'">
+                <i class="bi bi-grid-3x3-gap"></i>
+              </button>
+            </td>
+          </tr>
+        `);
         });
       });
     });
   }
+
 
   // ------------------------------
   // RESETAR FORMULÁRIO
@@ -145,6 +148,46 @@ $(document).ready(function () {
       }
     });
   });
+
+  function loadDropdowns() {
+    // Levels
+    $.get(levelsUrl, function (data) {
+      const $levelSelect = $('#keyPracticeLevel'); // form
+      const $filterLevel = $('#filterLevel');       // th
+      $levelSelect.empty().append('<option value="">Select Level</option>');
+      $filterLevel.empty().append('<option value="">All Levels</option>');
+
+      data.forEach(lvl => {
+        const option = `<option value="${lvl.id}">${lvl.value} - ${lvl.name}</option>`;
+        $levelSelect.append(option);
+        $filterLevel.append(option);
+      });
+    });
+
+    // Dimensions
+    $.get(dimensionsUrl, function (data) {
+      const $dimSelect = $('#keyPracticeDimension'); // form
+      const $filterDimension = $('#filterDimension'); // th
+      $dimSelect.empty().append('<option value="">Select Dimension</option>');
+      $filterDimension.empty().append('<option value="">All Dimensions</option>');
+
+      data.forEach(dim => {
+        const option = `<option value="${dim.id}">${dim.name}</option>`;
+        $dimSelect.append(option);
+        $filterDimension.append(option);
+      });
+    });
+  }
+
+  $('#filterLevel, #filterDimension').change(function () {
+    const filters = {
+      level: $('#filterLevel').val(),
+      dimension: $('#filterDimension').val()
+    };
+    loadKeyPractices(filters);
+  });
+
+
 
   // ------------------------------
   // INICIALIZAÇÃO

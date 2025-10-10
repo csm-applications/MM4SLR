@@ -8,6 +8,7 @@ import keyPracticeRoutes from './src/routes/keyPracticeRoutes.js';
 import practiceInstanceRoutes from './src/routes/practiceInstanceRoutes.js';
 import textPassageRoutes from './src/routes/textPassageRoutes.js';
 import studyRoutes from './src/routes/studyRoutes.js';
+import exportRoutes from './src/routes/exportRoutes.js';
 
 const app = express();
 app.use(express.json());
@@ -28,6 +29,7 @@ app.use('/keypractices', keyPracticeRoutes);
 app.use('/practiceinstances', practiceInstanceRoutes);
 app.use('/textpassages', textPassageRoutes);
 app.use('/studies', studyRoutes);
+app.use('/export', exportRoutes);
 
 app.get('/', (req, res) => res.send('🚀 MM4SLR API rodando'));
 
