@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MM4SLR - Studies</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <div id="imports"></div>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/studies.css">
+</head>
+
+<body class="bg-light" style="height: 100vh;">
+    <div id="header"></div>
+    <div class="container text-center mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8 p-5 bg-white rounded shadow-sm">
+
+                <h3 class="mb-4">Manage Studies</h3>
+
+                <!-- Formulário para criar/editar -->
+                <div class="mb-4 p-3 bg-light rounded shadow-sm text-start">
+                    <input type="hidden" id="studyId" />
+                    <div class="mb-2">
+                        <label for="studyBib" class="form-label">BibTex</label>
+                        <textarea id="studyBib" class="form-control" rows="4"></textarea>
+                    </div>
+                    <button id="saveStudy" class="btn btn-primary">Save</button>
+                    <button id="resetStudy" class="btn btn-secondary">Reset</button>
+                </div>
+
+                <!-- Lista de Estudos -->
+                <div class="mb-4">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>BibTeX Key</th>
+                                <th>Título</th>
+                                <th>Autores</th>
+                                <th>Ano</th>
+                                <th>DOI</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="studyTableBody"></tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<div id="footer"></div>
+
+<script src="JS/studies.js"></script>
+<script>
+    $("#imports").load("../../../components/imports.html");
+    $("#header").load("components/header.html");
+    $("#footer").load("../../../components/footer.html");
+</script>
+
+</html>

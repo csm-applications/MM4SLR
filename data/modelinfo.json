@@ -1,0 +1,122 @@
+{
+    "dimensions": [
+        {
+            "name": "Knowledge management",
+            "description": "Capacidade de organizar, armazenar e recuperar conhecimento de forma eficaz durante o processo de revisão sistemática.",
+            "KPs": [
+                {
+                    "name": "Fundamentation",
+                    "description": "Garantir que a pesquisa esteja bem fundamentada em teorias e evidências pré-existentes."
+                },
+                {
+                    "name": "Planning and protocol",
+                    "description": "Definir protocolos claros e detalhados para orientar a execução da pesquisa."
+                },
+                {
+                    "name": "Knowledge Communication",
+                    "description": "Assegurar que o conhecimento gerado seja comunicado de maneira clara e acessível."
+                }
+            ]
+        },
+        {
+            "name": "Tool Support",
+            "description": "Uso de ferramentas que apoiem a execução, análise e documentação do processo de pesquisa.",
+            "KPs": [
+                {
+                    "name": "The researchers should use the well-experimented guidelines",
+                    "description": "Utilizar ferramentas e diretrizes consolidadas que aumentem a eficácia e a consistência do estudo."
+                },
+                {
+                    "name": "Independent Verification",
+                    "description": "Ferramentas e métodos que permitam a verificação independente dos resultados."
+                }
+            ]
+        },
+        {
+            "name": "Validation & Reliability",
+            "description": "Assegurar que os resultados sejam confiáveis, consistentes e passíveis de validação externa.",
+            "KPs": [
+                {
+                    "name": "GRADE",
+                    "description": "Aplicar o método GRADE para avaliar a qualidade da evidência e força das recomendações."
+                },
+                {
+                    "name": "Bias Evaluation & Control",
+                    "description": "Identificar e controlar vieses que possam comprometer a validade da pesquisa."
+                },
+                {
+                    "name": "The researchers should ensure quality of SLR implementing mechanisms to identify and mitigate SLR problems",
+                    "description": "Implementar mecanismos que garantam a qualidade da revisão sistemática, identificando e mitigando problemas."
+                },
+                {
+                    "name": "Replicability",
+                    "description": "Garantir que o estudo possa ser replicado por outros pesquisadores."
+                },
+                {
+                    "name": "Independent Verification",
+                    "description": "Permitir que outros pesquisadores verifiquem de forma independente os resultados."
+                }
+            ]
+        },
+        {
+            "name": "Collaboration & communication",
+            "description": "A promoção da comunicação eficaz e da colaboração entre os pesquisadores e stakeholders.",
+            "KPs": [
+                {
+                    "name": "Conflict Resolution",
+                    "description": "Estabelecer métodos claros para resolução de conflitos entre membros da equipe ou partes interessadas."
+                },
+                {
+                    "name": "Knowledge Communication",
+                    "description": "Compartilhar resultados, insights e decisões de forma clara e acessível."
+                }
+            ]
+        },
+        {
+            "name": "Documentation, transparency & reproducibility",
+            "description": "Garantir que todos os processos e decisões estejam bem documentados, permitindo reprodução e auditoria.",
+            "KPs": [
+                {
+                    "name": "Reporting Clarity",
+                    "description": "Documentar resultados e métodos de forma clara, compreensível e detalhada."
+                },
+                {
+                    "name": "Replicability",
+                    "description": "Permitir que outros reproduzam o estudo utilizando a documentação disponível."
+                },
+                {
+                    "name": "Study Limitations & Applicability",
+                    "description": "Documentar limitações do estudo e contextos de aplicabilidade dos resultados."
+                },
+                {
+                    "name": "Funding Disclosure",
+                    "description": "Transparência sobre fontes de financiamento e possíveis conflitos de interesse."
+                }
+            ]
+        },
+        {
+            "name": "Coverage",
+            "description": "Abrangência e completude da revisão sistemática em relação ao domínio estudado.",
+            "KPs": [
+                {
+                    "name": "Effect on practice",
+                    "description": "Avaliar como os resultados impactam a prática e a aplicação do conhecimento."
+                },
+                {
+                    "name": "Findings Clarity and suitability",
+                    "description": "Assegurar que os achados cubram adequadamente o escopo da pesquisa e sejam claros para os stakeholders."
+                }
+            ]
+        },
+        {
+            "name": "Efficiency",
+            "description": "Capacidade de otimizar tempo, recursos e esforços durante a realização da pesquisa.",
+            "KPs": [
+                {
+                    "name": "The researcher should comprise with methodological rigour",
+                    "description": "Equilibrar rigor metodológico com eficiência na execução do estudo."
+                }
+            ]
+        }
+    ]
+}

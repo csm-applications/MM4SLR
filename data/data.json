@@ -1,29 +1,27 @@
 {
-    "Knowledge management": {
-        "The researchers should use the well-experimented guidelines": {
-            "level": 1,
+    "Quality Assurance": {
+        "Define and apply appropriate guidelines for quality assessment strategies.": {
+            "level": "3",
+            "text": "",
+            "bibtexkey": "",
+            "code": "",
             "practice_instances": [
                 {
                     "bibtexkey": "S1",
                     "text": "Appropriate guidelines are required for devising quality assessment strategies.",
                     "code": "Guidelines for QA are necessary",
-                    "practice_instance": "Define and apply appropriate guidelines for quality assessment strategies."
-                }
-            ]
-        },
-        "The researchers should ensure quality of SLR implementing mechanisms to identify and mitigate SLR problems": {
-            "level": 2,
-            "practice_instances": [
+                    "practice_instance": "nan"
+                },
                 {
                     "bibtexkey": "S1",
                     "text": "The possible differences between SLR and SMS could offer advice when researchers perform quality assessment in SLR and SMS.",
-                    "code": "SLR/SMS QA advice",
+                    "code": "SLR/SMS guidelines to perform QA evaluation",
                     "practice_instance": "Consider differences between SLR and SMS when conducting quality assessment."
                 },
                 {
                     "bibtexkey": "S1",
                     "text": "For each aspect, researchers can gain the knowledge of the most concerned criteria, which is particularly helpful in developing and applying quality assessment instruments for future SLRs.",
-                    "code": "Use common criteria",
+                    "code": "Use common criteria for QA evaluation",
                     "practice_instance": "Identify and use key criteria to develop and apply quality assessment instruments for future SLRs."
                 },
                 {
@@ -34,27 +32,15 @@
                 },
                 {
                     "bibtexkey": "S1",
+                    "text": "GRADE is a complicated approach and may be difficult for new SLR researchers.",
+                    "code": "GRADE is difficult for newbies",
+                    "practice_instance": "GRADE is not recommended for new researchers"
+                },
+                {
+                    "bibtexkey": "S1",
                     "text": "If there exist any former SLRs on the similar topic, researchers may consult these SLRs in developing their criteria for quality assessment.",
-                    "code": "Consult similar SLRs",
+                    "code": "Consult similar SLRs to develop yours",
                     "practice_instance": "Consult prior SLRs on similar topics to inform quality assessment criteria."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "When implementing the quality assessment, systematic reviewers could consider the criterion of the recommendations for future research, which may influence the ongoing work in a research area.",
-                    "code": "Consider future research criterion",
-                    "practice_instance": "Consider recommendations for future research when performing quality assessment."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Hence, it is important that SLRs researchers start paying more attention to the quality assessment of the papers included in SLRs.",
-                    "code": "Increase QA attention",
-                    "practice_instance": "Give more attention to quality assessment in SLRs."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Albeit quality assessment is not recommended for SMS, this part could be a good choice to increase the credibility of evidence in an SMS.",
-                    "code": "Use QA in SMS",
-                    "practice_instance": "Consider applying quality assessment in SMS to increase credibility."
                 },
                 {
                     "bibtexkey": "S1",
@@ -64,32 +50,483 @@
                 },
                 {
                     "bibtexkey": "S1",
+                    "text": "This situation might ignore the negative effect of the factors like inconsistency of results that could make to the strength of the evidence.",
+                    "code": "Consider the negative effects of inconsistency of results",
+                    "practice_instance": "Account for negative factors such as result inconsistency in evidence strength."
+                }
+            ]
+        }
+    },
+    "Validation & Reliability": {
+        "Perform quality assessment in SLRs.": {
+            "level": "3",
+            "text": "",
+            "bibtexkey": "",
+            "code": "",
+            "practice_instances": [
+                {
+                    "bibtexkey": "S1",
+                    "text": "We assigned the workload to make sure that each study was checked by at least two researchers independently to minimize the potential impact of any bias.",
+                    "code": "Dual checker bias mitigation",
+                    "practice_instance": "Perform independent review check by at least two researchers to reduce bias."
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "The disagreements on search and selection opinions were solved in joint discussion.",
+                    "code": "Resolve disagreements jointly",
+                    "practice_instance": "Resolve disagreements on search and selection through joint discussion."
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "Any disagreements that could not be solved were escalated to the supervisor.",
+                    "code": "Use supervisor oppinion",
+                    "practice_instance": "Escalate unresolved disagreements to a supervisor."
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "Hence, it is important that SLRs researchers start paying more attention to the quality assessment of the papers included in SLRs.",
+                    "code": "Increase QA attention",
+                    "practice_instance": "nan"
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "Albeit quality assessment is not recommended for SMS, this part could be a good choice to increase the credibility of evidence in an SMS.",
+                    "code": "Use QA in SMS",
+                    "practice_instance": "Consider applying quality assessment in SMS to increase credibility."
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "Moreover, the cross-check was necessary among the reviewers, and again we had at least two research students extracting data from each selected SLR independently.",
+                    "code": "Independent data extraction",
+                    "practice_instance": "Perform independent cross-checks with multiple reviewers for data extraction."
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "The supervisor played the role of expert panel who dealt with any divergences and disagreements between the students during the process.",
+                    "code": "Supervisor resolves disagreements",
+                    "practice_instance": "Use supervisors or expert panels to resolve reviewer divergences."
+                },
+                {
+                    "bibtexkey": "S1",
                     "text": "This information can help researchers to develop the quality criteria according to the purpose of their quality assessment: rather than ‘blindly’ performing the quality assessment for no particular reason.",
                     "code": "Link criteria to purpose",
                     "practice_instance": "Develop quality criteria aligned with assessment purpose, not blindly."
+                }
+            ]
+        },
+        "Use research design appropriate to the study aims.": {
+            "level": "1",
+            "text": "",
+            "bibtexkey": "",
+            "code": "",
+            "practice_instances": [
+                {
+                    "bibtexkey": "S1",
+                    "text": "Are the metrics (methods, design, measures) used in the study clearly (fully) defined (description)?",
+                    "code": "Metrics definition in the study",
+                    "practice_instance": "Define study metrics, methods, and measures."
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "Are the variables/metrics/methods/design used in the study adequately measured and validated (justified)?",
+                    "code": "Parameters validation and evaluation",
+                    "practice_instance": "Validate and justify variables, metrics, and study design."
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "Was the data analysis (collected) sufficiently rigorous?",
+                    "code": "Data collection rigor",
+                    "practice_instance": "Conduct data analysis rigorously."
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "Was there a control group with which to compare treatments?",
+                    "code": "Usage of control group",
+                    "practice_instance": "Use control groups where applicable."
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "Was the research design appropriate to address the aims of the research?",
+                    "code": "Research design appropriateness",
+                    "practice_instance": "nan"
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "Is the methodology (design) used suitable to address the stated research questions?",
+                    "code": "Methodology suitability to answer RQs",
+                    "practice_instance": "Use methodology suitable for the research questions."
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "Has the relationship between researcher and participants been considered to an adequate degree?",
+                    "code": "Check researcher/participant relation",
+                    "practice_instance": "Consider researcher–participant relationship adequately."
+                }
+            ]
+        },
+        "Discuss limitations and threats to validity.": {
+            "level": "3",
+            "text": "",
+            "bibtexkey": "",
+            "code": "",
+            "practice_instances": [
+                {
+                    "bibtexkey": "S1",
+                    "text": "Do the researchers discuss any problems (limitations, threats) with the validity (reliability) of their results?",
+                    "code": "Check discussion of limitations",
+                    "practice_instance": "Discuss limitations and threats to validity."
+                }
+            ]
+        },
+        "Ensure that findings are credible.": {
+            "level": "3",
+            "text": "",
+            "bibtexkey": "",
+            "code": "",
+            "practice_instances": [
+                {
+                    "bibtexkey": "S1",
+                    "text": "Are the findings credible?",
+                    "code": "Check findings credibility",
+                    "practice_instance": "nan"
                 },
                 {
                     "bibtexkey": "S1",
                     "text": "Based on our observation, we suggest that researchers should care more about the aspect of credibility, which directly impacts the validity and generalizability of a study’s conclusion.",
                     "code": "Focus on credibility aspect",
                     "practice_instance": "Prioritize credibility to strengthen validity and generalizability."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "This needs more serious considerations in the quality assessment of any future SLRs.",
-                    "code": "Consider relevance seriously",
-                    "practice_instance": "Give serious consideration to credibility in future SLR quality assessments."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "The next step of this thread of research could be to identify the gaps between the actual practices of quality assessment in EBSE and the existing guidelines for quality assessment.",
-                    "code": "Identify QA gaps",
-                    "practice_instance": "Identify gaps between QA practices and guidelines in EBSE."
                 }
             ]
         },
-        "Knowledge Communication": {
-            "level": 5,
+        "nan": {
+            "level": "1",
+            "text": "",
+            "bibtexkey": "",
+            "code": "",
+            "practice_instances": [
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"Additional sources of bias across studies, such as failing to locate appropriate reports to include and the effects of financial conflicts of interest, should be evaluated as part of the review process;\"",
+                    "code": "Evaluate bias sources",
+                    "practice_instance": "Evaluate and report additional sources of bias across studies."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"this category of bias can often be minimized by utilizing a well-designed review protocol (Miller 2000).\"",
+                    "code": "Use protocol to minimize bias",
+                    "practice_instance": "Minimize bias by using well-designed review protocols."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"The funding source for the review should be disclosed in publication to allow the reader to evaluate potential bias from conflicts of interest.\"",
+                    "code": "Disclose funding source",
+                    "practice_instance": "Disclose funding sources to assess potential conflicts of interest."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"In order to assist the reader in appropriate interpretation of the review results it is important to highlight and discuss limitations in any review publication.\"",
+                    "code": "Highlight review limitations",
+                    "practice_instance": "Highlight and discuss limitations in review publications."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"it is helpful for the authors to discuss where their findings likely can and cannot be applied based on the scope of the review.\"",
+                    "code": "Discuss applicability scope",
+                    "practice_instance": "Discuss applicability and limits of findings."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"We also recommend an assessment of bias both for each study included in the review and across the entire review.\"",
+                    "code": "Recommend bias assessment",
+                    "practice_instance": "Assess bias at both study and review levels."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"Bias based on methodology does not necessarily invalidate a study, but it is important to report and understand in order to optimize appro-priate interpretation of the study.\"",
+                    "code": "Report methodology bias",
+                    "practice_instance": "Report and interpret methodological bias rather than dismissing studies."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"We also recommend that authors specifically highlight the lim-itations of the systematic review as a way to assist the reader in result interpretation and highlight important questions for future research.\"",
+                    "code": "Highlight limitations/research",
+                    "practice_instance": "Highlight systematic review limitations to guide interpretation and future research."
+                }
+            ]
+        }
+    },
+    "Documentation, transparency & reproducibility": {
+        "Ensure a clear statement of research aims and objectives.": {
+            "level": "1",
+            "text": "",
+            "bibtexkey": "",
+            "code": "",
+            "practice_instances": [
+                {
+                    "bibtexkey": "S1",
+                    "text": "Is there a clear statement (definition) of the aims (goals, purposes, problems, motivations, objectives, questions) of the research?",
+                    "code": "Define clear aims",
+                    "practice_instance": "nan"
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "Does the study answer the research question defined or presents the results in a clear way?",
+                    "code": "Answers RQs acuratelly",
+                    "practice_instance": "Ensure the study answers the research question clearly."
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "Are the metrics used in the study the most relevant ones for answering the research questions?",
+                    "code": "Check metric relevance",
+                    "practice_instance": "Use metrics that are relevant to anwer the research questions."
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "Is there a clear statement of findings (data) and relate to the aims of research?",
+                    "code": "Findings are related to aims",
+                    "practice_instance": "Clearly state findings and relate them to research aims."
+                }
+            ]
+        },
+        "Provide adequate description of research elements": {
+            "level": "1",
+            "text": "",
+            "bibtexkey": "",
+            "code": "",
+            "practice_instances": [
+                {
+                    "bibtexkey": "S1",
+                    "text": "Is there an adequate description of the context in which the research was carried out?",
+                    "code": "Describe adequately research context",
+                    "practice_instance": "nan"
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "Is the paper based on research?",
+                    "code": "Paper based on research",
+                    "practice_instance": "Provide basis for the paper on actual research."
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "Are the data collection methods adequately described (defined)?",
+                    "code": "Data collection description",
+                    "practice_instance": "Describe data collection methods."
+                }
+            ]
+        },
+        "Ensure the study is replicable.": {
+            "level": "2",
+            "text": "",
+            "bibtexkey": "",
+            "code": "",
+            "practice_instances": [
+                {
+                    "bibtexkey": "S1",
+                    "text": "Are references maintained accurately?",
+                    "code": "Maintain references acurately",
+                    "practice_instance": "Maintain references accurately."
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "Is the study replicable?",
+                    "code": "Check study replicability",
+                    "practice_instance": "nan"
+                }
+            ]
+        },
+        "Provide adequate description of research context.": {
+            "level": "1",
+            "text": "",
+            "bibtexkey": "",
+            "code": "",
+            "practice_instances": [
+                {
+                    "bibtexkey": "S1",
+                    "text": "Was the data collected in a way that addressed the research issue?",
+                    "code": "Data address RQ",
+                    "practice_instance": "Collect data in a way that addresses the research issue."
+                }
+            ]
+        },
+        "Present sufficient data to support findings.": {
+            "level": "2",
+            "text": "",
+            "bibtexkey": "",
+            "code": "",
+            "practice_instances": [
+                {
+                    "bibtexkey": "S1",
+                    "text": "Has sufficient data been presented to support the findings?",
+                    "code": "Check data sufficiency",
+                    "practice_instance": "nan"
+                }
+            ]
+        },
+        "nan": {
+            "level": "1",
+            "text": "",
+            "bibtexkey": "",
+            "code": "",
+            "practice_instances": [
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"We propose a checklist for a standardized technique for assessing and reporting reviews of LCA data (STARR-LCA) to assist in structuring the process of conduct-ing and reporting systematic reviews.\"",
+                    "code": "Checklist for STARR-LCA",
+                    "practice_instance": "Use a standardized checklist (e.g., STARR-LCA) to structure SLR assessment and reporting."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"We suggest that abstracts for systematic reviews related to LCA include at least the following nine components: (1) background; (2) objectives; (3) data sources; (4) study eligibility criteria; (5) scope, system boundaries and functional unit; (6) study appraisal and synthe-sis methods (including any original data adjustments, such as harmonization); (7) results; (8) limitations; and (9) conclusions with implications of key findings.\"",
+                    "code": "Abstract components standard",
+                    "practice_instance": "Include standardized components in abstracts of systematic reviews."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"In the context of what is already known, describe why the systematic review, with or without meta-analysis, was a worth-while effort.\"",
+                    "code": "Describe review rationale",
+                    "practice_instance": "Justify the systematic review in context of existing knowledge."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"A clear outline of the steps undertaken in a review can provide the transparency needed for replication, as well as ap-propriate updates when additional data are generated in fu-ture studies.\"",
+                    "code": "Report replication steps",
+                    "practice_instance": "Provide clear outlines of review steps to ensure transparency and replication."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"We recommend that, at a minimum, a systematic review protocol include five key components: (1) a general description of how studies or data will be discovered for con-sideration of further review (e.g., literature or database search, manual review of the bibliographies of key publications, pre-vious studies performed by the author’s laboratory, solicitation of unpublished data); (2) enough information about any elec-tronic search strategies that the search can be replicated; (3) clear parameters describing how the decision will be made to in-clude or exclude individual studies and data for further analysis in the systematic review and/or meta-analysis; (4) a clear plan for recording and summarizing data from the individual studies, including what parameters or data points are of interest; and (5) what, if any, meta-analyses are planned.\"",
+                    "code": "Protocol five components",
+                    "practice_instance": "Include key components in systematic review protocols to ensure replicability and rigor."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"Any revisions should be outlined and commented upon in subsequent publications and the protocol described should be transparent and complete enough to allow for replication.\"",
+                    "code": "Report protocol revisions",
+                    "practice_instance": "Document and report protocol revisions transparently for replication."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"key information about the individual studies or sources of data included in the review should be provided.\"",
+                    "code": "Provide individual study info",
+                    "practice_instance": "Provide key information on all included studies or data sources."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"Whatever synthesis meth-ods are undertaken in a review, they should be clearly described and justified based on the study protocol and the available data included in the review.\"",
+                    "code": "Describe and justify synthesis",
+                    "practice_instance": "Clearly describe and justify synthesis methods used."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"Article titles should clearly identify the manuscript as a review with or without meta-analysis, and key-word listings for both individual reports and database structure should include the terms meta-analysis and systematic review.\"",
+                    "code": "Identify title and keywords",
+                    "practice_instance": "Clearly identify reviews in titles and keywords."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"A structured summary or abstract should be provided at the beginning of a review;\"",
+                    "code": "Provide structured summary",
+                    "practice_instance": "Provide a structured abstract for reviews."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"The reason for the systematic review should be clear in the context of what is already known.\"",
+                    "code": "Clear systematic review reason",
+                    "practice_instance": "Clearly state the rationale for the review."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"A systematic review pro-tocol should be prospectively written to guide researchers and, ideally, made available for peer review with key areas as noted above.\"",
+                    "code": "Prospectively write protocol",
+                    "practice_instance": "Prospectively write and share systematic review protocols for peer review."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"We recommend that, in the interest of transparency, methods be clearly described and any new data presented as part of the publication.\"",
+                    "code": "Describe methods clearly",
+                    "practice_instance": "Ensure transparency by clearly describing methods and presenting new data."
+                },
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"Finally, the conclusions of the review should be clearly stated.\"",
+                    "code": "Clearly state conclusions",
+                    "practice_instance": "Clearly state the conclusions of the review."
+                }
+            ]
+        }
+    },
+    "Coverage": {
+        "Apply search strategy aligned with research aims.": {
+            "level": "2",
+            "text": "",
+            "bibtexkey": "",
+            "code": "",
+            "practice_instances": [
+                {
+                    "bibtexkey": "S1",
+                    "text": "Was the recruitment strategy appropriate to the aims of the research?",
+                    "code": "Use appropriate study selection strategy",
+                    "practice_instance": "nan"
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "In order to exhaustively identify SLRs with quality assessment component and ensure that the process of papers selection was unbiased as far as possible, the approach of quasi-gold standard (QGS) was adopted, which systematically integrates manual and automated search strategies and suggests a relatively rigorous approach for search performance evaluation in terms of sensitivity and precision.",
+                    "code": "Adopt QGS approach",
+                    "practice_instance": "Use quasi-gold standard (QGS) integrating manual and automated searches to ensure unbiased and rigorous selection."
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "...we also used the snowballing as the complementary search to reduce the possibility of missing relevant SLRs.",
+                    "code": "Use snowballing search",
+                    "practice_instance": "Apply snowballing as a complementary search to avoid missing relevant studies."
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "In addition, the search strategy was developed by the three research students and reviewed by their supervisor.",
+                    "code": "Review search strategy",
+                    "practice_instance": "Develop search strategies collaboratively and review them with a supervisor."
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "To ensure the removal of these duplicates, each retrieved paper was checked and further read by at least two researchers independently to handle the duplication and limited bias as much as possible.",
+                    "code": "Independent duplicate check",
+                    "practice_instance": "Check duplicates independently by at least two researchers to minimize bias."
+                }
+            ]
+        }
+    },
+    "Knowledge management": {
+        "Ensure study contributes value to research or practice.": {
+            "level": "5",
+            "text": "",
+            "bibtexkey": "",
+            "code": "",
+            "practice_instances": [
+                {
+                    "bibtexkey": "S1",
+                    "text": "Is the study of value for research or practice?",
+                    "code": "Check study value",
+                    "practice_instance": "nan"
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "Are conclusions, implications for practice and future research, reported suitably for its audience?",
+                    "code": "Check conclusion suitability",
+                    "practice_instance": "Report conclusions and implications appropriately for the audience."
+                },
+                {
+                    "bibtexkey": "S1",
+                    "text": "Has the approach been validated on a certain scale (either in academia or/ and industry)?",
+                    "code": "Check approach validation scale",
+                    "practice_instance": "Validate the approach in academia or industry."
+                }
+            ]
+        },
+        "nan": {
+            "level": "1",
+            "text": "",
+            "bibtexkey": "",
+            "code": "",
             "practice_instances": [
                 {
                     "bibtexkey": "S2",
@@ -130,483 +567,13 @@
             ]
         }
     },
-    "Tool Support": {
-        "GRADE": {
-            "level": 2,
-            "practice_instances": [
-                {
-                    "bibtexkey": "S1",
-                    "text": "To use this system, researchers should combine several basic components.",
-                    "code": "Combine GRADE components",
-                    "practice_instance": "Combine essential components when applying the assessment system."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "GRADE is a complicated approach and may be difficult for new SLR researchers.",
-                    "code": "GRADE difficulty caution",
-                    "practice_instance": "Provide support or alternatives for new researchers using GRADE."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "As recommended in the assessment system of GRADE, factors that could decrease and increase the strength of evidence are both suggested to determine the strength of evidence.",
-                    "code": "Use GRADE factors",
-                    "practice_instance": "Consider both positive and negative factors when determining strength of evidence."
-                }
-            ]
-        }
-    },
-    "Validation & Reliability": {
-        "Bias Evaluation & Control": {
-            "level": 4,
-            "practice_instances": [
-                {
-                    "bibtexkey": "S1",
-                    "text": "We assigned the workload to make sure that each study was checked by at least two researchers independently to minimize the potential impact of any bias.",
-                    "code": "Dual checker bias mitigation",
-                    "practice_instance": "Ensure each study is independently reviewed by at least two researchers to reduce bias."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"Additional sources of bias across studies, such as failing to locate appropriate reports to include and the effects of financial conflicts of interest, should be evaluated as part of the review process;\"",
-                    "code": "Evaluate bias sources",
-                    "practice_instance": "Evaluate and report additional sources of bias across studies."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"this category of bias can often be minimized by utilizing a well-designed review protocol (Miller 2000).\"",
-                    "code": "Use protocol to minimize bias",
-                    "practice_instance": "Minimize bias by using well-designed review protocols."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"We also recommend an assessment of bias both for each study included in the review and across the entire review.\"",
-                    "code": "Recommend bias assessment",
-                    "practice_instance": "Assess bias at both study and review levels."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"Bias based on methodology does not necessarily invalidate a study, but it is important to report and understand in order to optimize appro-priate interpretation of the study.\"",
-                    "code": "Report methodology bias",
-                    "practice_instance": "Report and interpret methodological bias rather than dismissing studies."
-                }
-            ]
-        },
-        "Planning and protocol": {
-            "level": 5,
-            "practice_instances": [
-                {
-                    "bibtexkey": "S1",
-                    "text": "Are the variables/metrics/methods/design used in the study adequately measured and validated (justified)?",
-                    "code": "Check method justification",
-                    "practice_instance": "Validate and justify variables, metrics, and study design."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Was the data collected in a way that addressed the research issue?",
-                    "code": "Check data relevance",
-                    "practice_instance": "Collect data in a way that addresses the research issue."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Does the study provide description and justification of the data analysis approaches?",
-                    "code": "Check data analysis justification",
-                    "practice_instance": "Describe and justify data analysis approaches."
-                }
-            ]
-        },
-        "The researcher should comprise with methodological rigour": {
-            "level": 1,
-            "practice_instances": [
-                {
-                    "bibtexkey": "S1",
-                    "text": "Was the data analysis (collected) sufficiently rigorous?",
-                    "code": "Check data analysis rigor",
-                    "practice_instance": "Conduct data analysis rigorously."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Was there a control group with which to compare treatments?",
-                    "code": "Check for control group",
-                    "practice_instance": "Use control groups where applicable."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Is the methodology (design) used suitable to address the stated research questions?",
-                    "code": "Check methodology suitability",
-                    "practice_instance": "Use methodology suitable for the research questions."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Are the metrics used in the study the most relevant ones for answering the research questions?",
-                    "code": "Check metric relevance",
-                    "practice_instance": "Use metrics relevant to research questions."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Are the findings credible?",
-                    "code": "Check findings credibility",
-                    "practice_instance": "Ensure findings are credible."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Has the approach been validated on a certain scale (either in academia or/ and industry)?",
-                    "code": "Check approach validation scale",
-                    "practice_instance": "Validate the approach in academia or industry."
-                }
-            ]
-        },
-        "Study Limitations & Applicability": {
-            "level": 3,
-            "practice_instances": [
-                {
-                    "bibtexkey": "S1",
-                    "text": "Do the researchers discuss any problems (limitations, threats) with the validity (reliability) of their results?",
-                    "code": "Check discussion of limitations",
-                    "practice_instance": "Discuss limitations and threats to validity."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "This situation might ignore the negative effect of the factors like inconsistency of results that could make to the strength of the evidence.",
-                    "code": "Address negative factors",
-                    "practice_instance": "Account for negative factors such as result inconsistency in evidence strength."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"In order to assist the reader in appropriate interpretation of the review results it is important to highlight and discuss limitations in any review publication.\"",
-                    "code": "Highlight review limitations",
-                    "practice_instance": "Highlight and discuss limitations in review publications."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"it is helpful for the authors to discuss where their findings likely can and cannot be applied based on the scope of the review.\"",
-                    "code": "Discuss applicability scope",
-                    "practice_instance": "Discuss applicability and limits of findings."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"We also recommend that authors specifically highlight the lim-itations of the systematic review as a way to assist the reader in result interpretation and highlight important questions for future research.\"",
-                    "code": "Highlight limitations/research",
-                    "practice_instance": "Highlight systematic review limitations to guide interpretation and future research."
-                }
-            ]
-        },
-        "Fundamentation": {
-            "level": 1,
-            "practice_instances": [
-                {
-                    "bibtexkey": "S1",
-                    "text": "Has sufficient data been presented to support the findings?",
-                    "code": "Check data sufficiency",
-                    "practice_instance": "Present sufficient data to support findings."
-                }
-            ]
-        },
-        "Independent Verification": {
-            "level": 5,
-            "practice_instances": [
-                {
-                    "bibtexkey": "S1",
-                    "text": "To ensure the removal of these duplicates, each retrieved paper was checked and further read by at least two researchers independently to handle the duplication and limited bias as much as possible.",
-                    "code": "Independent duplicate check",
-                    "practice_instance": "Check duplicates independently by at least two researchers to minimize bias."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Moreover, the cross-check was necessary among the reviewers, and again we had at least two research students extracting data from each selected SLR independently.",
-                    "code": "Independent data extraction",
-                    "practice_instance": "Perform independent cross-checks with multiple reviewers for data extraction."
-                }
-            ]
-        },
-        "Funding Disclosure": {
-            "level": 2,
-            "practice_instances": [
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"The funding source for the review should be disclosed in publication to allow the reader to evaluate potential bias from conflicts of interest.\"",
-                    "code": "Disclose funding source",
-                    "practice_instance": "Disclose funding sources to assess potential conflicts of interest."
-                }
-            ]
-        }
-    },
-    "Collaboration & communication": {
-        "Conflict Resolution": {
-            "level": 3,
-            "practice_instances": [
-                {
-                    "bibtexkey": "S1",
-                    "text": "The disagreements on search and selection opinions were solved in joint discussion.",
-                    "code": "Resolve disagreements jointly",
-                    "practice_instance": "Resolve disagreements on search and selection through joint discussion."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Any disagreements that could not be solved were escalated to the supervisor.",
-                    "code": "Escalate remaining issues",
-                    "practice_instance": "Escalate unresolved disagreements to a supervisor."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "The supervisor played the role of expert panel who dealt with any divergences and disagreements between the students during the process.",
-                    "code": "Supervisor resolves disagreements",
-                    "practice_instance": "Use supervisors or expert panels to resolve reviewer divergences."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"Detection and minimization of bias in LCA is a new concept worthy of ongoing discussion.\"",
-                    "code": "Discuss bias minimization",
-                    "practice_instance": "Promote ongoing discussion on bias detection and minimization in LCA."
-                }
-            ]
-        },
-        "Planning and protocol": {
-            "level": 4,
-            "practice_instances": [
-                {
-                    "bibtexkey": "S1",
-                    "text": "Has the relationship between researcher and participants been considered to an adequate degree?",
-                    "code": "Check researcher/participant relation",
-                    "practice_instance": "Consider researcher–participant relationship adequately."
-                }
-            ]
-        }
-    },
-    "Documentation, transparency & reproducibility": {
-        "Planning and protocol": {
-            "level": 3,
-            "practice_instances": [
-                {
-                    "bibtexkey": "S1",
-                    "text": "Is there a clear statement (definition) of the aims (goals, purposes, problems, motivations, objectives, questions) of the research?",
-                    "code": "Check clear research aims",
-                    "practice_instance": "Ensure a clear statement of research aims and objectives."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Is there an adequate description of the context in which the research was carried out?",
-                    "code": "Check context description",
-                    "practice_instance": "Provide adequate description of research context."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Are the metrics (methods, design, measures) used in the study clearly (fully) defined (description)?",
-                    "code": "Check methods definition",
-                    "practice_instance": "Clearly define study metrics, methods, and measures."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Are the data collection methods adequately described (defined)?",
-                    "code": "Check data collection description",
-                    "practice_instance": "Clearly describe data collection methods."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Is the study design stated clearly?",
-                    "code": "Check clear study design",
-                    "practice_instance": "Clearly state the study design."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"We propose a checklist for a standardized technique for assessing and reporting reviews of LCA data (STARR-LCA) to assist in structuring the process of conduct-ing and reporting systematic reviews.\"",
-                    "code": "Checklist for STARR-LCA",
-                    "practice_instance": "Use a standardized checklist (e.g., STARR-LCA) to structure SLR assessment and reporting."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"In the context of what is already known, describe why the systematic review, with or without meta-analysis, was a worth-while effort.\"",
-                    "code": "Describe review rationale",
-                    "practice_instance": "Justify the systematic review in context of existing knowledge."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"We recommend that, at a minimum, a systematic review protocol include five key components: (1) a general description of how studies or data will be discovered for con-sideration of further review (e.g., literature or database search, manual review of the bibliographies of key publications, pre-vious studies performed by the author’s laboratory, solicitation of unpublished data); (2) enough information about any elec-tronic search strategies that the search can be replicated; (3) clear parameters describing how the decision will be made to in-clude or exclude individual studies and data for further analysis in the systematic review and/or meta-analysis; (4) a clear plan for recording and summarizing data from the individual studies, including what parameters or data points are of interest; and (5) what, if any, meta-analyses are planned.\"",
-                    "code": "Protocol five components",
-                    "practice_instance": "Include key components in systematic review protocols to ensure replicability and rigor."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"Any revisions should be outlined and commented upon in subsequent publications and the protocol described should be transparent and complete enough to allow for replication.\"",
-                    "code": "Report protocol revisions",
-                    "practice_instance": "Document and report protocol revisions transparently for replication."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"Whatever synthesis meth-ods are undertaken in a review, they should be clearly described and justified based on the study protocol and the available data included in the review.\"",
-                    "code": "Describe and justify synthesis",
-                    "practice_instance": "Clearly describe and justify synthesis methods used."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"The reason for the systematic review should be clear in the context of what is already known.\"",
-                    "code": "Clear systematic review reason",
-                    "practice_instance": "Clearly state the rationale for the review."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"A systematic review pro-tocol should be prospectively written to guide researchers and, ideally, made available for peer review with key areas as noted above.\"",
-                    "code": "Prospectively write protocol",
-                    "practice_instance": "Prospectively write and share systematic review protocols for peer review."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"We recommend that, in the interest of transparency, methods be clearly described and any new data presented as part of the publication.\"",
-                    "code": "Describe methods clearly",
-                    "practice_instance": "Ensure transparency by clearly describing methods and presenting new data."
-                }
-            ]
-        },
-        "Fundamentation": {
-            "level": 3,
-            "practice_instances": [
-                {
-                    "bibtexkey": "S1",
-                    "text": "Is the paper based on research?",
-                    "code": "Check basis of research work",
-                    "practice_instance": "Base papers on actual research."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Are references maintained accurately?",
-                    "code": "Check reference accuracy",
-                    "practice_instance": "Maintain references accurately."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"key information about the individual studies or sources of data included in the review should be provided.\"",
-                    "code": "Provide individual study info",
-                    "practice_instance": "Provide key information on all included studies or data sources."
-                }
-            ]
-        },
-        "Findings Clarity and suitability": {
-            "level": 2,
-            "practice_instances": [
-                {
-                    "bibtexkey": "S1",
-                    "text": "Does the study answer the research question defined or presents the results in a clear way?",
-                    "code": "Check RQ answer/clarity",
-                    "practice_instance": "Ensure the study answers the research question clearly."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Is there a clear statement of findings (data) and relate to the aims of research?",
-                    "code": "Check findings clarity",
-                    "practice_instance": "Clearly state findings and relate them to research aims."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Are conclusions, implications for practice and future research, reported suitably for its audience?",
-                    "code": "Check conclusion suitability",
-                    "practice_instance": "Report conclusions and implications appropriately for the audience."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"Finally, the conclusions of the review should be clearly stated.\"",
-                    "code": "Clearly state conclusions",
-                    "practice_instance": "Clearly state the conclusions of the review."
-                }
-            ]
-        },
-        "Reporting Clarity": {
-            "level": 3,
-            "practice_instances": [
-                {
-                    "bibtexkey": "S1",
-                    "text": "Is the reporting clear and coherent?",
-                    "code": "Check reporting clarity",
-                    "practice_instance": "Report findings clearly and coherently."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"We suggest that abstracts for systematic reviews related to LCA include at least the following nine components: (1) background; (2) objectives; (3) data sources; (4) study eligibility criteria; (5) scope, system boundaries and functional unit; (6) study appraisal and synthe-sis methods (including any original data adjustments, such as harmonization); (7) results; (8) limitations; and (9) conclusions with implications of key findings.\"",
-                    "code": "Abstract components standard",
-                    "practice_instance": "Include standardized components in abstracts of systematic reviews."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"Article titles should clearly identify the manuscript as a review with or without meta-analysis, and key-word listings for both individual reports and database structure should include the terms meta-analysis and systematic review.\"",
-                    "code": "Identify title and keywords",
-                    "practice_instance": "Clearly identify reviews in titles and keywords."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"A structured summary or abstract should be provided at the beginning of a review;\"",
-                    "code": "Provide structured summary",
-                    "practice_instance": "Provide a structured abstract for reviews."
-                }
-            ]
-        },
-        "Replicability": {
-            "level": 3,
-            "practice_instances": [
-                {
-                    "bibtexkey": "S1",
-                    "text": "Is the study replicable?",
-                    "code": "Check study replicability",
-                    "practice_instance": "Ensure the study is replicable."
-                },
-                {
-                    "bibtexkey": "S2",
-                    "text": "\"A clear outline of the steps undertaken in a review can provide the transparency needed for replication, as well as ap-propriate updates when additional data are generated in fu-ture studies.\"",
-                    "code": "Report replication steps",
-                    "practice_instance": "Provide clear outlines of review steps to ensure transparency and replication."
-                }
-            ]
-        }
-    },
-    "Coverage": {
-        "Planning and protocol": {
-            "level": 2,
-            "practice_instances": [
-                {
-                    "bibtexkey": "S1",
-                    "text": "Was the research design appropriate to address the aims of the research?",
-                    "code": "Check research design appropriateness",
-                    "practice_instance": "Use research design appropriate to the study aims."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "Was the recruitment strategy appropriate to the aims of the research?",
-                    "code": "Check selection strategy",
-                    "practice_instance": "Apply recruitment strategy aligned with research aims."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "...we also used the snowballing as the complementary search to reduce the possibility of missing relevant SLRs.",
-                    "code": "Use snowballing search",
-                    "practice_instance": "Apply snowballing as a complementary search to avoid missing relevant studies."
-                },
-                {
-                    "bibtexkey": "S1",
-                    "text": "In addition, the search strategy was developed by the three research students and reviewed by their supervisor.",
-                    "code": "Review search strategy",
-                    "practice_instance": "Develop search strategies collaboratively and review them with a supervisor."
-                }
-            ]
-        },
-        "Effect on practice": {
-            "level": 3,
-            "practice_instances": [
-                {
-                    "bibtexkey": "S1",
-                    "text": "Is the study of value for research or practice?",
-                    "code": "Check study value",
-                    "practice_instance": "Ensure study contributes value to research or practice."
-                }
-            ]
-        }
-    },
     "Efficiency": {
-        "Planning and protocol": {
-            "level": 1,
+        "nan": {
+            "level": "1",
+            "text": "",
+            "bibtexkey": "",
+            "code": "",
             "practice_instances": [
-                {
-                    "bibtexkey": "S1",
-                    "text": "In order to exhaustively identify SLRs with quality assessment component and ensure that the process of papers selection was unbiased as far as possible, the approach of quasi-gold standard (QGS) was adopted, which systematically integrates manual and automated search strategies and suggests a relatively rigorous approach for search performance evaluation in terms of sensitivity and precision.",
-                    "code": "Adopt QGS approach",
-                    "practice_instance": "Use quasi-gold standard (QGS) integrating manual and automated searches to ensure unbiased and rigorous selection."
-                },
                 {
                     "bibtexkey": "S2",
                     "text": "\"we advise that protocols for systematic reviews in LCA and any associated meta-analysis methods be trialed for usability by the study group, reviewed, discussed, and revised as indicated during the course of the review.\"",
@@ -618,6 +585,22 @@
                     "text": "\"An answerable question should be the foundation for a review—and while question articulation can be an iterative process, a focused question should be drafted at the start of the systematic review process.\"",
                     "code": "Draft focused question",
                     "practice_instance": "Formulate a focused, answerable review question at the start."
+                }
+            ]
+        }
+    },
+    "Collaboration & communication": {
+        "nan": {
+            "level": "1",
+            "text": "",
+            "bibtexkey": "",
+            "code": "",
+            "practice_instances": [
+                {
+                    "bibtexkey": "S2",
+                    "text": "\"Detection and minimization of bias in LCA is a new concept worthy of ongoing discussion.\"",
+                    "code": "Discuss bias minimization",
+                    "practice_instance": "Promote ongoing discussion on bias detection and minimization in LCA."
                 }
             ]
         }

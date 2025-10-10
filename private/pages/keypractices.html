@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MM4SLR - Key Practices</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <div id="imports"></div>
+  <script src="js/common.js"></script>
+  <link rel="stylesheet" href="CSS/keyPractices.css">
+</head>
+
+<body class="bg-light" style="height: 100vh;">
+  <div id="header"></div>
+  <div class="container text-center mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 p-5 bg-white rounded shadow-sm">
+
+        <h3 class="mb-4">Manage Key Practices</h3>
+
+        <!-- Formulário para criar/editar -->
+        <div class="mb-4 p-3 bg-light rounded shadow-sm text-start">
+          <input type="hidden" id="keyPracticeId" />
+
+          <div class="mb-2">
+            <label for="keyPracticeDescription" class="form-label">Description</label>
+            <textarea id="keyPracticeDescription" class="form-control" rows="2"></textarea>
+          </div>
+
+          <div class="mb-2">
+            <label for="keyPracticeLevel" class="form-label">Level</label>
+            <select id="keyPracticeLevel" class="form-control">
+              <option value="">Select Level</option>
+            </select>
+          </div>
+
+          <div class="mb-2">
+            <label for="keyPracticeDimension" class="form-label">Dimension</label>
+            <select id="keyPracticeDimension" class="form-control">
+              <option value="">Select Dimension</option>
+            </select>
+          </div>
+
+          <button id="saveKeyPractice" class="btn btn-primary">Save</button>
+          <button id="resetKeyPractice" class="btn btn-secondary">Reset</button>
+        </div>
+
+        <!-- Lista de Key Practices -->
+        <div class="mb-4">
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>ID</th>
+                <th>Description</th>
+                <th>Level</th>
+                <th>Dimension</th>
+                <th>Instances</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="keyPracticeTableBody"></tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<div id="footer"></div>
+
+<script src="JS/keyPractices.js"></script>
+<script>
+  $("#imports").load("../../../components/imports.html");
+  $("#header").load("components/header.html");
+  $("#footer").load("../../../components/footer.html");
+</script>
+
+</html>

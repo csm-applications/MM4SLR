@@ -1,0 +1,76 @@
+// src/controllers/practiceInstanceController.js
+import {
+  getAllPracticeInstances,
+  getPracticeInstanceById,
+  createPracticeInstance,
+  updatePracticeInstance,
+  deletePracticeInstance
+} from '../models/practiceInstanceModel.js';
+
+export async function listPracticeInstances(req, res) {
+  try {
+    const result = await getAllPracticeInstances();
+    res.json(result);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+}
+
+export async function getPracticeInstance(req, res) {
+  try {
+    const { id } = req.params;
+    const pi = await getPracticeInstanceById(id);
+    if (!pi) return res.status(404).json({ error: 'PracticeInstance não encontrada' });
+    res.json(pi);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+}
+
+export async function createNewPracticeInstance(req, res) {
+  try {
+    const { description, keypractice_id } = req.body;
+    if (!description || !keypractice_id) {
+      return res.status(400).json({ error: 'Campos "description" e "keypractice_id" são obrigatórios' });
+    }
+
+    const newPI = await createPracticeInstance(description, keypractice_id);
+    console.log(newPI);
+    res.status(201).json(newPI);
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+}
+
+export async function updateExistingPracticeInstance(req, res) {
+  try {
+    const { id } = req.params;
+    const { description, keypractice_id } = req.body;
+
+    const existing = await getPracticeInstanceById(id);
+    if (!existing) return res.status(404).json({ error: 'PracticeInstance não encontrada' });
+
+    const updated = await updatePracticeInstance(
+      id,
+      description ?? existing.description,
+      keypractice_id ?? existing.keypractice_id
+    );
+
+    res.json(updated);
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+}
+
+export async function removePracticeInstance(req, res) {
+  try {
+    const { id } = req.params;
+    const existing = await getPracticeInstanceById(id);
+    if (!existing) return res.status(404).json({ error: 'PracticeInstance não encontrada' });
+
+    await deletePracticeInstance(id);
+    res.status(204).send();
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+}

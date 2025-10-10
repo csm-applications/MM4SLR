@@ -117,7 +117,7 @@ function showKPs() {
 
     const title = document.createElement('h4');
     title.className = "text-start mb-3";
-    title.textContent = "Knowledge Practices (KPs)";
+    title.textContent = "Key Practices (KPs)";
     kpContainer.appendChild(title);
 
     const ul = document.createElement('ul');
@@ -152,7 +152,7 @@ function showKPDetail(kpName, instances, dimension, category) {
 
     document.getElementById('kpTitle').textContent = kpName;
     document.getElementById('kpTitle').className = "card-title h4 mb-3 text-primary";
-    document.getElementById('kpDescription').textContent = `Dimension: ${dimension} | Category: ${category}`;
+    document.getElementById('kpDescription').textContent = `Dimension: ${dimension} | Key Practice: ${category}`;
     document.getElementById('kpDescription').className = "mb-3 fw-light text-muted";
 
     const tbody = document.getElementById('kpTableBody');
@@ -160,9 +160,13 @@ function showKPDetail(kpName, instances, dimension, category) {
 
     instances.forEach(inst => {
         const tr = document.createElement('tr');
-        tr.innerHTML = `<td>${inst.bibtexkey}</td><td>${inst.text}</td>`;
+        tr.innerHTML = `
+    <td title="${inst.text}">${inst.bibtexkey}</td>
+    <td title="${"("+ inst.bibtexkey + ")" + " " + inst.text}">${inst.practice_instance}</td>
+  `;
         tbody.appendChild(tr);
     });
+
 }
 
 // 7. Inicialização
