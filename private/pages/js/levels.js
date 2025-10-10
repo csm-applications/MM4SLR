@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
   const apiUrl = url + '/levels';
 
@@ -6,7 +6,7 @@ $(document).ready(function() {
   // FUNÇÃO PARA CARREGAR LEVELS
   // ------------------------------
   function loadLevels() {
-    $.get(apiUrl, function(data) {
+    $.get(apiUrl, function (data) {
       const $tbody = $('#levelTableBody');
       $tbody.empty();
 
@@ -17,10 +17,15 @@ $(document).ready(function() {
             <td>${level.value}</td>
             <td>${level.name}</td>
             <td>${level.description || ''}</td>
-            <td class="d-flex gap-2">
-              <button class="btn btn-sm btn-outline-dark edit" data-id="${level.id}"><i class="bi bi-pencil"></i></button>
-              <button class="btn btn-sm btn-outline-dark edit" data-id="${level.id}"><i class="bi bi-trash"></i></button>
+            <td class="d-flex justify-content-center gap-1">
+              <button class="btn btn-sm btn-outline-dark edit" data-id="${level.id}">
+                <i class="bi bi-pencil"></i>
+              </button>
+              <button class="btn btn-sm btn-outline-dark delete" data-id="${level.id}">
+                <i class="bi bi-trash"></i>
+              </button>
             </td>
+
           </tr>
         `);
       });
@@ -42,7 +47,7 @@ $(document).ready(function() {
   // ------------------------------
   // SALVAR LEVEL (CRIAR OU EDITAR)
   // ------------------------------
-  $('#saveLevel').click(function() {
+  $('#saveLevel').click(function () {
     const id = $('#levelId').val();
     const value = parseInt($('#levelValue').val(), 10);
     const name = $('#levelName').val().trim();
@@ -66,11 +71,11 @@ $(document).ready(function() {
         type: 'PUT',
         contentType: 'application/json',
         data: JSON.stringify(payload),
-        success: function() {
+        success: function () {
           resetForm();
           loadLevels();
         },
-        error: function(err) {
+        error: function (err) {
           alert('Erro ao atualizar level: ' + err.responseJSON?.error || err.statusText);
         }
       });
@@ -81,11 +86,11 @@ $(document).ready(function() {
         type: 'POST',
         contentType: 'application/json',
         data: JSON.stringify(payload),
-        success: function() {
+        success: function () {
           resetForm();
           loadLevels();
         },
-        error: function(err) {
+        error: function (err) {
           alert('Erro ao criar level: ' + err.responseJSON?.error || err.statusText);
         }
       });
@@ -95,14 +100,14 @@ $(document).ready(function() {
   // ------------------------------
   // EDITAR LEVEL (CARREGAR NO FORMULÁRIO)
   // ------------------------------
-  $('#levelTableBody').on('click', '.edit', function() {
+  $('#levelTableBody').on('click', '.edit', function () {
     const id = $(this).data('id');
-    $.get(`${apiUrl}/${id}`, function(level) {
+    $.get(`${apiUrl}/${id}`, function (level) {
       $('#levelId').val(level.id);
       $('#levelValue').val(level.value);
       $('#levelName').val(level.name);
       $('#levelDescription').val(level.description || '');
-    }).fail(function(err) {
+    }).fail(function (err) {
       alert('Erro ao buscar level: ' + err.responseJSON?.error || err.statusText);
     });
   });
@@ -110,17 +115,17 @@ $(document).ready(function() {
   // ------------------------------
   // DELETAR LEVEL
   // ------------------------------
-  $('#levelTableBody').on('click', '.delete', function() {
+  $('#levelTableBody').on('click', '.delete', function () {
     if (!confirm('Tem certeza que deseja deletar este level?')) return;
     const id = $(this).data('id');
 
     $.ajax({
       url: `${apiUrl}/${id}`,
       type: 'DELETE',
-      success: function() {
+      success: function () {
         loadLevels();
       },
-      error: function(err) {
+      error: function (err) {
         alert('Erro ao deletar level: ' + err.responseJSON?.error || err.statusText);
       }
     });

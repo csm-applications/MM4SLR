@@ -33,10 +33,10 @@
             <thead class="table-light">
               <tr>
                 <th>ID</th>
-                <th>Study ID</th>
-                <th>Key Practice ID</th>
-                <th>Practice Instance ID</th>
-                <th>Text</th>
+                <th>SID</th>
+                <th>KP</th>
+                <th>Instance</th>
+                <th>Text Passage</th>
                 <th>Actions</th>
               </tr>
             </thead>
@@ -49,7 +49,8 @@
   </div>
 
   <!-- Modal para criar/editar Text Passage -->
-  <div class="modal fade" id="textPassageModal" tabindex="-1" aria-labelledby="textPassageModalLabel" aria-hidden="true">
+  <div class="modal fade" id="textPassageModal" tabindex="-1" aria-labelledby="textPassageModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -64,15 +65,13 @@
             <select id="textPassageStudySelect" class="form-select"></select>
           </div>
 
-          <div class="mb-3">
-            <label for="textPassageKeyPracticeId" class="form-label">Key Practice ID (optional)</label>
-            <input type="number" id="textPassageKeyPracticeId" class="form-control">
-          </div>
+          <select id="textPassageKeyPracticeId" class="form-select">
+            <option value="">-- Selecione uma Key Practice --</option>
+          </select>
 
-          <div class="mb-3">
-            <label for="textPassagePracticeInstanceId" class="form-label">Practice Instance ID (optional)</label>
-            <input type="number" id="textPassagePracticeInstanceId" class="form-control">
-          </div>
+          <select id="textPassagePracticeInstanceId" class="form-select mt-3">
+            <option value="">-- Selecione uma Practice Instance --</option>
+          </select>
 
           <div class="mb-3">
             <label for="textPassageText" class="form-label">Text</label>
@@ -99,4 +98,5 @@
   </script>
 
 </body>
+
 </html>

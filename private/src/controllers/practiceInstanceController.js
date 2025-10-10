@@ -6,6 +6,9 @@ import {
   updatePracticeInstance,
   deletePracticeInstance
 } from '../models/practiceInstanceModel.js';
+import {
+  getPracticeInstancesByKeyPractice
+} from '../models/practiceInstanceModel.js';
 
 export async function listPracticeInstances(req, res) {
   try {
@@ -15,6 +18,19 @@ export async function listPracticeInstances(req, res) {
     res.status(500).json({ error: err.message });
   }
 }
+
+export const listPracticeInstancesByKeyPractice = async (req, res) => {
+  try {
+    const { keypracticeId } = req.params;
+
+    const instances = await getPracticeInstancesByKeyPractice(keypracticeId);
+
+    res.json(instances);
+  } catch (err) {
+    console.error('Erro ao buscar Practice Instances por Key Practice:', err);
+    res.status(500).json({ error: 'Erro ao buscar Practice Instances.' });
+  }
+};
 
 export async function getPracticeInstance(req, res) {
   try {

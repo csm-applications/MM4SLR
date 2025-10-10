@@ -17,7 +17,7 @@ $(document).ready(function() {
             <td>${dim.id}</td>
             <td>${dim.name}</td>
             <td>${dim.description || ''}</td>
-            <td class="d-flex gap-2">
+            <td class="d-flex justify-content-center gap-1">
               <button class="btn btn-sm btn-outline-dark edit" data-id="${dim.id}"><i class="bi bi-pencil"></i></button>
               <button class="btn btn-sm btn-outline-dark edit" data-id="${dim.id}"><i class="bi bi-trash"></i></button>
             </td>

@@ -5,7 +5,8 @@ import {
   getPracticeInstance,
   createNewPracticeInstance,
   updateExistingPracticeInstance,
-  removePracticeInstance
+  removePracticeInstance,
+  listPracticeInstancesByKeyPractice
 } from '../controllers/practiceInstanceController.js';
 
 const router = express.Router();
@@ -15,5 +16,6 @@ router.get('/:id', getPracticeInstance);                // GET /practiceinstance
 router.post('/', createNewPracticeInstance);           // POST /practiceinstances
 router.put('/:id', updateExistingPracticeInstance);    // PUT /practiceinstances/:id
 router.delete('/:id', removePracticeInstance);         // DELETE /practiceinstances/:id
+router.get('/keypractice/:keypracticeId', listPracticeInstancesByKeyPractice);
 
 export default router;

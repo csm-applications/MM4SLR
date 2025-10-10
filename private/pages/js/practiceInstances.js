@@ -84,9 +84,10 @@ $(document).ready(function () {
     function loadPracticeInstances() {
         if (!keyPracticeId) return;
 
-        $.get(apiUrl, { keypractice_id: keyPracticeId }, function (data) {
+        $.get(`${apiUrl}/keypractice/${keyPracticeId}`, function (data) {
             const $tbody = $('#practiceInstanceTableBody');
             $tbody.empty();
+            console.log(apiUrl + keyPracticeId)
             console.log(data)
             data.forEach(pi => {
                 $tbody.append(`
@@ -97,6 +98,10 @@ $(document).ready(function () {
                             <button class="btn btn-sm btn-outline-dark edit" data-id="${pi.id}"><i class="bi bi-pencil"></i></button>
                             <button class="btn btn-sm btn-outline-dark delete" data-id="${pi.id}"><i class="bi bi-trash"></i></button>
                             <button class="btn btn-sm btn-outline-success add-textpassage" data-id="${pi.id}">+</button>
+                            <button class="btn btn-sm btn-outline-dark manage-instances" 
+                                onclick="window.location.href='textpassages.html?practiceInstanceId=${pi.id}'">
+                                <i class="bi bi-grid-3x3-gap"></i>
+                            </button>
                         </td>
                     </tr>
                 `);

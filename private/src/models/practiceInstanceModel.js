@@ -13,6 +13,18 @@ export async function getAllPracticeInstances() {
   `);
 }
 
+export async function getPracticeInstancesByKeyPractice(keypracticeId) {
+  const db = getDB();
+  return db.all(`
+    SELECT pi.id, pi.description,
+           kp.id as keypractice_id, kp.description as keypractice_description
+    FROM practiceinstance pi
+    JOIN keypractice kp ON kp.id = pi.keypractice_id
+    WHERE pi.keypractice_id = ?
+    ORDER BY pi.id ASC
+  `, [keypracticeId]);
+}
+
 // 🔸 Buscar Practice Instance por ID
 export async function getPracticeInstanceById(id) {
   const db = getDB();
