@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MM4SLR - Merge Items</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+  <div id="imports"></div>
+  <script src="../pages/js/common.js"></script>
+  <link rel="stylesheet" href="CSS/keyPractices.css">
+  <style>
+    .drag-handle {
+      cursor: grab;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .selected {
+      background-color: #e7f1ff !important;
+    }
+
+    .merge-desc {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body class="bg-light" style="height: 100vh;">
+  <div id="header"></div>
+
+  <div class="text-center mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 p-5 bg-white rounded shadow-sm text-start">
+
+        <h3 class="mb-4 text-center">Merge Key Practices / Practice Instances</h3>
+
+        <!-- Filtros -->
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <label for="filterLevel" class="form-label">Level</label>
+            <select id="filterLevel" class="form-select">
+              <option value="">Todos os Levels</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="filterDimension" class="form-label">Dimension</label>
+            <select id="filterDimension" class="form-select">
+              <option value="">Todas as Dimensions</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="container-fluid" style="max-width: 95%;">
+          <div class="mb-4">
+            <label class="form-label">Arraste e solte os itens para agrupar:</label>
+            <table id="mergeTable" class="table table-bordered table-hover w-100">
+              <thead>
+                <tr>
+                  <th style="width: 80px;">Draggable</th>
+                  <th style="width: 45%;">Description</th>
+                  <th style="width: 35%;">Similar Concepts</th>
+                  <th style="width: 20%;">New description for merge</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Botões -->
+        <div class="text-end">
+          <button id="cancelMerge" class="btn btn-secondary me-2">Cancelar</button>
+          <button id="saveMerge" class="btn btn-success">Salvar Merge</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <script src="JS/merge.js"></script>
+  <script>
+    $("#imports").load("../../../components/imports.html");
+    $("#header").load("components/header.html");
+    $("#footer").load("../../../components/footer.html");
+  </script>
+
+</body>
+
+</html>

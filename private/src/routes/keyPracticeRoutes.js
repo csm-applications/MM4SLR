@@ -6,16 +6,20 @@ import {
   createNewKeyPractice,
   updateExistingKeyPractice,
   removeKeyPractice,
-  countPracticeInstances          // importando o novo método
+  countPracticeInstances,
 } from '../controllers/keyPracticeController.js';
+import { mergeKeyPractices } from '../controllers/mergePracticesController.js'; // 👈 importar novo controller
 
 const router = express.Router();
 
-router.get('/', listKeyPractices);                // GET /keypractices
-router.get('/:id', getKeyPractice);               // GET /keypractices/:id
-router.get('/:id/instances/count', countPracticeInstances); // GET /keypractices/:id/instances/count
-router.post('/', createNewKeyPractice);           // POST /keypractices
-router.put('/:id', updateExistingKeyPractice);    // PUT /keypractices/:id
-router.delete('/:id', removeKeyPractice);         // DELETE /keypractices/:id
+router.get('/', listKeyPractices);
+router.get('/:id', getKeyPractice);
+router.get('/:id/instances/count', countPracticeInstances);
+router.post('/', createNewKeyPractice);
+router.put('/:id', updateExistingKeyPractice);
+router.delete('/:id', removeKeyPractice);
+
+// 👇 Nova rota de merge
+router.post('/merge', mergeKeyPractices);
 
 export default router;
