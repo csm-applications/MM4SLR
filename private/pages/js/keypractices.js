@@ -61,6 +61,10 @@ $(document).ready(function () {
                 onclick="window.location.href='practiceInstances.html?kpId=${kp.id}'">
                 <i class="bi bi-grid-3x3-gap"></i>
               </button>
+              <button class="btn btn-sm btn-outline-dark manage-instances" 
+                onclick="window.location.href='textpassages.html?keypracticeId=${kp.id}'">
+                <i class="bi bi-card-text"></i>
+              </button>
             </td>
           </tr>
         `);

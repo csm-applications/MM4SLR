@@ -1,7 +1,7 @@
 {
   "MaturityModel": "MM4SLR",
   "ModelVersion": "1.0",
-  "LastUpdate": "2025-10-10",
+  "LastUpdate": "2025-10-13",
   "ModelAuthors": [
     "Vinicius dos Santos",
     "Rick Kazman",
@@ -12,7 +12,52 @@
     {
       "DimensionName": "Knowledge Management",
       "Description": "This dimension ensures that all knowledge produced in the entire SLR lifecycle is managed, i.e., created, shared, reused, adapted, and eliminated.",
-      "keyPractices": []
+      "keyPractices": [
+        {
+          "id": 4,
+          "description": "Provide basis for the paper on actual research",
+          "level_id": 1,
+          "dimension_id": 1,
+          "textPassages": [
+            {
+              "id": 7,
+              "study_id": 1,
+              "keypractice_id": 4,
+              "practiceinstance_id": null,
+              "text": "Is the paper based on research?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            },
+            {
+              "id": 8,
+              "study_id": 1,
+              "keypractice_id": 4,
+              "practiceinstance_id": 4,
+              "text": "Are references maintained accurately?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": [
+            {
+              "id": 4,
+              "description": "Maintain references accurately",
+              "keypractice_id": 4,
+              "textPassages": [
+                {
+                  "id": 8,
+                  "study_id": 1,
+                  "keypractice_id": 4,
+                  "practiceinstance_id": 4,
+                  "text": "Are references maintained accurately?",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "DimensionName": "Tool Support",
@@ -26,7 +71,7 @@
         {
           "id": 1,
           "description": "Develop appropriate strategies for quality assessment strategies",
-          "level_id": 2,
+          "level_id": 1,
           "dimension_id": 3,
           "textPassages": [
             {
@@ -44,6 +89,24 @@
               "keypractice_id": 1,
               "practiceinstance_id": 1,
               "text": "For each aspect, researchers can gain the knowledge of the most concerned criteria, which is particularly helpful in developing and applying quality assessment instruments for future SLRs.",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            },
+            {
+              "id": 3,
+              "study_id": 1,
+              "keypractice_id": 1,
+              "practiceinstance_id": 2,
+              "text": "Systematic reviewers can form their own quality assessment checklists by selecting and revising several questions from the original questions",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            },
+            {
+              "id": 4,
+              "study_id": 1,
+              "keypractice_id": 1,
+              "practiceinstance_id": 3,
+              "text": "If there exist any former SLRs on the similar topic, researchers may consult these SLRs in developing their criteria for quality assessment.",
               "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
               "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
             }
@@ -64,8 +127,58 @@
                   "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
                 }
               ]
+            },
+            {
+              "id": 2,
+              "description": "Develop customized quality assessment checklists by adapting existing questions",
+              "keypractice_id": 1,
+              "textPassages": [
+                {
+                  "id": 3,
+                  "study_id": 1,
+                  "keypractice_id": 1,
+                  "practiceinstance_id": 2,
+                  "text": "Systematic reviewers can form their own quality assessment checklists by selecting and revising several questions from the original questions",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "description": "Consult prior SLRs on similar topics to inform quality assessment criteria.",
+              "keypractice_id": 1,
+              "textPassages": [
+                {
+                  "id": 4,
+                  "study_id": 1,
+                  "keypractice_id": 1,
+                  "practiceinstance_id": 3,
+                  "text": "If there exist any former SLRs on the similar topic, researchers may consult these SLRs in developing their criteria for quality assessment.",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+                }
+              ]
             }
           ]
+        },
+        {
+          "id": 7,
+          "description": "Conduct data analysis rigorously",
+          "level_id": 1,
+          "dimension_id": 3,
+          "textPassages": [
+            {
+              "id": 12,
+              "study_id": 1,
+              "keypractice_id": 7,
+              "practiceinstance_id": null,
+              "text": "Was the data analysis (collected) sufficiently rigorous?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
         }
       ]
     },
@@ -77,7 +190,103 @@
     {
       "DimensionName": "Documentation & Reproducibility",
       "Description": "This dimension ensures that process documentation, consequently, the reproducibility and auditability is assured.",
-      "keyPractices": []
+      "keyPractices": [
+        {
+          "id": 2,
+          "description": "Ensure a clear statement of research aims and objectives",
+          "level_id": 1,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 5,
+              "study_id": 1,
+              "keypractice_id": 2,
+              "practiceinstance_id": null,
+              "text": "Is there a clear statement (definition) of the aims (goals, purposes, problems, motivations, objectives, questions) of the research?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 3,
+          "description": "Provide an adequate description of the context in which the research was conducted",
+          "level_id": 1,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 6,
+              "study_id": 1,
+              "keypractice_id": 3,
+              "practiceinstance_id": null,
+              "text": "Is there an adequate description of the context in which the research was carried out?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 5,
+          "description": "Ensure the study answers the research question clearly presenting the results in clear way",
+          "level_id": 1,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 9,
+              "study_id": 1,
+              "keypractice_id": 5,
+              "practiceinstance_id": null,
+              "text": "Does the study answer the research question defined or presents the results in a clear way?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": [
+            {
+              "id": 5,
+              "description": "Validate and justify variables, metrics, and study design",
+              "keypractice_id": 5,
+              "textPassages": [
+                {
+                  "id": 11,
+                  "study_id": 1,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 5,
+                  "text": "Are the variables/metrics/methods/design used in the study adequately measured and validated (justified)?",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "DimensionName": "Design & Planning",
+      "Description": "This dimension ensures that the design and planning adopted is carefully aligned with the review goals to comply its objective",
+      "keyPractices": [
+        {
+          "id": 6,
+          "description": "Define study metrics, methods, and measures clearly in study design",
+          "level_id": 1,
+          "dimension_id": 6,
+          "textPassages": [
+            {
+              "id": 10,
+              "study_id": 1,
+              "keypractice_id": 6,
+              "practiceinstance_id": null,
+              "text": "Are the metrics (methods, design, measures) used in the study clearly (fully) defined (description)?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        }
+      ]
     }
   ]
 }

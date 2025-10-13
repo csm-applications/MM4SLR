@@ -109,8 +109,8 @@ $(document).ready(function () {
                             <i class="bi bi-trash"></i>
                         </button>
                         <button class="btn btn-sm btn-outline-dark manage-textpassages" 
-                            onclick="window.location.href='textPassages.html?practiceInstanceId=${pi.id}'">
-                            <i class="bi bi-grid-3x3-gap"></i>
+                            onclick="window.location.href='textPassages.html?practiceinstanceId=${pi.id}'">
+                            <i class="bi bi-card-text"></i>
                         </button>
                         </td>
                     </tr>

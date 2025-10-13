@@ -23,7 +23,6 @@ export async function listPracticeInstances(req, res) {
 
 export const listPracticeInstancesByKeyPractice = async (req, res) => {
   try {
-    console.log(req.params)
     const instances =  await getPracticeInstancesByKeyPractice(req, res);
     res.json(instances);
   } catch (err) {

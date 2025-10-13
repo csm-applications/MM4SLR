@@ -2,89 +2,48 @@ $(document).ready(function () {
     const apiUrl = url + '/textpassages'; // Assumindo que você tem a variável url definida
 
     // --------------------------
-    // Carregar lista de estudos
+    // Captura parâmetros da URL
     // --------------------------
-    function loadStudies() {
-        $.get(url + '/studies', function (studies) {
-            const $select = $('#textPassageStudySelect');
-            $select.empty();
-            if (studies.length === 0) {
-                $select.append('<option disabled>Nenhum estudo disponível</option>');
-                return;
-            }
-            $select.append('<option value="">-- Selecione um estudo --</option>');
-            studies.forEach(study => {
-                $select.append(`<option value="${study.id}">${study.bibtex_key}</option>`);
-            });
-        });
-    }
+    const urlParams = new URLSearchParams(window.location.search);
+    const practiceInstanceIdFromUrl = urlParams.get('practiceinstanceId');
+    const keyPracticeIdFromUrl = urlParams.get('keypracticeId');
+
+    console.log(practiceInstanceIdFromUrl, keyPracticeIdFromUrl);
 
     // --------------------------
-    // Carregar todas Text Passages
+    // Carregar Text Passages filtrando conforme parâmetros
     // --------------------------
-    function loadTextPassages() {
-        $.get(apiUrl, function (data) {
-            const $tbody = $('#textPassageTableBody');
-            $tbody.empty();
+    function loadTextPassagesFiltered() {
+        let endpoint = apiUrl;
 
-            data.forEach(async tp => {
-                let kpText = '';
-                let piText = '';
-
-                // Buscar Key Practice se existir
-                if (tp.keypractice_id) {
-                    try {
-                        const kp = await $.get(url + `/keypractices/${tp.keypractice_id}`);
-                        kpText = kp.description;
-                    } catch (err) {
-                        kpText = 'N/A';
-                        console.error('Erro ao carregar Key Practice', err);
-                    }
-                }
-
-                // Buscar Practice Instance se existir
-                if (tp.practiceinstance_id) {
-                    try {
-                        const pi = await $.get(url + `/practiceinstances/${tp.practiceinstance_id}`);
-                        piText = pi.description;
-                    } catch (err) {
-                        piText = 'N/A';
-                        console.error('Erro ao carregar Practice Instance', err);
-                    }
-                }
-
-                $tbody.append(`
-                <tr>
-                    <td>${tp.id}</td>
-                    <td>${tp.study_id}</td>
-                    <td>${kpText}</td>
-                    <td>${piText}</td>
-                    <td>${tp.text}</td>
-                    <td class="d-flex justify-content-center gap-1">
-                        <button class="btn btn-sm btn-outline-dark edit" data-id="${tp.id}"><i class="bi bi-pencil"></i></button>
-                        <button class="btn btn-sm btn-outline-dark delete" data-id="${tp.id}"><i class="bi bi-trash"></i></button>
-                    </td>
-                </tr>
-            `);
-            });
-        });
-    }
-
-    function loadTextPassagesByPracticeInstance() {
-        // Captura o parâmetro da URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const practiceInstanceId = urlParams.get('practiceInstanceId');
-        
-        console.log(`${apiUrl}/practiceinstance/${practiceInstanceId}`);
-
-        // Define o endpoint dinamicamente
-        const endpoint = practiceInstanceId
-            ? `${apiUrl}/practiceinstance/${practiceInstanceId}`
-            : apiUrl;
+        if (practiceInstanceIdFromUrl && keyPracticeIdFromUrl) {
+            // Se vierem os dois parâmetros
+            console.log('Carregando com ambos os parâmetros');
+            endpoint = `${apiUrl}?practiceinstance_id=${practiceInstanceIdFromUrl}&keypractice_id=${keyPracticeIdFromUrl}`;
+        } else if (practiceInstanceIdFromUrl) {
+            // Apenas Practice Instance
+            console.log('Carregando com Practice Instance');
+            endpoint = `${apiUrl}/practiceinstance/${practiceInstanceIdFromUrl}`;
+        } else if (keyPracticeIdFromUrl) {
+            // Apenas Key Practice
+            console.log('Carregando com Key Practice');
+            endpoint = `${apiUrl}/keypractice/${keyPracticeIdFromUrl}`;
+        }
 
         $.get(endpoint, function (data) {
             const $tbody = $('#textPassageTableBody');
             $tbody.empty();
+
+            if (!data || data.length === 0) {
+                $tbody.append(`
+                <tr>
+                    <td colspan="6" class="text-center text-muted">
+                        Nenhum Text Passage encontrado.
+                    </td>
+                </tr>
+            `);
+                return;
+            }
 
             data.forEach(async tp => {
                 let kpText = '';
@@ -136,6 +95,39 @@ $(document).ready(function () {
     }
 
     // --------------------------
+    // Carregar lista de estudos
+    // --------------------------
+    function loadStudies() {
+        $.get(url + '/studies', function (studies) {
+            const $select = $('#textPassageStudySelect');
+            $select.empty();
+            if (studies.length === 0) {
+                $select.append('<option disabled>Nenhum estudo disponível</option>');
+                return;
+            }
+            $select.append('<option value="">-- Selecione um estudo --</option>');
+            studies.forEach(study => {
+                $select.append(`<option value="${study.id}">${study.bibtex_key}</option>`);
+            });
+        });
+    }
+
+    // --------------------------
+    // Carregar Key Practices
+    // --------------------------
+    function loadKeyPractices() {
+        $.get(url + '/keypractices', function (data) {
+            const $select = $('#textPassageKeyPracticeId');
+            $select.empty();
+            $select.append('<option value="">-- Selecione uma Key Practice --</option>');
+            data.forEach(kp => {
+                $select.append(`<option value="${kp.id}">${kp.description}</option>`);
+            });
+        });
+    }
+
+
+    // --------------------------
     // Carregar Key Practices
     // --------------------------
     function loadKeyPractices() {
@@ -170,8 +162,8 @@ $(document).ready(function () {
     $('#newTextPassage').click(function () {
         $('#textPassageId').val('');
         $('#textPassageStudySelect').val('');
-        $('#textPassageKeyPracticeId').val('');
-        $('#textPassagePracticeInstanceId').val('');
+        $('#textPassageKeyPracticeId').val(keyPracticeIdFromUrl || '');
+        $('#textPassagePracticeInstanceId').val(practiceInstanceIdFromUrl || '');
         $('#textPassageText').val('');
 
         const modal = new bootstrap.Modal(document.getElementById('textPassageModal'));
@@ -224,8 +216,8 @@ $(document).ready(function () {
         $.get(`${apiUrl}/${id}`, function (tp) {
             $('#textPassageId').val(tp.id);
             $('#textPassageStudySelect').val(tp.study_id);
-            $('#textPassageKeyPracticeId').val(tp.keypractice_id);
-            $('#textPassagePracticeInstanceId').val(tp.practiceinstance_id);
+            $('#textPassageKeyPracticeId').val(tp.keypractice_id || keyPracticeIdFromUrl || '');
+            $('#textPassagePracticeInstanceId').val(tp.practiceinstance_id || practiceInstanceIdFromUrl || '');
             $('#textPassageText').val(tp.text);
 
             const modal = new bootstrap.Modal(document.getElementById('textPassageModal'));
@@ -251,12 +243,11 @@ $(document).ready(function () {
             }
         });
     });
-
     // --------------------------
     // Inicialização
     // --------------------------
     loadStudies();
-    loadTextPassagesByPracticeInstance()
     loadPracticeInstances();
     loadKeyPractices();
+    loadTextPassagesFiltered()
 });
