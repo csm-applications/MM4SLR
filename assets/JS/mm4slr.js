@@ -1,4 +1,4 @@
-const jsonPath = '../../data/data.json';
+const jsonPath = '../assets/data.json';
 let jsonData = {};
 let levelMap = {}; // níveis preenchidos dinamicamente
 let selectedDimensions = new Set();
@@ -39,7 +39,7 @@ function populateDimensions(data) {
     });
 }
 
-// 2. Construir o mapa de níveis dinamicamente (agora inclui study_id)
+// 2. Construir o mapa de níveis dinamicamente (agora usa bibtex_key)
 function buildLevelMap(data) {
     levelMap = {};
     data.Dimensions.forEach(dim => {
@@ -53,7 +53,7 @@ function buildLevelMap(data) {
                 instances: kp.practiceInstances.map(pi => ({
                     practice_instance: pi.description,
                     text: pi.textPassages.map(tp => tp.text).join(' | '),
-                    study_ids: pi.textPassages.map(tp => tp.study_id).join('; '),
+                    study_bibtex_keys: pi.textPassages.map(tp => tp.study_bibtex_key).join('; '),
                     study_titles: pi.textPassages.map(tp => tp.study_title).join('; ')
                 }))
             });
@@ -98,7 +98,6 @@ function showLevels() {
 
 // 4. Mostrar KPs conforme filtros
 function showKPs() {
-    // Esconde o card de detalhe ao atualizar os filtros
     const detail = document.getElementById('kpDetail');
     detail.style.display = 'none';
 
@@ -119,7 +118,7 @@ function showKPs() {
                         instances: kp.practiceInstances.map(pi => ({
                             practice_instance: pi.description,
                             text: pi.textPassages.map(tp => tp.text).join(' | '),
-                            study_ids: pi.textPassages.map(tp => tp.study_id).join('; '),
+                            study_bibtex_keys: pi.textPassages.map(tp => tp.study_bibtex_key).join('; '),
                             study_titles: pi.textPassages.map(tp => tp.study_title).join('; ')
                         }))
                     });
@@ -155,8 +154,7 @@ function createKPItem(container, kpName, instances, dimension, category) {
     container.appendChild(li);
 }
 
-// 6. Mostrar detalhes de um KP (agora mostra study_id corretamente)
-// 6. Mostrar detalhes de um KP (agora mostra study_id corretamente e mensagem se não houver instances)
+// 6. Mostrar detalhes de um KP (agora mostra bibtex_key no lugar de study_id)
 function showKPDetail(kpName, instances, dimension, category) {
     const detail = document.getElementById('kpDetail');
     detail.style.display = 'block';
@@ -174,13 +172,10 @@ function showKPDetail(kpName, instances, dimension, category) {
     const tbody = document.getElementById('kpTableBody');
     tbody.innerHTML = '';
 
-    // Verifica se há instances
     if (instances.length === 0) {
-        // Remove a tabela se existir
         const table = detail.querySelector('table');
         if (table) table.style.display = 'none';
 
-        // Adiciona mensagem
         let msg = detail.querySelector('.no-instances-msg');
         if (!msg) {
             msg = document.createElement('p');
@@ -189,24 +184,45 @@ function showKPDetail(kpName, instances, dimension, category) {
             cardBody.appendChild(msg);
         }
     } else {
-        // Remove mensagem se existir
         const msg = detail.querySelector('.no-instances-msg');
         if (msg) msg.remove();
 
-        // Mostra a tabela
         const table = detail.querySelector('table');
         if (table) table.style.display = '';
 
         instances.forEach(inst => {
             const tr = document.createElement('tr');
             tr.innerHTML = `
-                <td title="${inst.study_titles}">${inst.study_ids}</td>
+                <td title="${inst.study_titles}">${inst.study_bibtex_keys}</td>
                 <td title="${inst.text}">${inst.practice_instance}</td>
             `;
             tbody.appendChild(tr);
         });
     }
+
+    // === Adiciona o div do BibTeX logo abaixo da tabela ===
+    let bibDiv = detail.querySelector('.bib-div');
+    if (!bibDiv) {
+        bibDiv = document.createElement('div');
+        bibDiv.className = 'bib-div';
+        bibDiv.style.backgroundColor = '#f0f0f0';
+        bibDiv.style.padding = '8px 12px';
+        bibDiv.style.borderRadius = '5px';
+        bibDiv.style.fontSize = '0.95rem';
+        bibDiv.style.marginTop = '12px'; // distância da tabela
+
+        const bibLink = document.createElement('a');
+        bibLink.href = '../assets/studies.bib';
+        bibLink.target = '_blank';
+        bibLink.style.textDecoration = 'none';
+        bibLink.style.color = '#333';
+        bibLink.textContent = 'Check here the references (bibtex file)';
+
+        bibDiv.appendChild(bibLink);
+        cardBody.appendChild(bibDiv);
+    }
 }
+
 
 // 7. Inicialização
 fetch(jsonPath)
