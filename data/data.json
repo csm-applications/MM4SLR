@@ -1,7 +1,7 @@
 {
   "MaturityModel": "MM4SLR",
   "ModelVersion": "1.0",
-  "LastUpdate": "2025-10-13",
+  "LastUpdate": "2025-10-14",
   "ModelAuthors": [
     "Vinicius dos Santos",
     "Rick Kazman",
@@ -14,33 +14,42 @@
       "Description": "This dimension ensures that all knowledge produced in the entire SLR lifecycle is managed, i.e., created, shared, reused, adapted, and eliminated.",
       "keyPractices": [
         {
-          "id": 5,
-          "description": "meu teste de associacao",
+          "id": 4,
+          "description": "Provide basis for the paper on actual research",
           "level_id": 1,
           "dimension_id": 1,
           "textPassages": [
             {
+              "id": 7,
+              "study_id": 1,
+              "keypractice_id": 4,
+              "practiceinstance_id": null,
+              "text": "Is the paper based on research?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            },
+            {
               "id": 8,
               "study_id": 1,
-              "keypractice_id": 5,
-              "practiceinstance_id": null,
-              "text": "texto da instance",
+              "keypractice_id": 4,
+              "practiceinstance_id": 4,
+              "text": "Are references maintained accurately?",
               "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
               "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
             }
           ],
           "practiceInstances": [
             {
-              "id": 6,
-              "description": "teste de ass",
-              "keypractice_id": 5,
+              "id": 4,
+              "description": "Maintain references accurately",
+              "keypractice_id": 4,
               "textPassages": [
                 {
-                  "id": 7,
+                  "id": 8,
                   "study_id": 1,
-                  "keypractice_id": null,
-                  "practiceinstance_id": 6,
-                  "text": "teste de pass",
+                  "keypractice_id": 4,
+                  "practiceinstance_id": 4,
+                  "text": "Are references maintained accurately?",
                   "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
                   "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
                 }
@@ -49,25 +58,41 @@
           ]
         },
         {
-          "id": 6,
-          "description": "We recommend researchers clearly and narrowly define research questions to reduce overall effort, and to improve selection and data extraction",
+          "id": 41,
+          "description": "Make the data generated while conducting SLR available",
           "level_id": 1,
           "dimension_id": 1,
           "textPassages": [],
           "practiceInstances": [
             {
-              "id": 7,
-              "description": "We recommend researchers clearly and narrowly define research questions to reduce overall effort, and to improve selection and data extraction.We recommend researchers clearly and narrowly define research questions to reduce overall effort, and to improve selection and data extraction.",
-              "keypractice_id": 6,
+              "id": 34,
+              "description": "Make quality assessment data available for synthesis in systematic reviews",
+              "keypractice_id": 41,
               "textPassages": [
                 {
-                  "id": 9,
-                  "study_id": 1,
+                  "id": 72,
+                  "study_id": 4,
                   "keypractice_id": null,
-                  "practiceinstance_id": 7,
-                  "text": "We recommend researchers clearly and narrowly define research questions to reduce overall effort, and to improve selection and data extraction.",
-                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
-                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+                  "practiceinstance_id": 34,
+                  "text": "Should the academic community also support the principle of making detailed data available for synthesis in a systematic review? We believe that it should, at the very least insofar as quality assessment is part of the systematic review process.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            },
+            {
+              "id": 41,
+              "description": "Make data supporting reported claims available upon request for synthesis in systematic reviews",
+              "keypractice_id": 41,
+              "textPassages": [
+                {
+                  "id": 85,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 41,
+                  "text": "We would support a call for a principle of academic research that data supporting claims made in a report or paper should be made available by researchers upon request, for synthesis in systematic reviews.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
                 }
               ]
             }
@@ -78,22 +103,56 @@
     {
       "DimensionName": "Tool Support",
       "Description": "This dimension ensures the quality and effectiveness of the tools used in the review.",
-      "keyPractices": []
+      "keyPractices": [
+        {
+          "id": 25,
+          "description": "Adopt tools, methods, procedures adequate for the researcher's experience",
+          "level_id": 1,
+          "dimension_id": 2,
+          "textPassages": [],
+          "practiceInstances": [
+            {
+              "id": 12,
+              "description": "GRADE is not recommended for new researchers",
+              "keypractice_id": 25,
+              "textPassages": [
+                {
+                  "id": 38,
+                  "study_id": 1,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 12,
+                  "text": "GRADE is a complicated approach and may be difficult for new SLR researchers.",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 47,
+          "description": "Use targeted collaborative tools to detect and resolve inter-rater reliability problems early",
+          "level_id": 1,
+          "dimension_id": 2,
+          "textPassages": [],
+          "practiceInstances": []
+        }
+      ]
     },
     {
-      "DimensionName": "Validation & Reliability",
+      "DimensionName": "Quality, Validity & Reliability",
       "Description": "This dimension ensures that all processes to validate each process of SLR (e.g., scope definition, protocol definition, studies selection, data extraction, data synthesis).",
       "keyPractices": [
         {
-          "id": 4,
-          "description": "Essa practice foi mergeada",
+          "id": 1,
+          "description": "Develop appropriate strategies for quality assessment strategies",
           "level_id": 1,
           "dimension_id": 3,
           "textPassages": [
             {
               "id": 1,
               "study_id": 1,
-              "keypractice_id": 4,
+              "keypractice_id": 1,
               "practiceinstance_id": null,
               "text": "Appropriate guidelines are required for devising quality assessment strategies",
               "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
@@ -102,7 +161,7 @@
             {
               "id": 2,
               "study_id": 1,
-              "keypractice_id": 4,
+              "keypractice_id": 1,
               "practiceinstance_id": 1,
               "text": "For each aspect, researchers can gain the knowledge of the most concerned criteria, which is particularly helpful in developing and applying quality assessment instruments for future SLRs.",
               "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
@@ -111,7 +170,7 @@
             {
               "id": 3,
               "study_id": 1,
-              "keypractice_id": 4,
+              "keypractice_id": 1,
               "practiceinstance_id": 2,
               "text": "Systematic reviewers can form their own quality assessment checklists by selecting and revising several questions from the original questions",
               "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
@@ -120,18 +179,9 @@
             {
               "id": 4,
               "study_id": 1,
-              "keypractice_id": 4,
-              "practiceinstance_id": 4,
-              "text": "teste2",
-              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
-              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
-            },
-            {
-              "id": 5,
-              "study_id": 1,
-              "keypractice_id": 4,
-              "practiceinstance_id": 5,
-              "text": "isso mesmo",
+              "keypractice_id": 1,
+              "practiceinstance_id": 3,
+              "text": "If there exist any former SLRs on the similar topic, researchers may consult these SLRs in developing their criteria for quality assessment.",
               "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
               "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
             }
@@ -140,12 +190,12 @@
             {
               "id": 1,
               "description": "Identify and reuse criteria to develop and apply quality assessment instruments for future SLRs",
-              "keypractice_id": 4,
+              "keypractice_id": 1,
               "textPassages": [
                 {
                   "id": 2,
                   "study_id": 1,
-                  "keypractice_id": 4,
+                  "keypractice_id": 1,
                   "practiceinstance_id": 1,
                   "text": "For each aspect, researchers can gain the knowledge of the most concerned criteria, which is particularly helpful in developing and applying quality assessment instruments for future SLRs.",
                   "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
@@ -156,23 +206,14 @@
             {
               "id": 2,
               "description": "Develop customized quality assessment checklists by adapting existing questions",
-              "keypractice_id": 4,
+              "keypractice_id": 1,
               "textPassages": [
                 {
                   "id": 3,
                   "study_id": 1,
-                  "keypractice_id": 4,
+                  "keypractice_id": 1,
                   "practiceinstance_id": 2,
                   "text": "Systematic reviewers can form their own quality assessment checklists by selecting and revising several questions from the original questions",
-                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
-                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
-                },
-                {
-                  "id": 6,
-                  "study_id": 1,
-                  "keypractice_id": null,
-                  "practiceinstance_id": 2,
-                  "text": "teste",
                   "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
                   "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
                 }
@@ -180,55 +221,1337 @@
             },
             {
               "id": 3,
-              "description": "testezinho",
-              "keypractice_id": 4,
-              "textPassages": []
-            },
-            {
-              "id": 4,
-              "description": "testezingo 2",
-              "keypractice_id": 4,
+              "description": "Consult prior SLRs on similar topics to inform quality assessment criteria.",
+              "keypractice_id": 1,
               "textPassages": [
                 {
                   "id": 4,
                   "study_id": 1,
-                  "keypractice_id": 4,
-                  "practiceinstance_id": 4,
-                  "text": "teste2",
+                  "keypractice_id": 1,
+                  "practiceinstance_id": 3,
+                  "text": "If there exist any former SLRs on the similar topic, researchers may consult these SLRs in developing their criteria for quality assessment.",
                   "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
                   "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
                 }
               ]
             },
             {
-              "id": 5,
-              "description": "outro teste de outra instance",
-              "keypractice_id": 4,
+              "id": 7,
+              "description": "Incorporate credibility aspects into quality assessment criteria",
+              "keypractice_id": 1,
               "textPassages": [
                 {
-                  "id": 5,
+                  "id": 29,
                   "study_id": 1,
-                  "keypractice_id": 4,
-                  "practiceinstance_id": 5,
-                  "text": "isso mesmo",
+                  "keypractice_id": null,
+                  "practiceinstance_id": 7,
+                  "text": "Our review has also found that there are not many SLRs whose quality assessment criteria pay sufficient attention to the credibility aspect in their quality assessment criteria.",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "description": "Develop quality criteria aligned with assessment purpose, not blindly",
+              "keypractice_id": 1,
+              "textPassages": [
+                {
+                  "id": 37,
+                  "study_id": 1,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 11,
+                  "text": "This information can help researchers to develop the quality criteria according to the purpose of their quality assessment: rather than ‘blindly’ performing the quality assessment for no particular reason.",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+                }
+              ]
+            },
+            {
+              "id": 24,
+              "description": "Design quality assessment checklists using factors that could bias study results",
+              "keypractice_id": 1,
+              "textPassages": [
+                {
+                  "id": 59,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 24,
+                  "text": "For detailed quality assessment, checklists can be designed using factors that could bias study results.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            },
+            {
+              "id": 31,
+              "description": "Assess the quality of primary studies based on the type of systematic literature review undertaken",
+              "keypractice_id": 1,
+              "textPassages": [
+                {
+                  "id": 67,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 31,
+                  "text": "All the medical standards emphasize that it is necessary to assess the quality of primary studies. However, it depends on the type of systematic literature review you are undertaking.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "description": "Conduct data analysis rigorously",
+          "level_id": 1,
+          "dimension_id": 3,
+          "textPassages": [
+            {
+              "id": 12,
+              "study_id": 1,
+              "keypractice_id": 7,
+              "practiceinstance_id": null,
+              "text": "Was the data analysis (collected) sufficiently rigorous?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": [
+            {
+              "id": 6,
+              "description": "Use control groups to compare treatments",
+              "keypractice_id": 7,
+              "textPassages": [
+                {
+                  "id": 13,
+                  "study_id": 1,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 6,
+                  "text": "Was there a control group with which to compare treatments?",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+                }
+              ]
+            },
+            {
+              "id": 8,
+              "description": "Account for negative factors such as result inconsistency in evidence strength",
+              "keypractice_id": 7,
+              "textPassages": [
+                {
+                  "id": 30,
+                  "study_id": 1,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 8,
+                  "text": "This situation might ignore the negative effect of the factors like inconsistency of results that could make to the strength of the evidence.",
                   "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
                   "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
                 }
               ]
             }
           ]
+        },
+        {
+          "id": 20,
+          "description": "Perform primary studies quality assessment in SLRs",
+          "level_id": 1,
+          "dimension_id": 3,
+          "textPassages": [
+            {
+              "id": 28,
+              "study_id": 1,
+              "keypractice_id": 20,
+              "practiceinstance_id": null,
+              "text": "Hence, it is important that SLRs researchers start paying more attention to the quality assessment of the papers included in SLRs.",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 21,
+          "description": "Integrates manual and automated search strategies",
+          "level_id": 1,
+          "dimension_id": 3,
+          "textPassages": [],
+          "practiceInstances": [
+            {
+              "id": 9,
+              "description": "Adopt quasi-gold standard (QGS)",
+              "keypractice_id": 21,
+              "textPassages": [
+                {
+                  "id": 31,
+                  "study_id": 1,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 9,
+                  "text": "In order to exhaustively identify SLRs with quality assessment component and ensure that the process of papers selection was unbiased as far as possible, the approach of quasi-gold standard (QGS) was adopted, which systematically integrates manual and automated search strategies and suggests a relatively rigorous approach for search performance evaluation in terms of sensitivity and precision.",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "description": "Address publication bias",
+          "level_id": 1,
+          "dimension_id": 3,
+          "textPassages": [
+            {
+              "id": 55,
+              "study_id": 4,
+              "keypractice_id": 34,
+              "practiceinstance_id": null,
+              "text": "the search strategy should attempt to address publication bias by trying to find publications that report negative results.",
+              "study_title": "Experiences Using Systematic Review Guidelines",
+              "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+            }
+          ],
+          "practiceInstances": [
+            {
+              "id": 23,
+              "description": "Address publication bias in the search strategy by including studies with negative results",
+              "keypractice_id": 34,
+              "textPassages": [
+                {
+                  "id": 58,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 23,
+                  "text": "the search strategy should attempt to address publication bias by trying to find publications that report negative results.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            },
+            {
+              "id": 28,
+              "description": "Identify multiple reports of the same study and seek missing or unpublished data from authors",
+              "keypractice_id": 34,
+              "textPassages": [
+                {
+                  "id": 63,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 28,
+                  "text": "multiple reports of the same study should be identified, and missing or unpublished data should be sought from the publications’ authors.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 35,
+          "description": "Follow the process described in the protocol",
+          "level_id": 1,
+          "dimension_id": 3,
+          "textPassages": [],
+          "practiceInstances": [
+            {
+              "id": 25,
+              "description": "Perform data extraction according to the systematic review protocol",
+              "keypractice_id": 35,
+              "textPassages": [
+                {
+                  "id": 60,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 25,
+                  "text": "Data extraction should be performed as indicated in the systematic review protocol.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            },
+            {
+              "id": 26,
+              "description": "Follow the selection process described in the protocol",
+              "keypractice_id": 35,
+              "textPassages": [
+                {
+                  "id": 61,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 26,
+                  "text": "the selection process should follow the plan described in the protocol.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 36,
+          "description": "Address the researcher's bias",
+          "level_id": 1,
+          "dimension_id": 3,
+          "textPassages": [],
+          "practiceInstances": [
+            {
+              "id": 22,
+              "description": "Check the reliability of the selection process",
+              "keypractice_id": 36,
+              "textPassages": [
+                {
+                  "id": 57,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 22,
+                  "text": "checking the reliability of this selection process, in order to reduce the risk of researcher bias.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "description": "Perform sensitivity analyses to determine the effect of excluding low-quality publications",
+          "level_id": 1,
+          "dimension_id": 3,
+          "textPassages": [],
+          "practiceInstances": []
+        },
+        {
+          "id": 38,
+          "description": "Address search & selection bias",
+          "level_id": 1,
+          "dimension_id": 3,
+          "textPassages": [],
+          "practiceInstances": [
+            {
+              "id": 30,
+              "description": "Select and justify a search strategy appropriate for the research question.",
+              "keypractice_id": 38,
+              "textPassages": [
+                {
+                  "id": 66,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 30,
+                  "text": "There are alternative search strategies that enable you to achieve different sort of search completion criteria. You must select and justify a search strategy that is appropriate for your research question.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            },
+            {
+              "id": 40,
+              "description": "Review conclusions as well as abstracts when selecting primary studies",
+              "keypractice_id": 38,
+              "textPassages": [
+                {
+                  "id": 84,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 40,
+                  "text": "The standard of IT and software engineering abstracts is too poor to rely on when selecting primary studies. You should also review the conclusions.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 40,
+          "description": "Establish a validation process separate from protocol piloting",
+          "level_id": 1,
+          "dimension_id": 3,
+          "textPassages": [
+            {
+              "id": 69,
+              "study_id": 4,
+              "keypractice_id": 40,
+              "practiceinstance_id": null,
+              "text": "There needs to be an agreed validation process separate from the protocol piloting activity.",
+              "study_title": "Experiences Using Systematic Review Guidelines",
+              "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+            }
+          ],
+          "practiceInstances": []
         }
       ]
     },
     {
       "DimensionName": "Collaboration & Communication",
       "Description": "This dimension ensures that all the interactions among researchers and the target audience are well-performed.",
-      "keyPractices": []
+      "keyPractices": [
+        {
+          "id": 15,
+          "description": "Consider the researcher–participant relationship adequately",
+          "level_id": 1,
+          "dimension_id": 4,
+          "textPassages": [
+            {
+              "id": 22,
+              "study_id": 1,
+              "keypractice_id": 15,
+              "practiceinstance_id": null,
+              "text": "Has the relationship between researcher and participants been considered to an adequate degree?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 19,
+          "description": "Validate the approach in academia or industry",
+          "level_id": 1,
+          "dimension_id": 4,
+          "textPassages": [
+            {
+              "id": 27,
+              "study_id": 1,
+              "keypractice_id": 19,
+              "practiceinstance_id": null,
+              "text": "Has the approach been validated on a certain scale (either in academia or/ and industry)?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 23,
+          "description": "Develop strategies to search and select studies collaboratively",
+          "level_id": 1,
+          "dimension_id": 4,
+          "textPassages": [
+            {
+              "id": 33,
+              "study_id": 1,
+              "keypractice_id": 23,
+              "practiceinstance_id": null,
+              "text": "In addition, the search strategy was developed by the three research students and reviewed by their supervisor.",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            },
+            {
+              "id": 35,
+              "study_id": 1,
+              "keypractice_id": 23,
+              "practiceinstance_id": null,
+              "text": "Moreover, the cross-check was necessary among the reviewers, and again we had at least two research students extracting data from each selected SLR independently.",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": [
+            {
+              "id": 10,
+              "description": "Check duplicates independently by at least two researchers to minimize bias",
+              "keypractice_id": 23,
+              "textPassages": [
+                {
+                  "id": 34,
+                  "study_id": 1,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 10,
+                  "text": "To ensure the removal of these duplicates, each retrieved paper was checked and further read by at least two researchers independently to handle the duplication and limited bias as much as possible.",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+                },
+                {
+                  "id": 39,
+                  "study_id": 1,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 10,
+                  "text": "We assigned the workload to make sure that each study was checked by at least two researchers independently to minimize the potential impact of any bias.",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "description": "Perform cross-checks with reviewers (independent, supervisors, team-members) for data extraction",
+          "level_id": 1,
+          "dimension_id": 4,
+          "textPassages": [
+            {
+              "id": 36,
+              "study_id": 1,
+              "keypractice_id": 24,
+              "practiceinstance_id": null,
+              "text": "The supervisor played the role of expert panel who dealt with any divergences and disagreements between the students during the process.",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": [
+            {
+              "id": 27,
+              "description": "Perform data extraction by at least two researchers and resolve disagreements by consensus or additional reviewers",
+              "keypractice_id": 24,
+              "textPassages": [
+                {
+                  "id": 62,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 27,
+                  "text": "Kitchenham recommends performing data extraction by two or more researchers and settling disagreements by consensus or by use of additional researchers.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            },
+            {
+              "id": 33,
+              "description": "Assign one reader as data extractor and another as data checker when reviewing large numbers of papers",
+              "keypractice_id": 24,
+              "textPassages": [
+                {
+                  "id": 71,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 33,
+                  "text": "Having one reader act as a data extractor and one act as data checker may be helpful when there are a large number of papers to review.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "description": "Resolve disagreements on search and selection through joint discussion",
+          "level_id": 1,
+          "dimension_id": 4,
+          "textPassages": [
+            {
+              "id": 40,
+              "study_id": 1,
+              "keypractice_id": 26,
+              "practiceinstance_id": null,
+              "text": "The disagreements on search and selection opinions were solved in joint discussion",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            },
+            {
+              "id": 70,
+              "study_id": 4,
+              "keypractice_id": 26,
+              "practiceinstance_id": null,
+              "text": "disagreements in selection should be discussed and resolved",
+              "study_title": "Experiences Using Systematic Review Guidelines",
+              "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+            }
+          ],
+          "practiceInstances": [
+            {
+              "id": 13,
+              "description": "Escalate unresolved disagreements to a supervisor",
+              "keypractice_id": 26,
+              "textPassages": [
+                {
+                  "id": 41,
+                  "study_id": 1,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 13,
+                  "text": "Any disagreements that could not be solved were escalated to the supervisor.",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 39,
+          "description": "Involve all review team members in developing the protocol",
+          "level_id": 1,
+          "dimension_id": 4,
+          "textPassages": [],
+          "practiceInstances": []
+        },
+        {
+          "id": 44,
+          "description": "Ensure all review team members understand the protocol and data extraction process",
+          "level_id": 1,
+          "dimension_id": 4,
+          "textPassages": [
+            {
+              "id": 80,
+              "study_id": 4,
+              "keypractice_id": 44,
+              "practiceinstance_id": null,
+              "text": "Review team members must make sure they understand the protocol and the data extraction process.",
+              "study_title": "Experiences Using Systematic Review Guidelines",
+              "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+            }
+          ],
+          "practiceInstances": []
+        }
+      ]
     },
     {
       "DimensionName": "Documentation & Reproducibility",
       "Description": "This dimension ensures that process documentation, consequently, the reproducibility and auditability is assured.",
-      "keyPractices": []
+      "keyPractices": [
+        {
+          "id": 2,
+          "description": "Ensure a clear statement of research aims and objectives",
+          "level_id": 1,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 5,
+              "study_id": 1,
+              "keypractice_id": 2,
+              "practiceinstance_id": null,
+              "text": "Is there a clear statement (definition) of the aims (goals, purposes, problems, motivations, objectives, questions) of the research?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 3,
+          "description": "Provide an adequate description of the context in which the research was conducted",
+          "level_id": 1,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 6,
+              "study_id": 1,
+              "keypractice_id": 3,
+              "practiceinstance_id": null,
+              "text": "Is there an adequate description of the context in which the research was carried out?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 5,
+          "description": "Ensure the study answers the research question clearly presenting the results in clear way",
+          "level_id": 1,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 9,
+              "study_id": 1,
+              "keypractice_id": 5,
+              "practiceinstance_id": null,
+              "text": "Does the study answer the research question defined or presents the results in a clear way?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": [
+            {
+              "id": 5,
+              "description": "Validate and justify variables, metrics, and study design",
+              "keypractice_id": 5,
+              "textPassages": [
+                {
+                  "id": 11,
+                  "study_id": 1,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 5,
+                  "text": "Are the variables/metrics/methods/design used in the study adequately measured and validated (justified)?",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+                }
+              ]
+            },
+            {
+              "id": 36,
+              "description": "Explain how the information extracted answers the research questions",
+              "keypractice_id": 5,
+              "textPassages": [
+                {
+                  "id": 75,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 36,
+                  "text": "Tabulating the data is a useful means of aggregation but it is necessary to explain how the aggregated data actually answers the research questions.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "description": "Describe data collection methods",
+          "level_id": 1,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 14,
+              "study_id": 1,
+              "keypractice_id": 8,
+              "practiceinstance_id": null,
+              "text": "Are the data collection methods adequately described (defined)?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 13,
+          "description": "Clearly state findings and relate them to research aims",
+          "level_id": 1,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 20,
+              "study_id": 1,
+              "keypractice_id": 13,
+              "practiceinstance_id": null,
+              "text": "Clearly state findings and relate them to research aims.",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 14,
+          "description": "Discuss limitations and threats to validity",
+          "level_id": 1,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 21,
+              "study_id": 1,
+              "keypractice_id": 14,
+              "practiceinstance_id": null,
+              "text": "Do the researchers discuss any problems (limitations, threats) with the validity (reliability) of their results?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 16,
+          "description": "Present sufficient data to support findings",
+          "level_id": 1,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 23,
+              "study_id": 1,
+              "keypractice_id": 16,
+              "practiceinstance_id": null,
+              "text": "Has sufficient data been presented to support the findings?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            },
+            {
+              "id": 24,
+              "study_id": 1,
+              "keypractice_id": 16,
+              "practiceinstance_id": null,
+              "text": "Are the findings credible?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 18,
+          "description": "Report conclusions and implications appropriately for the audience",
+          "level_id": 1,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 26,
+              "study_id": 1,
+              "keypractice_id": 18,
+              "practiceinstance_id": null,
+              "text": "Are conclusions, implications for practice and future research, reported suitably for its audience?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 30,
+          "description": "Define and document the systematic review in a detailed protocol",
+          "level_id": 1,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 64,
+              "study_id": 4,
+              "keypractice_id": 30,
+              "practiceinstance_id": null,
+              "text": "the procedures to be followed should be defined in the protocol.",
+              "study_title": "Experiences Using Systematic Review Guidelines",
+              "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+            }
+          ],
+          "practiceInstances": [
+            {
+              "id": 14,
+              "description": "Define and document a search strategy as part of the protocol",
+              "keypractice_id": 30,
+              "textPassages": [
+                {
+                  "id": 46,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 14,
+                  "text": "Definition and documentation of a search strategy as part of the protocol, to find as much of the relevant literature as possible.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            },
+            {
+              "id": 15,
+              "description": "Define and document a systematic review protocol in advance",
+              "keypractice_id": 30,
+              "textPassages": [
+                {
+                  "id": 45,
+                  "study_id": 4,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 15,
+                  "text": "Definition and documentation of a systematic review protocol in advance of conducting the review, to specify the research questions and the procedures to be used to perform the review.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                },
+                {
+                  "id": 50,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 15,
+                  "text": "a pre-defined protocol is necessary to reduce the possibility of researcher bias.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            },
+            {
+              "id": 16,
+              "description": "Describe explicit inclusion and exclusion criteria as part of the protocol",
+              "keypractice_id": 30,
+              "textPassages": [
+                {
+                  "id": 47,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 16,
+                  "text": "Description of the explicit inclusion and exclusion criteria as part of the protocol, to be used to assess each potential study.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            },
+            {
+              "id": 17,
+              "description": "Describe quality assessment mechanisms as part of the protocol",
+              "keypractice_id": 30,
+              "textPassages": [
+                {
+                  "id": 48,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 17,
+                  "text": "Description of quality assessment mechanisms as part of the protocol, to evaluate each study.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            },
+            {
+              "id": 18,
+              "description": "Describe review and cross-checking processes as part of the protocol to control researcher bias",
+              "keypractice_id": 30,
+              "textPassages": [
+                {
+                  "id": 49,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 18,
+                  "text": "Description of review and cross-checking processes as part of the protocol, and involving multiple independent researchers, in order to control researcher bias",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            },
+            {
+              "id": 29,
+              "description": "Record the specific search string used for each resource",
+              "keypractice_id": 30,
+              "textPassages": [
+                {
+                  "id": 65,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 29,
+                  "text": "There are alternative search strategies that enable you to achieve different sort of search completion criteria. You must select and justify a search strategy that is appropriate for your research question.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            },
+            {
+              "id": 32,
+              "description": "Record data definitions and data extraction guidelines in the protocol",
+              "keypractice_id": 30,
+              "textPassages": [
+                {
+                  "id": 68,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 32,
+                  "text": "Data extraction is assisted by having data definitions and data extraction guidelines form the protocol recorded in a separate short document.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            },
+            {
+              "id": 35,
+              "description": "Provide guidance on classification and summarization of qualitative information in protocols",
+              "keypractice_id": 30,
+              "textPassages": [
+                {
+                  "id": 74,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 35,
+                  "text": "it may be beneficial for the guidelines to provide more guidance on the classification and summarization of qualitative information, and the positioning of these activities within systematic review protocols.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            },
+            {
+              "id": 39,
+              "description": "Report only the final protocol design and provide commentary on changes made",
+              "keypractice_id": 30,
+              "textPassages": [
+                {
+                  "id": 83,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 39,
+                  "text": "suggest that in the full reporting of a systematic review only the final (fake) protocol design be shown together with footnotes or other supplementary commentary that discuss the nature and reason of any changes made to the initial protocol during the course of the systematic review.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 43,
+          "description": "Publish a full report separately from a journal overview paper when reporting systematic reviews",
+          "level_id": 1,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 76,
+              "study_id": 4,
+              "keypractice_id": 43,
+              "practiceinstance_id": null,
+              "text": "we have provided the full report as an institutional technical report (Niazi and Staples, 2006), and are preparing a separate journal paper that will include an overview of the methodology and results of the systematic review. We believe this a satisfactory approach for reporting systematic reviews.",
+              "study_title": "Experiences Using Systematic Review Guidelines",
+              "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 46,
+          "description": "Keep a detailed record of all decisions made during the review process and report them",
+          "level_id": 1,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 82,
+              "study_id": 4,
+              "keypractice_id": 46,
+              "practiceinstance_id": null,
+              "text": "Review teams need to keep a detailed record of decisions made throughout the review process, but we would amplify this and claim that these decisions must also be reported.",
+              "study_title": "Experiences Using Systematic Review Guidelines",
+              "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+            }
+          ],
+          "practiceInstances": []
+        }
+      ]
+    },
+    {
+      "DimensionName": "Design & Planning",
+      "Description": "This dimension ensures that the design and planning adopted is carefully aligned with the review goals to comply its objective",
+      "keyPractices": [
+        {
+          "id": 6,
+          "description": "Define study metrics, methods, and measures clearly in study design",
+          "level_id": 1,
+          "dimension_id": 6,
+          "textPassages": [
+            {
+              "id": 10,
+              "study_id": 1,
+              "keypractice_id": 6,
+              "practiceinstance_id": null,
+              "text": "Are the metrics (methods, design, measures) used in the study clearly (fully) defined (description)?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            },
+            {
+              "id": 19,
+              "study_id": 1,
+              "keypractice_id": 6,
+              "practiceinstance_id": null,
+              "text": "Are the metrics used in the study the most relevant ones for answering the research questions?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 9,
+          "description": "Collect data in a way that addresses the research issue",
+          "level_id": 1,
+          "dimension_id": 6,
+          "textPassages": [
+            {
+              "id": 15,
+              "study_id": 1,
+              "keypractice_id": 9,
+              "practiceinstance_id": null,
+              "text": "Was the data collected in a way that addressed the research issue?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 10,
+          "description": "Use research design appropriate to the study aims",
+          "level_id": 1,
+          "dimension_id": 6,
+          "textPassages": [
+            {
+              "id": 16,
+              "study_id": 1,
+              "keypractice_id": 10,
+              "practiceinstance_id": null,
+              "text": "Was the research design appropriate to address the aims of the research?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 11,
+          "description": "Apply search strategy aligned with research aims",
+          "level_id": 1,
+          "dimension_id": 6,
+          "textPassages": [
+            {
+              "id": 17,
+              "study_id": 1,
+              "keypractice_id": 11,
+              "practiceinstance_id": null,
+              "text": "Was the recruitment strategy appropriate to the aims of the research?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 12,
+          "description": "Use a methodology suitable for the research questions",
+          "level_id": 1,
+          "dimension_id": 6,
+          "textPassages": [
+            {
+              "id": 18,
+              "study_id": 1,
+              "keypractice_id": 12,
+              "practiceinstance_id": null,
+              "text": "Is the methodology (design) used suitable to address the stated research questions?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 17,
+          "description": "Ensure study contributes value to research or practice",
+          "level_id": 1,
+          "dimension_id": 6,
+          "textPassages": [
+            {
+              "id": 25,
+              "study_id": 1,
+              "keypractice_id": 17,
+              "practiceinstance_id": null,
+              "text": "Is the study of value for research or practice?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 22,
+          "description": "Apply snowballing as a complementary search to avoid missing relevant studies",
+          "level_id": 1,
+          "dimension_id": 6,
+          "textPassages": [
+            {
+              "id": 32,
+              "study_id": 1,
+              "keypractice_id": 22,
+              "practiceinstance_id": null,
+              "text": "...we also used the snowballing as the complementary search to reduce the possibility of missing relevant SLRs.",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 27,
+          "description": "Recommend the use of the guidelines",
+          "level_id": 1,
+          "dimension_id": 6,
+          "textPassages": [
+            {
+              "id": 42,
+              "study_id": 4,
+              "keypractice_id": 27,
+              "practiceinstance_id": null,
+              "text": "Overall we recommend the guidelines",
+              "study_title": "Experiences Using Systematic Review Guidelines",
+              "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 29,
+          "description": "Define complementary research questions to clarify the main questions",
+          "level_id": 1,
+          "dimension_id": 6,
+          "textPassages": [
+            {
+              "id": 44,
+              "study_id": 4,
+              "keypractice_id": 29,
+              "practiceinstance_id": null,
+              "text": "We suggest that complementary research questions can help clarify the main questions and define selection criteria.",
+              "study_title": "Experiences Using Systematic Review Guidelines",
+              "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+            },
+            {
+              "id": 77,
+              "study_id": 4,
+              "keypractice_id": 29,
+              "practiceinstance_id": null,
+              "text": "We also found that it was very helpful to define complementary research questions that were not being investigated, so as to clarify the boundaries of our research question of interest.",
+              "study_title": "Experiences Using Systematic Review Guidelines",
+              "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+            }
+          ],
+          "practiceInstances": [
+            {
+              "id": 37,
+              "description": "Identify the unit of analysis (i.e. to be explicitly clear whether you are studying organizations, teams, or individuals) explicitly when defining research questions",
+              "keypractice_id": 29,
+              "textPassages": [
+                {
+                  "id": 78,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 37,
+                  "text": "an instance of our recommendation to define complementary research questions is to clearly identify the unit of analysis for the research question, i.e. to be explicitly clear whether you are studying organizations, teams, or individuals.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "description": "Perform a pilot test in the SLR protocol",
+          "level_id": 1,
+          "dimension_id": 6,
+          "textPassages": [],
+          "practiceInstances": [
+            {
+              "id": 19,
+              "description": "Pilot aspects of the protocol during its development",
+              "keypractice_id": 31,
+              "textPassages": [
+                {
+                  "id": 51,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 19,
+                  "text": "Kitchenham recommends in several places that aspects of the protocol should be piloted during its development.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            },
+            {
+              "id": 21,
+              "description": "Review the protocol itself because it is critical for the systematic review",
+              "keypractice_id": 31,
+              "textPassages": [
+                {
+                  "id": 53,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 21,
+                  "text": "Review the protocol itself because it is critical for the systematic review.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            },
+            {
+              "id": 38,
+              "description": "Pilot the research protocol to find mistakes and refine the methodology",
+              "keypractice_id": 31,
+              "textPassages": [
+                {
+                  "id": 79,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 38,
+                  "text": "Piloting the research protocol is essential. It will find mistakes in your data collection and aggregation procedures. It may also indicate that you need to change the methodology you intend to use to address the research questions.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "description": "Trial search terms, selection criteria, and data extraction procedures before finalizing the protocol",
+          "level_id": 1,
+          "dimension_id": 6,
+          "textPassages": [
+            {
+              "id": 52,
+              "study_id": 4,
+              "keypractice_id": 32,
+              "practiceinstance_id": null,
+              "text": "the search terms, selection criteria, and data extraction procedures should all be trialled before finalising the protocol.",
+              "study_title": "Experiences Using Systematic Review Guidelines",
+              "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 33,
+          "description": "Use a formal search strategy to identify all relevant publications",
+          "level_id": 1,
+          "dimension_id": 6,
+          "textPassages": [
+            {
+              "id": 54,
+              "study_id": 4,
+              "keypractice_id": 33,
+              "practiceinstance_id": null,
+              "text": "A formal search strategy (described in the protocol) is used to find the entire population of publications that may be relevant to the research questions.",
+              "study_title": "Experiences Using Systematic Review Guidelines",
+              "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 42,
+          "description": "Determine how quality assessment will be used in data aggregation and analysis",
+          "level_id": 1,
+          "dimension_id": 6,
+          "textPassages": [
+            {
+              "id": 73,
+              "study_id": 4,
+              "keypractice_id": 42,
+              "practiceinstance_id": null,
+              "text": "It is important to be sure how the quality assessment will be used in the subsequent data aggregation and analysis.",
+              "study_title": "Experiences Using Systematic Review Guidelines",
+              "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 45,
+          "description": "Revise research questions during protocol development as understanding increases",
+          "level_id": 1,
+          "dimension_id": 6,
+          "textPassages": [
+            {
+              "id": 81,
+              "study_id": 4,
+              "keypractice_id": 45,
+              "practiceinstance_id": null,
+              "text": "Expect to revise your questions during protocol development, as your understanding of the problem increases experiences with the revision of research questions during systematic review.",
+              "study_title": "Experiences Using Systematic Review Guidelines",
+              "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+            }
+          ],
+          "practiceInstances": []
+        }
+      ]
+    },
+    {
+      "DimensionName": "Process Efficiency & Optimization",
+      "Description": "This dimension handles all aspects related to optimization of SLR process to make it less costly in terms of time and effort needed.",
+      "keyPractices": [
+        {
+          "id": 28,
+          "description": "Define research questions clearly and narrowly to reduce effort and improve selection and data extraction",
+          "level_id": 1,
+          "dimension_id": 7,
+          "textPassages": [
+            {
+              "id": 43,
+              "study_id": 4,
+              "keypractice_id": 28,
+              "practiceinstance_id": null,
+              "text": "We recommend researchers clearly and narrowly define research questions to reduce overall effort, and to improve selection and data extraction.",
+              "study_title": "Experiences Using Systematic Review Guidelines",
+              "study_authors": "Staples,  Mark and Niazi,  Mahmood"
+            }
+          ],
+          "practiceInstances": []
+        }
+      ]
     }
   ]
 }

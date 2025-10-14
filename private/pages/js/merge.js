@@ -3,25 +3,70 @@ $(document).ready(function () {
   let items = [];
 
   // ===============================
-  // 1️⃣ Carregar Key Practices
+  // 1️⃣ Load Key Practices
   // ===============================
   function loadItems() {
+    console.log("Loading items for merge...");
     $("#mergeTable tbody").empty();
 
     $.get(`${url}/keypractices`, function (data) {
       items = data;
-      renderItems(items);
+      populateFilters(items);
+      renderItems();
     });
   }
 
   // ===============================
-  // 2️⃣ Renderizar Tabela
+  // 2️⃣ Populate Filters
   // ===============================
-  function renderItems(items) {
+  function populateFilters(items) {
+    // Extract unique level names and dimension names
+    const levels = [...new Set(items.map(i => i.level_name))];
+    const dimensions = [...new Set(items.map(i => i.dimension_name))];
+
+    console.log("Available Levels:", levels);
+    console.log("Available Dimensions:", dimensions);
+
+    const levelSelect = $("#filterLevel");
+    const dimensionSelect = $("#filterDimension");
+
+    // Remove existing options except first
+    levelSelect.find("option:not(:first)").remove();
+    dimensionSelect.find("option:not(:first)").remove();
+
+    // Populate dropdowns
+    levels.forEach(lvl => {
+      levelSelect.append(`<option value="${lvl}">${lvl}</option>`);
+    });
+
+    dimensions.forEach(dim => {
+      dimensionSelect.append(`<option value="${dim}">${dim}</option>`);
+    });
+  }
+
+  // ===============================
+  // 3️⃣ Filtered Items
+  // ===============================
+  function getFilteredItems() {
+    const selectedLevel = $("#filterLevel").val();
+    const selectedDimension = $("#filterDimension").val();
+
+    return items.filter(item => {
+      const matchLevel = selectedLevel ? item.level_name === selectedLevel : true;
+      const matchDimension = selectedDimension ? item.dimension_name === selectedDimension : true;
+      return matchLevel && matchDimension;
+    });
+  }
+
+  // ===============================
+  // 4️⃣ Render Table
+  // ===============================
+  function renderItems() {
+    const filteredItems = getFilteredItems();
     const tbody = $("#mergeTable tbody");
     tbody.empty();
 
-    items.forEach(item => {
+    filteredItems.forEach(item => {
       const row = $(`
         <tr class="merge-row" data-id="${item.id}" draggable="true">
           <td class="drag-handle text-center">☰</td>
@@ -44,16 +89,14 @@ $(document).ready(function () {
   }
 
   // ===============================
-  // 3️⃣ Drag & Drop
+  // 5️⃣ Drag & Drop
   // ===============================
   function initDragDrop() {
-    // Linhas arrastáveis
     $(".merge-row").off("dragstart").on("dragstart", function (e) {
       e.originalEvent.dataTransfer.setData("text/plain", $(this).data("id"));
       e.originalEvent.dataTransfer.effectAllowed = "move";
     });
 
-    // Droppable nas células Similar Concepts
     $(".similar-concepts").each(function () {
       const cell = $(this);
       cell.css({
@@ -66,16 +109,15 @@ $(document).ready(function () {
         minHeight: "50px"
       });
 
-      // Highlight sutil
       cell.off("dragover").on("dragover", function (e) {
         e.preventDefault();
         $(this).css({ backgroundColor: "#eef2f4", borderColor: "#6c757d" });
       });
+
       cell.off("dragleave").on("dragleave", function () {
         $(this).css({ backgroundColor: "#f8f9fa", borderColor: "#adb5bd" });
       });
 
-      // Drop
       cell.off("drop").on("drop", function (e) {
         e.preventDefault();
         $(this).css({ backgroundColor: "#f8f9fa", borderColor: "#adb5bd" });
@@ -84,10 +126,8 @@ $(document).ready(function () {
         const draggedRow = $(`.merge-row[data-id='${draggedId}']`);
         const draggedDesc = draggedRow.find("td:nth-child(2)").text();
 
-        // Remove linha da tabela
         draggedRow.remove();
 
-        // Adiciona item à célula
         const conceptItem = $(`
           <div class="concept-item"
                style="border:1px solid #6c757d;
@@ -101,7 +141,6 @@ $(document).ready(function () {
 
         $(this).append(conceptItem);
 
-        // Habilitar input de merge se ainda não existir
         const parentRow = $(this).closest("tr");
         if (parentRow.find(".merge-input-cell input").length === 0) {
           parentRow.find(".merge-input-cell").html(`
@@ -110,14 +149,12 @@ $(document).ready(function () {
           `);
         }
 
-        // Arrastar de volta para tabela
         conceptItem.on("dragstart", function (ev) {
           ev.originalEvent.dataTransfer.setData("text/concept-id", $(this).data("id"));
         });
       });
     });
 
-    // Drop de volta na tabela
     $("#mergeTable tbody")
       .off("dragover drop")
       .on("dragover", "tr", function (e) { e.preventDefault(); })
@@ -151,11 +188,11 @@ $(document).ready(function () {
   }
 
   // ===============================
-  // 4️⃣ Botões
+  // 6️⃣ Buttons
   // ===============================
   $("#cancelMerge").click(function () {
     $("#mergeTable tbody").empty();
-    loadItems();
+    renderItems();
   });
 
   $("#saveMerge").click(async function () {
@@ -205,7 +242,14 @@ $(document).ready(function () {
   });
 
   // ===============================
-  // Inicialização
+  // 7️⃣ Filters change
+  // ===============================
+  $("#filterLevel, #filterDimension").change(function () {
+    renderItems();
+  });
+
+  // ===============================
+  // 8️⃣ Initialize
   // ===============================
   loadItems();
 });

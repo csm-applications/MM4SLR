@@ -98,6 +98,10 @@ function showLevels() {
 
 // 4. Mostrar KPs conforme filtros
 function showKPs() {
+    // Esconde o card de detalhe ao atualizar os filtros
+    const detail = document.getElementById('kpDetail');
+    detail.style.display = 'none';
+
     const kpContainer = document.getElementById('kpContainer');
     kpContainer.innerHTML = '';
 
@@ -152,6 +156,7 @@ function createKPItem(container, kpName, instances, dimension, category) {
 }
 
 // 6. Mostrar detalhes de um KP (agora mostra study_id corretamente)
+// 6. Mostrar detalhes de um KP (agora mostra study_id corretamente e mensagem se não houver instances)
 function showKPDetail(kpName, instances, dimension, category) {
     const detail = document.getElementById('kpDetail');
     detail.style.display = 'block';
@@ -169,14 +174,38 @@ function showKPDetail(kpName, instances, dimension, category) {
     const tbody = document.getElementById('kpTableBody');
     tbody.innerHTML = '';
 
-    instances.forEach(inst => {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-            <td title="${inst.study_titles}">${inst.study_ids}</td>
-            <td title="${inst.text}">${inst.practice_instance}</td>
-        `;
-        tbody.appendChild(tr);
-    });
+    // Verifica se há instances
+    if (instances.length === 0) {
+        // Remove a tabela se existir
+        const table = detail.querySelector('table');
+        if (table) table.style.display = 'none';
+
+        // Adiciona mensagem
+        let msg = detail.querySelector('.no-instances-msg');
+        if (!msg) {
+            msg = document.createElement('p');
+            msg.className = 'no-instances-msg text-muted fst-italic';
+            msg.textContent = 'No instances found yet.';
+            cardBody.appendChild(msg);
+        }
+    } else {
+        // Remove mensagem se existir
+        const msg = detail.querySelector('.no-instances-msg');
+        if (msg) msg.remove();
+
+        // Mostra a tabela
+        const table = detail.querySelector('table');
+        if (table) table.style.display = '';
+
+        instances.forEach(inst => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td title="${inst.study_titles}">${inst.study_ids}</td>
+                <td title="${inst.text}">${inst.practice_instance}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+    }
 }
 
 // 7. Inicialização
