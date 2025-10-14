@@ -5,29 +5,6 @@ $(document).ready(function () {
   const dimensionsUrl = url + '/dimensions';
 
   // ------------------------------
-  // CARREGAR DROPDOWNS DE LEVELS E DIMENSIONS
-  // ------------------------------
-  function loadDropdowns() {
-    // Levels
-    $.get(levelsUrl, function (data) {
-      const $levelSelect = $('#keyPracticeLevel');
-      $levelSelect.empty().append('<option value="">Select Level</option>');
-      data.forEach(lvl => {
-        $levelSelect.append(`<option value="${lvl.id}">${lvl.value} - ${lvl.name}</option>`);
-      });
-    });
-
-    // Dimensions
-    $.get(dimensionsUrl, function (data) {
-      const $dimSelect = $('#keyPracticeDimension');
-      $dimSelect.empty().append('<option value="">Select Dimension</option>');
-      data.forEach(dim => {
-        $dimSelect.append(`<option value="${dim.id}">${dim.name}</option>`);
-      });
-    });
-  }
-
-  // ------------------------------
   // CARREGAR KEY PRACTICES COM CONTAGEM DE INSTANCES
   // ------------------------------
   function loadKeyPractices(filters = {}) {
@@ -35,21 +12,34 @@ $(document).ready(function () {
       const $tbody = $('#keyPracticeTableBody');
       $tbody.empty();
 
-      data.forEach(kp => {
-        // Filtro
-        if (filters.level && kp.level_id != filters.level) return;
-        if (filters.dimension && kp.dimension_id != filters.dimension) return;
+      console.log('loadKeyPractices called with filters:', filters);
 
-        $.get(`${apiUrl}/${kp.id}/instances/count`, function (countData) {
-          const instanceCount = countData.count || 0;
 
+      const filtered = data.filter(kp => {
+        if (filters.level && kp.level_id != filters.level) return false;
+        if (filters.dimension && kp.dimension_id != filters.dimension) return false;
+        if (filters.description && !kp.description.toLowerCase().includes(filters.description.toLowerCase())) return false;
+        return true;
+      });
+
+      const promises = filtered.map(kp => {
+        return $.get(`${apiUrl}/${kp.id}/instances/count`).then(countData => {
+          return {
+            ...kp,
+            instanceCount: countData.count || 0
+          };
+        });
+      });
+
+      Promise.all(promises).then(results => {
+        results.forEach(kp => {
           $tbody.append(`
           <tr>
             <td>${kp.id}</td>
             <td>${kp.description}</td>
             <td>${kp.level_name || ''}</td>
             <td>${kp.dimension_name || ''}</td>
-            <td>${instanceCount}</td>
+            <td>${kp.instanceCount}</td>
             <td class="d-flex gap-2">
               <button class="btn btn-sm btn-outline-dark edit" data-id="${kp.id}">
                 <i class="bi bi-pencil"></i>
@@ -183,15 +173,23 @@ $(document).ready(function () {
     });
   }
 
-  $('#filterLevel, #filterDimension').change(function () {
+  $('#filterLevel, #filterDimension').on('change', function () {
     const filters = {
       level: $('#filterLevel').val(),
-      dimension: $('#filterDimension').val()
+      dimension: $('#filterDimension').val(),
+      description: $('#filterDescription').val().trim()
     };
     loadKeyPractices(filters);
   });
 
-
+  $('#filterDescription').on('input', function () {
+    const filters = {
+      level: $('#filterLevel').val(),
+      dimension: $('#filterDimension').val(),
+      description: $('#filterDescription').val().trim()
+    };
+    loadKeyPractices(filters);
+  });
 
   // ------------------------------
   // INICIALIZAÇÃO

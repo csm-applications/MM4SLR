@@ -11,7 +11,7 @@ export async function getAllKeyPractices() {
     FROM keypractice kp
     JOIN level l ON l.id = kp.level_id
     JOIN dimension d ON d.id = kp.dimension_id
-    ORDER BY kp.id ASC
+    ORDER BY kp.id DESC
   `);
 }
 
