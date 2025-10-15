@@ -1,10 +1,16 @@
+// ============================================
+// MM4SLR - JavaScript Refatorado
+// ============================================
+
 const jsonPath = '../assets/data.json';
 let jsonData = {};
-let levelMap = {}; // níveis preenchidos dinamicamente
+let levelMap = {};
 let selectedDimensions = new Set();
 let selectedLevels = new Set();
 
+// ============================================
 // 1. Popular checkboxes de dimensões
+// ============================================
 function populateDimensions(data) {
     const dimensionContainer = document.getElementById('dimensionSelect');
     dimensionContainer.innerHTML = '';
@@ -20,11 +26,8 @@ function populateDimensions(data) {
         input.value = dim.DimensionName;
 
         input.addEventListener('change', () => {
-            if (input.checked) {
-                selectedDimensions.add(dim.DimensionName);
-            } else {
-                selectedDimensions.delete(dim.DimensionName);
-            }
+            if (input.checked) selectedDimensions.add(dim.DimensionName);
+            else selectedDimensions.delete(dim.DimensionName);
             showKPs();
         });
 
@@ -39,7 +42,9 @@ function populateDimensions(data) {
     });
 }
 
-// 2. Construir o mapa de níveis dinamicamente (agora usa bibtex_key)
+// ============================================
+// 2. Construir o mapa de níveis
+// ============================================
 function buildLevelMap(data) {
     levelMap = {};
     data.Dimensions.forEach(dim => {
@@ -50,18 +55,27 @@ function buildLevelMap(data) {
             levelMap[level].push({
                 kpName: kp.description,
                 dimension: dim.DimensionName,
+                kpTextPassages: kp.textPassages.map(tp => ({
+                    text: tp.text,
+                    title: tp.study_title,
+                    authors: tp.study_authors,
+                    bibtex: tp.study_bibtex_key
+                })),
                 instances: kp.practiceInstances.map(pi => ({
                     practice_instance: pi.description,
                     text: pi.textPassages.map(tp => tp.text).join(' | '),
                     study_bibtex_keys: pi.textPassages.map(tp => tp.study_bibtex_key).join('; '),
-                    study_titles: pi.textPassages.map(tp => tp.study_title).join('; ')
+                    study_titles: pi.textPassages.map(tp => tp.study_title).join('; '),
+                    study_authors: pi.textPassages.map(tp => tp.study_authors || '').join('; ')
                 }))
             });
         });
     });
 }
 
-// 3. Mostrar checkboxes de níveis
+// ============================================
+// 3. Mostrar níveis
+// ============================================
 function showLevels() {
     const levelsContainer = document.getElementById('levelsContainer');
     levelsContainer.innerHTML = '';
@@ -77,11 +91,8 @@ function showLevels() {
         input.value = level;
 
         input.addEventListener('change', () => {
-            if (input.checked) {
-                selectedLevels.add(level);
-            } else {
-                selectedLevels.delete(level);
-            }
+            if (input.checked) selectedLevels.add(level);
+            else selectedLevels.delete(level);
             showKPs();
         });
 
@@ -96,7 +107,9 @@ function showLevels() {
     });
 }
 
-// 4. Mostrar KPs conforme filtros
+// ============================================
+// 4. Mostrar Key Practices (KPs)
+// ============================================
 function showKPs() {
     const detail = document.getElementById('kpDetail');
     detail.style.display = 'none';
@@ -104,7 +117,7 @@ function showKPs() {
     const kpContainer = document.getElementById('kpContainer');
     kpContainer.innerHTML = '';
 
-    let kpsToShow = [];
+    const kpsToShow = [];
 
     jsonData.Dimensions.forEach(dim => {
         if (selectedDimensions.size === 0 || selectedDimensions.has(dim.DimensionName)) {
@@ -115,11 +128,18 @@ function showKPs() {
                         kpName: kp.description,
                         dimension: dim.DimensionName,
                         category: kp.description,
+                        kpTextPassages: kp.textPassages.map(tp => ({
+                            text: tp.text,
+                            title: tp.study_title,
+                            authors: tp.study_authors,
+                            bibtex: tp.study_bibtex_key
+                        })),
                         instances: kp.practiceInstances.map(pi => ({
                             practice_instance: pi.description,
                             text: pi.textPassages.map(tp => tp.text).join(' | '),
                             study_bibtex_keys: pi.textPassages.map(tp => tp.study_bibtex_key).join('; '),
-                            study_titles: pi.textPassages.map(tp => tp.study_title).join('; ')
+                            study_titles: pi.textPassages.map(tp => tp.study_title).join('; '),
+                            study_authors: pi.textPassages.map(tp => tp.study_authors || '').join('; ')
                         }))
                     });
                 }
@@ -137,48 +157,71 @@ function showKPs() {
     const ul = document.createElement('ul');
     ul.className = "list-group text-start";
 
-    kpsToShow.forEach(({ kpName, instances, dimension, category }) => {
-        createKPItem(ul, kpName, instances, dimension, category);
+    kpsToShow.forEach(({ kpName, instances, dimension, category, kpTextPassages }) => {
+        createKPItem(ul, kpName, instances, dimension, category, kpTextPassages);
     });
 
     kpContainer.appendChild(ul);
 }
 
-// 5. Criar item de lista para cada KP
-function createKPItem(container, kpName, instances, dimension, category) {
+// ============================================
+// 5. Criar item de lista KP
+// ============================================
+function createKPItem(container, kpName, instances, dimension, category, kpTextPassages) {
     const li = document.createElement('li');
     li.className = 'list-group-item list-group-item-action';
     li.textContent = kpName;
     li.style.cursor = "pointer";
-    li.addEventListener('click', () => showKPDetail(kpName, instances, dimension, category));
+    li.addEventListener('click', () => showKPDetail(kpName, instances, dimension, category, kpTextPassages));
     container.appendChild(li);
 }
 
-// 6. Mostrar detalhes de um KP (agora mostra bibtex_key no lugar de study_id)
-function showKPDetail(kpName, instances, dimension, category) {
+// ============================================
+// 6. Mostrar detalhes KP
+// ============================================
+// ============================================
+// 6. Mostrar detalhes KP (com ícone discreto para text passages)
+// ============================================
+function showKPDetail(kpName, instances, dimension, category, kpTextPassages = []) {
     const detail = document.getElementById('kpDetail');
     detail.style.display = 'block';
-    detail.className = "card mt-4 border-0 shadow-sm";
-
-    const cardBody = detail.querySelector(".card-body");
-    cardBody.style.backgroundColor = "#f8f9fa";
-    cardBody.style.borderRadius = "10px";
 
     document.getElementById('kpTitle').textContent = kpName;
-    document.getElementById('kpTitle').className = "card-title h4 mb-3 text-primary";
     document.getElementById('kpDescription').textContent = `Dimension: ${dimension} | Key Practice: ${category}`;
-    document.getElementById('kpDescription').className = "mb-3 fw-light text-muted";
 
+    const cardBody = detail.querySelector('.card-body');
     const tbody = document.getElementById('kpTableBody');
     tbody.innerHTML = '';
 
-    if (instances.length === 0) {
-        const table = detail.querySelector('table');
-        if (table) table.style.display = 'none';
+    // --- Ícone discreto à direita ---
+    let kpIcon = document.getElementById('kpTextPassagesIcon');
+    if (!kpIcon) {
+        kpIcon = document.createElement('button');
+        kpIcon.id = 'kpTextPassagesIcon';
+        kpIcon.className = 'btn btn-sm btn-outline-primary float-end';
+        kpIcon.innerHTML = `<i class="bi bi-eye"></i>`;
+        kpIcon.title = 'View Key Practice text passages';
+        kpIcon.style.marginTop = '-5px';
 
-        let msg = detail.querySelector('.no-instances-msg');
-        if (!msg) {
-            msg = document.createElement('p');
+        // Insere logo após o título
+        const titleEl = document.getElementById('kpTitle');
+        titleEl.style.display = 'inline-block';
+        titleEl.parentNode.insertBefore(kpIcon, titleEl.nextSibling);
+    }
+
+    // Mostra ou esconde ícone dependendo se tem text passages
+    if (kpTextPassages.length > 0) {
+        kpIcon.style.display = 'inline-block';
+        kpIcon.onclick = () => openKPTextModal(kpTextPassages);
+    } else {
+        kpIcon.style.display = 'none';
+    }
+
+    // --- Practice Instances ---
+    if (instances.length === 0) {
+        detail.querySelector('table').style.display = 'none';
+        if (!detail.querySelector('.no-instances-msg')) {
+            const msg = document.createElement('p');
             msg.className = 'no-instances-msg text-muted fst-italic';
             msg.textContent = 'No instances found yet.';
             cardBody.appendChild(msg);
@@ -186,45 +229,86 @@ function showKPDetail(kpName, instances, dimension, category) {
     } else {
         const msg = detail.querySelector('.no-instances-msg');
         if (msg) msg.remove();
-
-        const table = detail.querySelector('table');
-        if (table) table.style.display = '';
+        detail.querySelector('table').style.display = '';
 
         instances.forEach(inst => {
             const tr = document.createElement('tr');
             tr.innerHTML = `
                 <td title="${inst.study_titles}">${inst.study_bibtex_keys}</td>
                 <td title="${inst.text}">${inst.practice_instance}</td>
+                <td class="text-center">
+                    <button class="btn btn-sm btn-outline-primary view-texts-btn" title="View instance text passages">
+                        <i class="bi bi-eye"></i>
+                    </button>
+                </td>
             `;
+            tr.querySelector('.view-texts-btn').addEventListener('click', () => {
+                openTextModal(inst.text, inst.study_titles, inst.study_authors);
+            });
             tbody.appendChild(tr);
         });
-    }
-
-    // === Adiciona o div do BibTeX logo abaixo da tabela ===
-    let bibDiv = detail.querySelector('.bib-div');
-    if (!bibDiv) {
-        bibDiv = document.createElement('div');
-        bibDiv.className = 'bib-div';
-        bibDiv.style.backgroundColor = '#f0f0f0';
-        bibDiv.style.padding = '8px 12px';
-        bibDiv.style.borderRadius = '5px';
-        bibDiv.style.fontSize = '0.95rem';
-        bibDiv.style.marginTop = '12px'; // distância da tabela
-
-        const bibLink = document.createElement('a');
-        bibLink.href = '../assets/studies.bib';
-        bibLink.target = '_blank';
-        bibLink.style.textDecoration = 'none';
-        bibLink.style.color = '#333';
-        bibLink.textContent = 'Check here the references (bibtex file)';
-
-        bibDiv.appendChild(bibLink);
-        cardBody.appendChild(bibDiv);
     }
 }
 
 
-// 7. Inicialização
+// ============================================
+// 7A. Abrir modal com text passages de instances
+// ============================================
+function openTextModal(textString, titleString, authorsString = '') {
+    const modalBody = document.getElementById('textModalBody');
+    modalBody.innerHTML = '';
+
+    const texts = textString.split(' | ');
+    const titles = titleString.split('; ');
+    const authors = authorsString ? authorsString.split('; ') : [];
+
+    texts.forEach((t, idx) => {
+        const title = titles[idx] || 'Unknown title';
+        const author = authors[idx] || 'N/A';
+
+        const div = document.createElement('div');
+        div.className = 'mb-4 p-3 border rounded bg-light';
+        div.innerHTML = `
+            <p class="mb-1"><strong>📖 Title:</strong> ${title}</p>
+            <p class="mb-2"><strong>🧑‍🔬 Authors:</strong> ${author}</p>
+            <p class="fst-italic text-secondary">${t}</p>
+        `;
+        modalBody.appendChild(div);
+    });
+
+    const modal = new bootstrap.Modal(document.getElementById('textModal'));
+    modal.show();
+}
+
+// ============================================
+// 7B. Abrir modal com text passages da Key Practice
+// ============================================
+function openKPTextModal(textPassages) {
+    const modalBody = document.getElementById('textModalBody');
+    modalBody.innerHTML = '';
+
+    if (!textPassages || textPassages.length === 0) {
+        modalBody.innerHTML = `<p class="text-muted fst-italic">No text passages for this Key Practice.</p>`;
+    } else {
+        textPassages.forEach(tp => {
+            const div = document.createElement('div');
+            div.className = 'mb-4 p-3 border rounded bg-light';
+            div.innerHTML = `
+                <p class="mb-1"><strong>📖 Title:</strong> ${tp.title || 'Unknown'}</p>
+                <p class="mb-2"><strong>🧑‍🔬 Authors:</strong> ${tp.authors || 'N/A'}</p>
+                <p class="fst-italic text-secondary">${tp.text}</p>
+            `;
+            modalBody.appendChild(div);
+        });
+    }
+
+    const modal = new bootstrap.Modal(document.getElementById('textModal'));
+    modal.show();
+}
+
+// ============================================
+// 8. Inicialização
+// ============================================
 fetch(jsonPath)
     .then(res => res.json())
     .then(data => {
