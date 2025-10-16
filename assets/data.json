@@ -1,7 +1,7 @@
 {
   "MaturityModel": "MM4SLR",
   "ModelVersion": "1.0",
-  "LastUpdate": "2025-10-14",
+  "LastUpdate": "2025-10-16",
   "ModelAuthors": [
     "Vinicius dos Santos",
     "Rick Kazman",
@@ -211,6 +211,16 @@
                   "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
                   "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
                   "study_bibtex_key": "S1"
+                },
+                {
+                  "id": 88,
+                  "study_id": 6,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 1,
+                  "text": "Select and tailor checklist items to create a quality checklist appropriate for the study",
+                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+                  "study_bibtex_key": "S3"
                 }
               ]
             },
@@ -313,6 +323,23 @@
                   "study_title": "Experiences Using Systematic Review Guidelines",
                   "study_authors": "Staples,  Mark and Niazi,  Mahmood",
                   "study_bibtex_key": "S2"
+                }
+              ]
+            },
+            {
+              "id": 44,
+              "description": "Adopt a team-based process for quality checklist construction and provide guidance on answering checklist questions",
+              "keypractice_id": 1,
+              "textPassages": [
+                {
+                  "id": 87,
+                  "study_id": 6,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 44,
+                  "text": "Researchers might find it useful to adopt a team-based process for quality checklist construction and provide suggestions for answering quality checklist questions.",
+                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+                  "study_bibtex_key": "S3"
                 }
               ]
             }
@@ -420,7 +447,7 @@
         {
           "id": 34,
           "description": "Address publication bias",
-          "level_id": 2,
+          "level_id": 3,
           "dimension_id": 3,
           "textPassages": [
             {
@@ -517,7 +544,7 @@
         {
           "id": 36,
           "description": "Address the researcher's bias",
-          "level_id": 2,
+          "level_id": 3,
           "dimension_id": 3,
           "textPassages": [],
           "practiceInstances": [
@@ -551,7 +578,7 @@
         {
           "id": 38,
           "description": "Address search & selection bias",
-          "level_id": 2,
+          "level_id": 3,
           "dimension_id": 3,
           "textPassages": [],
           "practiceInstances": [
@@ -939,7 +966,7 @@
         {
           "id": 8,
           "description": "Describe data collection methods",
-          "level_id": 2,
+          "level_id": 3,
           "dimension_id": 5,
           "textPassages": [
             {
@@ -1404,7 +1431,7 @@
         {
           "id": 27,
           "description": "Apply the well-established guidelines for SLR",
-          "level_id": 2,
+          "level_id": 3,
           "dimension_id": 6,
           "textPassages": [
             {
@@ -1568,7 +1595,7 @@
         {
           "id": 42,
           "description": "Determine how quality assessment will be used in data aggregation and analysis",
-          "level_id": 2,
+          "level_id": 3,
           "dimension_id": 6,
           "textPassages": [
             {

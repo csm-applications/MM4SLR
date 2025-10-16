@@ -21,13 +21,15 @@ export async function listPracticeInstances(req, res) {
   }
 }
 
+// Controller
 export const listPracticeInstancesByKeyPractice = async (req, res) => {
   try {
-    const instances =  await getPracticeInstancesByKeyPractice(req, res);
-    res.json(instances);
+    await getPracticeInstancesByKeyPractice(req, res); // a função já responde
   } catch (err) {
     console.error('Erro ao buscar Practice Instances por Key Practice:', err);
-    res.status(500).json({ error: 'Erro ao buscar Practice Instances.' });
+    if (!res.headersSent) {
+      res.status(500).json({ error: 'Erro ao buscar Practice Instances.' });
+    }
   }
 };
 
