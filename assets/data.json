@@ -1,7 +1,7 @@
 {
   "MaturityModel": "MM4SLR",
   "ModelVersion": "1.0",
-  "LastUpdate": "2025-10-16",
+  "LastUpdate": "2025-10-17",
   "ModelAuthors": [
     "Vinicius dos Santos",
     "Rick Kazman",
@@ -28,16 +28,6 @@
               "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
               "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
               "study_bibtex_key": "S1"
-            },
-            {
-              "id": 8,
-              "study_id": 1,
-              "keypractice_id": 4,
-              "practiceinstance_id": 4,
-              "text": "Are references maintained accurately?",
-              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
-              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
-              "study_bibtex_key": "S1"
             }
           ],
           "practiceInstances": [
@@ -49,7 +39,7 @@
                 {
                   "id": 8,
                   "study_id": 1,
-                  "keypractice_id": 4,
+                  "keypractice_id": "",
                   "practiceinstance_id": 4,
                   "text": "Are references maintained accurately?",
                   "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
@@ -102,16 +92,73 @@
               ]
             }
           ]
+        },
+        {
+          "id": 61,
+          "description": "Take as baseline good SLR examples, experiences, and protocols from other researchers",
+          "level_id": 2,
+          "dimension_id": 1,
+          "textPassages": [
+            {
+              "id": 122,
+              "study_id": 8,
+              "keypractice_id": 61,
+              "practiceinstance_id": null,
+              "text": "Find and read good SLR examples, experiences, and protocols from others as many as you can.",
+              "study_title": "Systematic literature reviews in software engineering: Preliminary results from interviews with researchers",
+              "study_authors": "Babar,  Muhammad Ali and Zhang,  He",
+              "study_bibtex_key": "S5"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 64,
+          "description": "Share the protocols within community",
+          "level_id": 3,
+          "dimension_id": 1,
+          "textPassages": [
+            {
+              "id": 124,
+              "study_id": 8,
+              "keypractice_id": 64,
+              "practiceinstance_id": null,
+              "text": "Share the protocols within community",
+              "study_title": "Systematic literature reviews in software engineering: Preliminary results from interviews with researchers",
+              "study_authors": "Babar,  Muhammad Ali and Zhang,  He",
+              "study_bibtex_key": "S5"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 66,
+          "description": "Record all relevant information during the review process",
+          "level_id": 3,
+          "dimension_id": 1,
+          "textPassages": [
+            {
+              "id": 127,
+              "study_id": 8,
+              "keypractice_id": 66,
+              "practiceinstance_id": null,
+              "text": "Do bookkeeping, record as much as you can during the review",
+              "study_title": "Systematic literature reviews in software engineering: Preliminary results from interviews with researchers",
+              "study_authors": "Babar,  Muhammad Ali and Zhang,  He",
+              "study_bibtex_key": "S5"
+            }
+          ],
+          "practiceInstances": []
         }
       ]
     },
     {
-      "DimensionName": "Tool Support",
-      "Description": "This dimension ensures the quality and effectiveness of the tools used in the review.",
+      "DimensionName": "Support Resources",
+      "Description": "This dimension ensures that researchers adopted adequate resources (frameworks, methods, tools, guidelines, checklists) to ensure SLR quality and effectiveness.",
       "keyPractices": [
         {
           "id": 25,
-          "description": "Adopt tools, methods, procedures adequate for the researcher's experience",
+          "description": "Adopt support resources that are adequate for the researcher's experience",
           "level_id": 2,
           "dimension_id": 2,
           "textPassages": [],
@@ -136,207 +183,50 @@
           ]
         },
         {
+          "id": 27,
+          "description": "Select and apply a well-established guideline for SLR process",
+          "level_id": 3,
+          "dimension_id": 2,
+          "textPassages": [
+            {
+              "id": 42,
+              "study_id": 4,
+              "keypractice_id": 27,
+              "practiceinstance_id": null,
+              "text": "Overall we recommend the guidelines",
+              "study_title": "Experiences Using Systematic Review Guidelines",
+              "study_authors": "Staples,  Mark and Niazi,  Mahmood",
+              "study_bibtex_key": "S2"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
           "id": 47,
           "description": "Use targeted collaborative tools to detect and resolve inter-rater reliability problems early",
           "level_id": 3,
           "dimension_id": 2,
           "textPassages": [],
           "practiceInstances": []
-        }
-      ]
-    },
-    {
-      "DimensionName": "Quality, Validity & Reliability",
-      "Description": "This dimension ensures that all processes to validate each process of SLR (e.g., scope definition, protocol definition, studies selection, data extraction, data synthesis).",
-      "keyPractices": [
+        },
         {
-          "id": 1,
-          "description": "Develop appropriate strategies for quality assessment strategies",
+          "id": 52,
+          "description": "Use tools to appraise the quality of experiments in primary studies (when applicable)",
           "level_id": 3,
-          "dimension_id": 3,
-          "textPassages": [
-            {
-              "id": 1,
-              "study_id": 1,
-              "keypractice_id": 1,
-              "practiceinstance_id": null,
-              "text": "Appropriate guidelines are required for devising quality assessment strategies",
-              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
-              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
-              "study_bibtex_key": "S1"
-            },
-            {
-              "id": 2,
-              "study_id": 1,
-              "keypractice_id": 1,
-              "practiceinstance_id": 1,
-              "text": "For each aspect, researchers can gain the knowledge of the most concerned criteria, which is particularly helpful in developing and applying quality assessment instruments for future SLRs.",
-              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
-              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
-              "study_bibtex_key": "S1"
-            },
-            {
-              "id": 3,
-              "study_id": 1,
-              "keypractice_id": 1,
-              "practiceinstance_id": 2,
-              "text": "Systematic reviewers can form their own quality assessment checklists by selecting and revising several questions from the original questions",
-              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
-              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
-              "study_bibtex_key": "S1"
-            },
-            {
-              "id": 4,
-              "study_id": 1,
-              "keypractice_id": 1,
-              "practiceinstance_id": 3,
-              "text": "If there exist any former SLRs on the similar topic, researchers may consult these SLRs in developing their criteria for quality assessment.",
-              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
-              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
-              "study_bibtex_key": "S1"
-            }
-          ],
+          "dimension_id": 2,
+          "textPassages": [],
           "practiceInstances": [
             {
-              "id": 1,
-              "description": "Identify and reuse criteria to develop and apply quality assessment instruments for future SLRs",
-              "keypractice_id": 1,
+              "id": 54,
+              "description": "Use the checklist to appraise quality of experiments",
+              "keypractice_id": 52,
               "textPassages": [
                 {
-                  "id": 2,
-                  "study_id": 1,
-                  "keypractice_id": 1,
-                  "practiceinstance_id": 1,
-                  "text": "For each aspect, researchers can gain the knowledge of the most concerned criteria, which is particularly helpful in developing and applying quality assessment instruments for future SLRs.",
-                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
-                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
-                  "study_bibtex_key": "S1"
-                },
-                {
-                  "id": 88,
+                  "id": 106,
                   "study_id": 6,
                   "keypractice_id": null,
-                  "practiceinstance_id": 1,
-                  "text": "Select and tailor checklist items to create a quality checklist appropriate for the study",
-                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
-                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
-                  "study_bibtex_key": "S3"
-                }
-              ]
-            },
-            {
-              "id": 2,
-              "description": "Develop customized quality assessment checklists by adapting existing questions",
-              "keypractice_id": 1,
-              "textPassages": [
-                {
-                  "id": 3,
-                  "study_id": 1,
-                  "keypractice_id": 1,
-                  "practiceinstance_id": 2,
-                  "text": "Systematic reviewers can form their own quality assessment checklists by selecting and revising several questions from the original questions",
-                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
-                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
-                  "study_bibtex_key": "S1"
-                }
-              ]
-            },
-            {
-              "id": 3,
-              "description": "Consult prior SLRs on similar topics to inform quality assessment criteria.",
-              "keypractice_id": 1,
-              "textPassages": [
-                {
-                  "id": 4,
-                  "study_id": 1,
-                  "keypractice_id": 1,
-                  "practiceinstance_id": 3,
-                  "text": "If there exist any former SLRs on the similar topic, researchers may consult these SLRs in developing their criteria for quality assessment.",
-                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
-                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
-                  "study_bibtex_key": "S1"
-                }
-              ]
-            },
-            {
-              "id": 7,
-              "description": "Incorporate credibility aspects into quality assessment criteria",
-              "keypractice_id": 1,
-              "textPassages": [
-                {
-                  "id": 29,
-                  "study_id": 1,
-                  "keypractice_id": null,
-                  "practiceinstance_id": 7,
-                  "text": "Our review has also found that there are not many SLRs whose quality assessment criteria pay sufficient attention to the credibility aspect in their quality assessment criteria.",
-                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
-                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
-                  "study_bibtex_key": "S1"
-                }
-              ]
-            },
-            {
-              "id": 11,
-              "description": "Develop quality criteria aligned with assessment purpose, not blindly",
-              "keypractice_id": 1,
-              "textPassages": [
-                {
-                  "id": 37,
-                  "study_id": 1,
-                  "keypractice_id": null,
-                  "practiceinstance_id": 11,
-                  "text": "This information can help researchers to develop the quality criteria according to the purpose of their quality assessment: rather than ‘blindly’ performing the quality assessment for no particular reason.",
-                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
-                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
-                  "study_bibtex_key": "S1"
-                }
-              ]
-            },
-            {
-              "id": 24,
-              "description": "Design quality assessment checklists using factors that could bias study results",
-              "keypractice_id": 1,
-              "textPassages": [
-                {
-                  "id": 59,
-                  "study_id": 4,
-                  "keypractice_id": null,
-                  "practiceinstance_id": 24,
-                  "text": "For detailed quality assessment, checklists can be designed using factors that could bias study results.",
-                  "study_title": "Experiences Using Systematic Review Guidelines",
-                  "study_authors": "Staples,  Mark and Niazi,  Mahmood",
-                  "study_bibtex_key": "S2"
-                }
-              ]
-            },
-            {
-              "id": 31,
-              "description": "Assess the quality of primary studies based on the type of systematic literature review undertaken",
-              "keypractice_id": 1,
-              "textPassages": [
-                {
-                  "id": 67,
-                  "study_id": 4,
-                  "keypractice_id": null,
-                  "practiceinstance_id": 31,
-                  "text": "All the medical standards emphasize that it is necessary to assess the quality of primary studies. However, it depends on the type of systematic literature review you are undertaking.",
-                  "study_title": "Experiences Using Systematic Review Guidelines",
-                  "study_authors": "Staples,  Mark and Niazi,  Mahmood",
-                  "study_bibtex_key": "S2"
-                }
-              ]
-            },
-            {
-              "id": 44,
-              "description": "Adopt a team-based process for quality checklist construction and provide guidance on answering checklist questions",
-              "keypractice_id": 1,
-              "textPassages": [
-                {
-                  "id": 87,
-                  "study_id": 6,
-                  "keypractice_id": null,
-                  "practiceinstance_id": 44,
-                  "text": "Researchers might find it useful to adopt a team-based process for quality checklist construction and provide suggestions for answering quality checklist questions.",
+                  "practiceinstance_id": 54,
+                  "text": "Kitchenham proposes a Generic Quality Checklist for Quality of Experiments (Table 3)",
                   "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
                   "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
                   "study_bibtex_key": "S3"
@@ -344,7 +234,13 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "DimensionName": "Quality, Validity & Reliability",
+      "Description": "This dimension ensures that all processes to validate each process of SLR (e.g., scope definition, protocol definition, studies selection, data extraction, data synthesis).",
+      "keyPractices": [
         {
           "id": 7,
           "description": "Conduct data analysis rigorously",
@@ -401,10 +297,20 @@
         },
         {
           "id": 20,
-          "description": "Perform primary studies quality assessment in SLRs",
+          "description": "Develop strategies to design and apply quality assessment of primary studies",
           "level_id": 3,
           "dimension_id": 3,
           "textPassages": [
+            {
+              "id": 1,
+              "study_id": 1,
+              "keypractice_id": 20,
+              "practiceinstance_id": null,
+              "text": "Appropriate guidelines are required for devising quality assessment strategies",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
+              "study_bibtex_key": "S1"
+            },
             {
               "id": 28,
               "study_id": 1,
@@ -414,20 +320,377 @@
               "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
               "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
               "study_bibtex_key": "S1"
+            },
+            {
+              "id": 117,
+              "study_id": 8,
+              "keypractice_id": 20,
+              "practiceinstance_id": null,
+              "text": "Researchers have also emphasized the need for providing appropriate advice on how to assess the quality of primary studies as the quality of the results of a systematic review is largely dependent upon the quality of the primary studies reviewed., 11",
+              "study_title": "Systematic literature reviews in software engineering: Preliminary results from interviews with researchers",
+              "study_authors": "Babar,  Muhammad Ali and Zhang,  He",
+              "study_bibtex_key": "S5"
             }
           ],
-          "practiceInstances": []
+          "practiceInstances": [
+            {
+              "id": 1,
+              "description": "Identify and reuse criteria to develop and apply quality assessment instruments for future SLRs",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 2,
+                  "study_id": 1,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 1,
+                  "text": "For each aspect, researchers can gain the knowledge of the most concerned criteria, which is particularly helpful in developing and applying quality assessment instruments for future SLRs.",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
+                  "study_bibtex_key": "S1"
+                },
+                {
+                  "id": 88,
+                  "study_id": 6,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 1,
+                  "text": "Select and tailor checklist items to create a quality checklist appropriate for the study",
+                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+                  "study_bibtex_key": "S3"
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "description": "Develop customized quality assessment checklists by adapting existing questions",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 3,
+                  "study_id": 1,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 2,
+                  "text": "Systematic reviewers can form their own quality assessment checklists by selecting and revising several questions from the original questions",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
+                  "study_bibtex_key": "S1"
+                },
+                {
+                  "id": 91,
+                  "study_id": 6,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 2,
+                  "text": "Discuss how to tailor checklists to specific research situations.",
+                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+                  "study_bibtex_key": "S3"
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "description": "Consult prior SLRs on similar topics to inform quality assessment criteria.",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 4,
+                  "study_id": 1,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 3,
+                  "text": "If there exist any former SLRs on the similar topic, researchers may consult these SLRs in developing their criteria for quality assessment.",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
+                  "study_bibtex_key": "S1"
+                }
+              ]
+            },
+            {
+              "id": 7,
+              "description": "Incorporate credibility aspects into quality assessment criteria",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 29,
+                  "study_id": 1,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 7,
+                  "text": "Our review has also found that there are not many SLRs whose quality assessment criteria pay sufficient attention to the credibility aspect in their quality assessment criteria.",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
+                  "study_bibtex_key": "S1"
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "description": "Develop quality criteria aligned with assessment purpose, not blindly",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 37,
+                  "study_id": 1,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 11,
+                  "text": "This information can help researchers to develop the quality criteria according to the purpose of their quality assessment: rather than ‘blindly’ performing the quality assessment for no particular reason.",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
+                  "study_bibtex_key": "S1"
+                }
+              ]
+            },
+            {
+              "id": 24,
+              "description": "Design quality assessment checklists using factors that could bias study results",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 59,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 24,
+                  "text": "For detailed quality assessment, checklists can be designed using factors that could bias study results.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood",
+                  "study_bibtex_key": "S2"
+                }
+              ]
+            },
+            {
+              "id": 31,
+              "description": "Assess the quality of primary studies based on the type of systematic literature review undertaken",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 67,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 31,
+                  "text": "All the medical standards emphasize that it is necessary to assess the quality of primary studies. However, it depends on the type of systematic literature review you are undertaking.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood",
+                  "study_bibtex_key": "S2"
+                }
+              ]
+            },
+            {
+              "id": 44,
+              "description": "Adopt a team-based process for quality checklist construction and provide guidance on answering checklist questions",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 87,
+                  "study_id": 6,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 44,
+                  "text": "Researchers might find it useful to adopt a team-based process for quality checklist construction and provide suggestions for answering quality checklist questions.",
+                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+                  "study_bibtex_key": "S3"
+                }
+              ]
+            },
+            {
+              "id": 45,
+              "description": "Include an item in quality assessment asking whether a sensitivity or stability analysis was performed",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 90,
+                  "study_id": 6,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 45,
+                  "text": "Given that the quality checklist is intended to provide an assessment of whether the results of the primary study are trustworthy, we should include an item to ask whether the study had performed a sensitivity or stability analysis to ensure that the results were not a result of one or two abnormal values.",
+                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+                  "study_bibtex_key": "S3"
+                }
+              ]
+            },
+            {
+              "id": 46,
+              "description": "Restrict the number of checklist items",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 93,
+                  "study_id": 6,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 46,
+                  "text": "Restrict the number of checklist items. We suggest between 6 and 12.",
+                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+                  "study_bibtex_key": "S3"
+                }
+              ]
+            },
+            {
+              "id": 47,
+              "description": "Balance the number of checklist items to ensure both correct evaluation and comprehensive coverage",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 94,
+                  "study_id": 6,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 47,
+                  "text": "The fewer the items the more likely that they will be correctly evaluated, yet too few questions make it difficult to capture all the aspects of methodology quality.",
+                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+                  "study_bibtex_key": "S3"
+                },
+                {
+                  "id": 100,
+                  "study_id": 6,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 47,
+                  "text": "Suggesting some limits to quality checklist size in the guidelines",
+                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+                  "study_bibtex_key": "S3"
+                }
+              ]
+            },
+            {
+              "id": 48,
+              "description": "Consider what information is needed to answer each checklist question",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 95,
+                  "study_id": 6,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 48,
+                  "text": "Consider what information is needed to answer the checklist question.",
+                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+                  "study_bibtex_key": "S3"
+                }
+              ]
+            },
+            {
+              "id": 49,
+              "description": "Request additional information from authors for questions about issues that are not reported",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 96,
+                  "study_id": 6,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 49,
+                  "text": "Consider what information is needed to answer the checklist question. Questions relating to issues that are not usually reported will require asking the authors for details. Questions that are very subjective will not give reliable answers",
+                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+                  "study_bibtex_key": "S3"
+                }
+              ]
+            },
+            {
+              "id": 50,
+              "description": "Remove overlapping checklist items",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 98,
+                  "study_id": 6,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 50,
+                  "text": "Remove checklist items that overlap",
+                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+                  "study_bibtex_key": "S3"
+                }
+              ]
+            },
+            {
+              "id": 51,
+              "description": "Concentrate on checklist items that assess whether results are valid",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 99,
+                  "study_id": 6,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 51,
+                  "text": "Concentrate on checklist items related to whether the results are valid",
+                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+                  "study_bibtex_key": "S3"
+                }
+              ]
+            },
+            {
+              "id": 52,
+              "description": "Avoid generic checklist items",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 102,
+                  "study_id": 6,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 52,
+                  "text": "\"The exercise we undertook to construct a team-based quality checklist for our testing SLR suggested that the number of generic checklist items could be much reduced. Based on our team discussions, it would seem that the quality checklist shown in Table 3 would both reduce redundancies among items and remove items related to\nreporting quality, leading to a much simpler generic checklist. \"",
+                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+                  "study_bibtex_key": "S3"
+                },
+                {
+                  "id": 103,
+                  "study_id": 6,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 52,
+                  "text": "Refine any generic checklist to meet the specific requirements of the SLR.",
+                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+                  "study_bibtex_key": "S3"
+                }
+              ]
+            },
+            {
+              "id": 53,
+              "description": "Trial quality checklists on a subset of primary studies, compare results, and refine items and evaluation processes",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 105,
+                  "study_id": 6,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 53,
+                  "text": "That is, the quality checklists should be trialled on a subset of primary studies and the results compared and any disagreements discussed to refine both the quality checklists and the quality evaluation process.",
+                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+                  "study_bibtex_key": "S3"
+                }
+              ]
+            },
+            {
+              "id": 55,
+              "description": "Use ordinal scales (e.g., not at all to fully) instead of simple Yes/No answers.",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 107,
+                  "study_id": 6,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 55,
+                  "text": "The answers should probably be an ordinal scale (e.g. not at all, a little, somewhat, mostly, fully) rather than a simple Yes/No.",
+                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+                  "study_bibtex_key": "S3"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": 21,
-          "description": "Integrates manual and automated search strategies",
+          "description": "Address search & selection bias",
           "level_id": 2,
           "dimension_id": 3,
           "textPassages": [],
           "practiceInstances": [
             {
               "id": 9,
-              "description": "Adopt quasi-gold standard (QGS)",
+              "description": "Integrate manual and automated search strategies",
               "keypractice_id": 21,
               "textPassages": [
                 {
@@ -436,6 +699,74 @@
                   "keypractice_id": null,
                   "practiceinstance_id": 9,
                   "text": "In order to exhaustively identify SLRs with quality assessment component and ensure that the process of papers selection was unbiased as far as possible, the approach of quasi-gold standard (QGS) was adopted, which systematically integrates manual and automated search strategies and suggests a relatively rigorous approach for search performance evaluation in terms of sensitivity and precision.",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
+                  "study_bibtex_key": "S1"
+                }
+              ]
+            },
+            {
+              "id": 30,
+              "description": "Select and justify a search strategy appropriate for the research question.",
+              "keypractice_id": 21,
+              "textPassages": [
+                {
+                  "id": 66,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 30,
+                  "text": "There are alternative search strategies that enable you to achieve different sort of search completion criteria. You must select and justify a search strategy that is appropriate for your research question.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood",
+                  "study_bibtex_key": "S2"
+                }
+              ]
+            },
+            {
+              "id": 40,
+              "description": "Review conclusions as well as abstracts when selecting primary studies",
+              "keypractice_id": 21,
+              "textPassages": [
+                {
+                  "id": 84,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 40,
+                  "text": "The standard of IT and software engineering abstracts is too poor to rely on when selecting primary studies. You should also review the conclusions.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood",
+                  "study_bibtex_key": "S2"
+                }
+              ]
+            },
+            {
+              "id": 56,
+              "description": "Use sensitivity analyses to determine the effect of excluding low-quality publications",
+              "keypractice_id": 21,
+              "textPassages": [
+                {
+                  "id": 109,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 56,
+                  "text": "it is possible to perform sensitivity analyses to determine the effects on the synthesis results of ignoring low quality publications.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood",
+                  "study_bibtex_key": "S2"
+                }
+              ]
+            },
+            {
+              "id": 58,
+              "description": "Apply snowballing as a complementary search to avoid missing relevant studies",
+              "keypractice_id": 21,
+              "textPassages": [
+                {
+                  "id": 32,
+                  "study_id": 1,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 58,
+                  "text": "...we also used the snowballing as the complementary search to reduce the possibility of missing relevant SLRs.",
                   "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
                   "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
                   "study_bibtex_key": "S1"
@@ -568,57 +899,6 @@
           ]
         },
         {
-          "id": 37,
-          "description": "Use sensitivity analyses to determine the effect of excluding low-quality publications",
-          "level_id": 3,
-          "dimension_id": 3,
-          "textPassages": [],
-          "practiceInstances": []
-        },
-        {
-          "id": 38,
-          "description": "Address search & selection bias",
-          "level_id": 3,
-          "dimension_id": 3,
-          "textPassages": [],
-          "practiceInstances": [
-            {
-              "id": 30,
-              "description": "Select and justify a search strategy appropriate for the research question.",
-              "keypractice_id": 38,
-              "textPassages": [
-                {
-                  "id": 66,
-                  "study_id": 4,
-                  "keypractice_id": null,
-                  "practiceinstance_id": 30,
-                  "text": "There are alternative search strategies that enable you to achieve different sort of search completion criteria. You must select and justify a search strategy that is appropriate for your research question.",
-                  "study_title": "Experiences Using Systematic Review Guidelines",
-                  "study_authors": "Staples,  Mark and Niazi,  Mahmood",
-                  "study_bibtex_key": "S2"
-                }
-              ]
-            },
-            {
-              "id": 40,
-              "description": "Review conclusions as well as abstracts when selecting primary studies",
-              "keypractice_id": 38,
-              "textPassages": [
-                {
-                  "id": 84,
-                  "study_id": 4,
-                  "keypractice_id": null,
-                  "practiceinstance_id": 40,
-                  "text": "The standard of IT and software engineering abstracts is too poor to rely on when selecting primary studies. You should also review the conclusions.",
-                  "study_title": "Experiences Using Systematic Review Guidelines",
-                  "study_authors": "Staples,  Mark and Niazi,  Mahmood",
-                  "study_bibtex_key": "S2"
-                }
-              ]
-            }
-          ]
-        },
-        {
           "id": 40,
           "description": "Establish a validation process separate from protocol piloting",
           "level_id": 3,
@@ -633,6 +913,54 @@
               "study_title": "Experiences Using Systematic Review Guidelines",
               "study_authors": "Staples,  Mark and Niazi,  Mahmood",
               "study_bibtex_key": "S2"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 49,
+          "description": "Ensure that guidelines and quality checklists are accessible and appropriate for users with varying levels expertise",
+          "level_id": 2,
+          "dimension_id": 3,
+          "textPassages": [
+            {
+              "id": 92,
+              "study_id": 6,
+              "keypractice_id": 49,
+              "practiceinstance_id": null,
+              "text": "It seems clear that the checklists by themselves are not helpful to novices",
+              "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+              "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+              "study_bibtex_key": "S3"
+            },
+            {
+              "id": 101,
+              "study_id": 6,
+              "keypractice_id": 49,
+              "practiceinstance_id": null,
+              "text": "The supervisors had mixed views about the checklists and some concern that the checklists would be difficult for non-statisticians or researchers inexperienced in empirical studies. One supervisor noted that the testing SLR is primarily a mapping SLR and thought the quality checklists were misleading for that type of study. Both supervisors reinforce the point made by the RA, that some statistical expertise is required to use the guidelines effectively and some terminology needs to be included in the guidelines",
+              "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+              "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+              "study_bibtex_key": "S3"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 57,
+          "description": "Advance beyond simply summarizing articles, evaluate their quality and relevance using explicit criteria",
+          "level_id": 2,
+          "dimension_id": 3,
+          "textPassages": [
+            {
+              "id": 114,
+              "study_id": 7,
+              "keypractice_id": 57,
+              "practiceinstance_id": null,
+              "text": "\"“Instead of simply summarising the content of each article, try to evaluate them in order to decide whether they are good pieces of research and helpful to you and your research question.”\n“Try to summarise & critically evaluate each article studied as well as synthesising the full collection.”\"",
+              "study_title": "Preliminary Reporting Guidelines for Experience Papers",
+              "study_authors": "Budgen,  David and Zhang,  Cheng",
+              "study_bibtex_key": "S4"
             }
           ],
           "practiceInstances": []
@@ -864,6 +1192,63 @@
             }
           ],
           "practiceInstances": []
+        },
+        {
+          "id": 51,
+          "description": "Construct quality checklists individually, then discuss similarities and differences to produce a team checklist",
+          "level_id": 3,
+          "dimension_id": 4,
+          "textPassages": [
+            {
+              "id": 104,
+              "study_id": 6,
+              "keypractice_id": 51,
+              "practiceinstance_id": null,
+              "text": "We found the process of constructing quality checklists individually and then discussing the similarities and differences in order to produce a team checklist was very useful. We would recommend such a process to other researchers.",
+              "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+              "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+              "study_bibtex_key": "S3"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 54,
+          "description": "Provide feedback for students that includes forward-looking advice for improvement",
+          "level_id": 2,
+          "dimension_id": 4,
+          "textPassages": [
+            {
+              "id": 111,
+              "study_id": 7,
+              "keypractice_id": 54,
+              "practiceinstance_id": null,
+              "text": "Such feedback should not just tell students what they have done well or poorly, but also “feed forward”, that is provide advice for how the students can improve in their next piece of work",
+              "study_title": "Preliminary Reporting Guidelines for Experience Papers",
+              "study_authors": "Budgen,  David and Zhang,  Cheng",
+              "study_bibtex_key": "S4"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 65,
+          "description": "Involve experienced SLR researchers for consultation and feedback",
+          "level_id": 3,
+          "dimension_id": 4,
+          "textPassages": [
+            {
+              "id": 126,
+              "study_id": 8,
+              "keypractice_id": 65,
+              "practiceinstance_id": null,
+              "text": "Have somebody with experience in conducting SLRs involved or being in touch, make them available to consult to, and ask them check your questions and results",
+              "study_title": "Systematic literature reviews in software engineering: Preliminary results from interviews with researchers",
+              "study_authors": "Babar,  Muhammad Ali and Zhang,  He",
+              "study_bibtex_key": "S5"
+            }
+          ],
+          "practiceInstances": []
         }
       ]
     },
@@ -910,60 +1295,6 @@
           "practiceInstances": []
         },
         {
-          "id": 5,
-          "description": "Ensure the study presents the results and answers the research question in clear way",
-          "level_id": 2,
-          "dimension_id": 5,
-          "textPassages": [
-            {
-              "id": 9,
-              "study_id": 1,
-              "keypractice_id": 5,
-              "practiceinstance_id": null,
-              "text": "Does the study answer the research question defined or presents the results in a clear way?",
-              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
-              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
-              "study_bibtex_key": "S1"
-            }
-          ],
-          "practiceInstances": [
-            {
-              "id": 5,
-              "description": "Validate and justify variables, metrics, and study design",
-              "keypractice_id": 5,
-              "textPassages": [
-                {
-                  "id": 11,
-                  "study_id": 1,
-                  "keypractice_id": null,
-                  "practiceinstance_id": 5,
-                  "text": "Are the variables/metrics/methods/design used in the study adequately measured and validated (justified)?",
-                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
-                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
-                  "study_bibtex_key": "S1"
-                }
-              ]
-            },
-            {
-              "id": 36,
-              "description": "Explain how the information extracted answers the research questions",
-              "keypractice_id": 5,
-              "textPassages": [
-                {
-                  "id": 75,
-                  "study_id": 4,
-                  "keypractice_id": null,
-                  "practiceinstance_id": 36,
-                  "text": "Tabulating the data is a useful means of aggregation but it is necessary to explain how the aggregated data actually answers the research questions.",
-                  "study_title": "Experiences Using Systematic Review Guidelines",
-                  "study_authors": "Staples,  Mark and Niazi,  Mahmood",
-                  "study_bibtex_key": "S2"
-                }
-              ]
-            }
-          ]
-        },
-        {
           "id": 8,
           "description": "Describe data collection methods",
           "level_id": 3,
@@ -984,10 +1315,20 @@
         },
         {
           "id": 13,
-          "description": "Clearly state findings and relate them to research aims",
+          "description": "Ensure the study presents the results and answers the research question in clear way",
           "level_id": 2,
           "dimension_id": 5,
           "textPassages": [
+            {
+              "id": 9,
+              "study_id": 1,
+              "keypractice_id": 13,
+              "practiceinstance_id": null,
+              "text": "Does the study answer the research question defined or presents the results in a clear way?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
+              "study_bibtex_key": "S1"
+            },
             {
               "id": 20,
               "study_id": 1,
@@ -997,9 +1338,71 @@
               "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
               "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
               "study_bibtex_key": "S1"
+            },
+            {
+              "id": 108,
+              "study_id": 6,
+              "keypractice_id": 13,
+              "practiceinstance_id": null,
+              "text": "Ensuring that questions selected can be answered and providing advice to make the answers as objective as possible.",
+              "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+              "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+              "study_bibtex_key": "S3"
             }
           ],
-          "practiceInstances": []
+          "practiceInstances": [
+            {
+              "id": 5,
+              "description": "Validate and justify variables, metrics, and study design",
+              "keypractice_id": 13,
+              "textPassages": [
+                {
+                  "id": 11,
+                  "study_id": 1,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 5,
+                  "text": "Are the variables/metrics/methods/design used in the study adequately measured and validated (justified)?",
+                  "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+                  "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
+                  "study_bibtex_key": "S1"
+                }
+              ]
+            },
+            {
+              "id": 36,
+              "description": "Explain how the information extracted answers the research questions",
+              "keypractice_id": 13,
+              "textPassages": [
+                {
+                  "id": 75,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 36,
+                  "text": "Tabulating the data is a useful means of aggregation but it is necessary to explain how the aggregated data actually answers the research questions.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood",
+                  "study_bibtex_key": "S2"
+                }
+              ]
+            },
+            {
+              "id": 59,
+              "description": "Synthesize across studies to directly address the research question rather than presenting isolated summaries",
+              "keypractice_id": 13,
+              "textPassages": [
+                {
+                  "id": 115,
+                  "study_id": 7,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 59,
+                  "text": "Be sure you have answered your own question. I couldn’t see how your analysis of the published research answered the question re evidence for making better computer programmers.",
+                  "study_title": "Preliminary Reporting Guidelines for Experience Papers",
+                  "study_authors": "Budgen,  David and Zhang,  Cheng",
+                  "study_bibtex_key": "S4"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": 14,
@@ -1288,6 +1691,63 @@
             }
           ],
           "practiceInstances": []
+        },
+        {
+          "id": 50,
+          "description": "Concentrate on checklist items that relate to good reporting rather than good experimental procedures",
+          "level_id": 2,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 97,
+              "study_id": 6,
+              "keypractice_id": 50,
+              "practiceinstance_id": null,
+              "text": "Concentrate on checklist items that relate to good reporting rather than good experimental procedures",
+              "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+              "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+              "study_bibtex_key": "S3"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 67,
+          "description": "Justify every action taken in the review and think critically about the process",
+          "level_id": 2,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 128,
+              "study_id": 8,
+              "keypractice_id": 67,
+              "practiceinstance_id": null,
+              "text": "You should have good reasons for everything you do; you should be willing to do it. Don’t stop thinking, and be very careful about what you’re doing",
+              "study_title": "Systematic literature reviews in software engineering: Preliminary results from interviews with researchers",
+              "study_authors": "Babar,  Muhammad Ali and Zhang,  He",
+              "study_bibtex_key": "S5"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 68,
+          "description": "Clarify search, selection, and quality criteria as thoroughly as possible",
+          "level_id": 3,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 129,
+              "study_id": 8,
+              "keypractice_id": 68,
+              "practiceinstance_id": null,
+              "text": "Clarify criteria for search, selection and quality as much as you can, and as good as you can",
+              "study_title": "Systematic literature reviews in software engineering: Preliminary results from interviews with researchers",
+              "study_authors": "Babar,  Muhammad Ali and Zhang,  He",
+              "study_bibtex_key": "S5"
+            }
+          ],
+          "practiceInstances": []
         }
       ]
     },
@@ -1410,44 +1870,6 @@
           "practiceInstances": []
         },
         {
-          "id": 22,
-          "description": "Apply snowballing as a complementary search to avoid missing relevant studies",
-          "level_id": 3,
-          "dimension_id": 6,
-          "textPassages": [
-            {
-              "id": 32,
-              "study_id": 1,
-              "keypractice_id": 22,
-              "practiceinstance_id": null,
-              "text": "...we also used the snowballing as the complementary search to reduce the possibility of missing relevant SLRs.",
-              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
-              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
-              "study_bibtex_key": "S1"
-            }
-          ],
-          "practiceInstances": []
-        },
-        {
-          "id": 27,
-          "description": "Apply the well-established guidelines for SLR",
-          "level_id": 3,
-          "dimension_id": 6,
-          "textPassages": [
-            {
-              "id": 42,
-              "study_id": 4,
-              "keypractice_id": 27,
-              "practiceinstance_id": null,
-              "text": "Overall we recommend the guidelines",
-              "study_title": "Experiences Using Systematic Review Guidelines",
-              "study_authors": "Staples,  Mark and Niazi,  Mahmood",
-              "study_bibtex_key": "S2"
-            }
-          ],
-          "practiceInstances": []
-        },
-        {
           "id": 29,
           "description": "Define complementary research questions to clarify the main questions",
           "level_id": 2,
@@ -1495,16 +1917,27 @@
           ]
         },
         {
-          "id": 31,
+          "id": 32,
           "description": "Perform a pilot test in the SLR protocol",
           "level_id": 3,
           "dimension_id": 6,
-          "textPassages": [],
+          "textPassages": [
+            {
+              "id": 125,
+              "study_id": 8,
+              "keypractice_id": 32,
+              "practiceinstance_id": null,
+              "text": "Conduct a pilot review, especially when unfamiliar with the domain",
+              "study_title": "Systematic literature reviews in software engineering: Preliminary results from interviews with researchers",
+              "study_authors": "Babar,  Muhammad Ali and Zhang,  He",
+              "study_bibtex_key": "S5"
+            }
+          ],
           "practiceInstances": [
             {
               "id": 19,
               "description": "Pilot aspects of the protocol during its development",
-              "keypractice_id": 31,
+              "keypractice_id": 32,
               "textPassages": [
                 {
                   "id": 51,
@@ -1521,7 +1954,7 @@
             {
               "id": 21,
               "description": "Review the protocol itself because it is critical for the systematic review",
-              "keypractice_id": 31,
+              "keypractice_id": 32,
               "textPassages": [
                 {
                   "id": 53,
@@ -1538,7 +1971,7 @@
             {
               "id": 38,
               "description": "Pilot the research protocol to find mistakes and refine the methodology",
-              "keypractice_id": 31,
+              "keypractice_id": 32,
               "textPassages": [
                 {
                   "id": 79,
@@ -1551,27 +1984,25 @@
                   "study_bibtex_key": "S2"
                 }
               ]
+            },
+            {
+              "id": 57,
+              "description": "Trial search terms, selection criteria, and data extraction procedures before finalizing the protocol",
+              "keypractice_id": 32,
+              "textPassages": [
+                {
+                  "id": 52,
+                  "study_id": 4,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 57,
+                  "text": "the search terms, selection criteria, and data extraction procedures should all be trialled before finalising the protocol.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood",
+                  "study_bibtex_key": "S2"
+                }
+              ]
             }
           ]
-        },
-        {
-          "id": 32,
-          "description": "Trial search terms, selection criteria, and data extraction procedures before finalizing the protocol",
-          "level_id": 3,
-          "dimension_id": 6,
-          "textPassages": [
-            {
-              "id": 52,
-              "study_id": 4,
-              "keypractice_id": 32,
-              "practiceinstance_id": null,
-              "text": "the search terms, selection criteria, and data extraction procedures should all be trialled before finalising the protocol.",
-              "study_title": "Experiences Using Systematic Review Guidelines",
-              "study_authors": "Staples,  Mark and Niazi,  Mahmood",
-              "study_bibtex_key": "S2"
-            }
-          ],
-          "practiceInstances": []
         },
         {
           "id": 33,
@@ -1629,6 +2060,116 @@
             }
           ],
           "practiceInstances": []
+        },
+        {
+          "id": 53,
+          "description": "Modify EBSE guidance for students and novice researchers to include developing a well-defined research question",
+          "level_id": 2,
+          "dimension_id": 6,
+          "textPassages": [
+            {
+              "id": 110,
+              "study_id": 7,
+              "keypractice_id": 53,
+              "practiceinstance_id": null,
+              "text": "The EBSE guidance should be modified for students and novice researchers to incorporate the process of developing a well-defined research question.",
+              "study_title": "Preliminary Reporting Guidelines for Experience Papers",
+              "study_authors": "Budgen,  David and Zhang,  Cheng",
+              "study_bibtex_key": "S4"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 56,
+          "description": "Define a search strategy early, but allow for its adjustment and reporting during the review",
+          "level_id": 2,
+          "dimension_id": 6,
+          "textPassages": [
+            {
+              "id": 113,
+              "study_id": 7,
+              "keypractice_id": 56,
+              "practiceinstance_id": null,
+              "text": "EBSE guidelines state that the review protocol should be defined in advance (Kitchenham 2004), but in practice this is also often very difficult to achieve. The search strategy is likely to be adjusted as the results are inspected and the research question evolves, so that the process of adjustment and refinement should be included in the reporting of the systematic review",
+              "study_title": "Preliminary Reporting Guidelines for Experience Papers",
+              "study_authors": "Budgen,  David and Zhang,  Cheng",
+              "study_bibtex_key": "S4"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 58,
+          "description": "Adapt the SLR process to support novices through stepwise guidance and iterative cycles rather than expecting a linear, expert-driven review",
+          "level_id": 2,
+          "dimension_id": 6,
+          "textPassages": [],
+          "practiceInstances": [
+            {
+              "id": 60,
+              "description": "Start with a broad question and refine it iteratively as the search progresses",
+              "keypractice_id": 58,
+              "textPassages": [
+                {
+                  "id": 112,
+                  "study_id": 7,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 60,
+                  "text": "Using the initial question ‘What has been published already on Topic X?’ gave students a starting point. In most cases the number of results returned was initially too high. Setting a target number of results for analysis and requiring documentation of the process made students persevere with their search, usually by narrowing down to a more focussed research question and more sophisticated search strategies.",
+                  "study_title": "Preliminary Reporting Guidelines for Experience Papers",
+                  "study_authors": "Budgen,  David and Zhang,  Cheng",
+                  "study_bibtex_key": "S4"
+                }
+              ]
+            },
+            {
+              "id": 61,
+              "description": "Allow for iterative refinement of the protocol rather than treating the protocol as fixed",
+              "keypractice_id": 58,
+              "textPassages": [
+                {
+                  "id": 116,
+                  "study_id": 7,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 61,
+                  "text": "“EBSE guidelines state that the review protocol should be defined in advance (Kitchenham 2004), but in practice this is also often very difficult to achieve. The search strategy is likely to be adjusted as the results are inspected and the research question evolves, so that the process of adjustment and refinement should be included in the reporting of the systematic review.”",
+                  "study_title": "Preliminary Reporting Guidelines for Experience Papers",
+                  "study_authors": "Budgen,  David and Zhang,  Cheng",
+                  "study_bibtex_key": "S4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 59,
+          "description": "Read general guidelines as a starting point and use more detailed ones for specific research areas",
+          "level_id": 2,
+          "dimension_id": 6,
+          "textPassages": [
+            {
+              "id": 118,
+              "study_id": 8,
+              "keypractice_id": 59,
+              "practiceinstance_id": null,
+              "text": "Advocates suggested reading any general guidelines as a starting point, and then using “more detailed guidelines for specific areas (where) your interest is and relevant",
+              "study_title": "Systematic literature reviews in software engineering: Preliminary results from interviews with researchers",
+              "study_authors": "Babar,  Muhammad Ali and Zhang,  He",
+              "study_bibtex_key": "S5"
+            },
+            {
+              "id": 121,
+              "study_id": 8,
+              "keypractice_id": 59,
+              "practiceinstance_id": null,
+              "text": "Read the guidelines, e.g. Kitchenham’s guidelines, make sure your understand, and then follow the guidelines; but never expect the guidelines give all answers to the problems, 43",
+              "study_title": "Systematic literature reviews in software engineering: Preliminary results from interviews with researchers",
+              "study_authors": "Babar,  Muhammad Ali and Zhang,  He",
+              "study_bibtex_key": "S5"
+            }
+          ],
+          "practiceInstances": []
         }
       ]
     },
@@ -1651,6 +2192,62 @@
               "study_title": "Experiences Using Systematic Review Guidelines",
               "study_authors": "Staples,  Mark and Niazi,  Mahmood",
               "study_bibtex_key": "S2"
+            },
+            {
+              "id": 120,
+              "study_id": 8,
+              "keypractice_id": 28,
+              "practiceinstance_id": null,
+              "text": "Make your research questions as concrete and explicit as possible, keep focus on them and a narrow world. Don’t waste lots of time on irrelevant literature",
+              "study_title": "Systematic literature reviews in software engineering: Preliminary results from interviews with researchers",
+              "study_authors": "Babar,  Muhammad Ali and Zhang,  He",
+              "study_bibtex_key": "S5"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 60,
+          "description": "Form an SLR team of three people to balance bias avoidance and coordination effort",
+          "level_id": 4,
+          "dimension_id": 7,
+          "textPassages": [
+            {
+              "id": 119,
+              "study_id": 8,
+              "keypractice_id": 60,
+              "practiceinstance_id": null,
+              "text": "In addition, two followers recommended the ideal team size for SLR is to get three people involved. If less, it might be difficult to avoid subjective bias; if more, it may take much time and effort in communication, coordination and getting agreement, particularly in a distributed working environment., 38",
+              "study_title": "Systematic literature reviews in software engineering: Preliminary results from interviews with researchers",
+              "study_authors": "Babar,  Muhammad Ali and Zhang,  He",
+              "study_bibtex_key": "S5"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 62,
+          "description": "Allocate adequate time for protocol development and anticipate revisions",
+          "level_id": 3,
+          "dimension_id": 7,
+          "textPassages": [],
+          "practiceInstances": []
+        },
+        {
+          "id": 63,
+          "description": "Validate your protocol externally to reduce rework",
+          "level_id": 3,
+          "dimension_id": 7,
+          "textPassages": [
+            {
+              "id": 123,
+              "study_id": 8,
+              "keypractice_id": 63,
+              "practiceinstance_id": null,
+              "text": "Get your protocol validated externally, as a low-quality protocol may lead to a lot of rework",
+              "study_title": "Systematic literature reviews in software engineering: Preliminary results from interviews with researchers",
+              "study_authors": "Babar,  Muhammad Ali and Zhang,  He",
+              "study_bibtex_key": "S5"
             }
           ],
           "practiceInstances": []
