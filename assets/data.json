@@ -1,7 +1,7 @@
 {
   "MaturityModel": "MM4SLR",
   "ModelVersion": "1.0",
-  "LastUpdate": "2025-10-17",
+  "LastUpdate": "2025-10-20",
   "ModelAuthors": [
     "Vinicius dos Santos",
     "Rick Kazman",
@@ -129,7 +129,25 @@
               "study_bibtex_key": "S5"
             }
           ],
-          "practiceInstances": []
+          "practiceInstances": [
+            {
+              "id": 63,
+              "description": "Develop and publish search strategies, including relevant digital libraries",
+              "keypractice_id": 64,
+              "textPassages": [
+                {
+                  "id": 131,
+                  "study_id": 9,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 63,
+                  "text": "the latest version of guidelines Kitchenham and Charters (2007) also encourage software engineering researchers to develop and publish such strategies including identification of relevant digital libraries. Hence, there is a need for validated search strategies for SLRs that optimise retrieval of relevant studies from digital libraries and electronic databases for researchers and practitioners.",
+                  "study_title": "On Searching Relevant Studies in Software Engineering",
+                  "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
+                  "study_bibtex_key": "S6"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": 66,
@@ -197,17 +215,63 @@
               "study_title": "Experiences Using Systematic Review Guidelines",
               "study_authors": "Staples,  Mark and Niazi,  Mahmood",
               "study_bibtex_key": "S2"
+            },
+            {
+              "id": 147,
+              "study_id": 10,
+              "keypractice_id": 27,
+              "practiceinstance_id": null,
+              "text": "The use of guidelines and citations to the EBSE papers in the reviews increased in the SE with respect to the OS/FE studies… The increase in the use of guidelines significantly correlated with quality of the SLRs by Kitchenham et al",
+              "study_title": "Six years of systematic literature reviews in software engineering: An updated tertiary study",
+              "study_authors": "da Silva,  Fabio Q.B. and Santos,  André L.M. and Soares,  Sérgio and Fran\\c{c",
+              "study_bibtex_key": "S7"
             }
           ],
-          "practiceInstances": []
+          "practiceInstances": [
+            {
+              "id": 74,
+              "description": "Adopt quasi-gold standard (GQS) to improve search process",
+              "keypractice_id": 27,
+              "textPassages": [
+                {
+                  "id": 144,
+                  "study_id": 9,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 74,
+                  "text": "Some secondary studies related to a research topic (subject matter), which have been screened and filtered already by external researchers, could be introduced into quasi-gold standard to further reduce the effort in manual search. For instance, some previous SLRs directly used studies identified by Sjoberg et al. (2005) as their full set of primary studies. As another example, the results from the mapping study by Jorgensen and Shepperd (2007) can be used to build QGS for more specific SLRs in software cost estimation. In such cases, the results may need to be tailored in terms of subject and time that conform to the new SLR.",
+                  "study_title": "On Searching Relevant Studies in Software Engineering",
+                  "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
+                  "study_bibtex_key": "S6"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": 47,
-          "description": "Use targeted collaborative tools to detect and resolve inter-rater reliability problems early",
+          "description": "Use collaborative tools/resources to detect and resolve inter-rater reliability or agreement problems",
           "level_id": 3,
           "dimension_id": 2,
           "textPassages": [],
-          "practiceInstances": []
+          "practiceInstances": [
+            {
+              "id": 67,
+              "description": "Use Kappa statistic to check agreement between researchers",
+              "keypractice_id": 47,
+              "textPassages": [
+                {
+                  "id": 136,
+                  "study_id": 9,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 67,
+                  "text": "the reliability of inclusion decision should be assessed using the Kappa statistic between researchers, or reviewed by an external panel.",
+                  "study_title": "On Searching Relevant Studies in Software Engineering",
+                  "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
+                  "study_bibtex_key": "S6"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": 52,
@@ -234,6 +298,51 @@
               ]
             }
           ]
+        },
+        {
+          "id": 69,
+          "description": "Evaluate search engines to check their capability of executing search strings",
+          "level_id": 3,
+          "dimension_id": 2,
+          "textPassages": [
+            {
+              "id": 130,
+              "study_id": 9,
+              "keypractice_id": 69,
+              "practiceinstance_id": null,
+              "text": "Biolchini et al. suggest evaluating search engines to verify if they are capable of executing search strings during the planning phase Biolchini et al. (2005)",
+              "study_title": "On Searching Relevant Studies in Software Engineering",
+              "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
+              "study_bibtex_key": "S6"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 71,
+          "description": "Adopt reliable and efficient digital libraries or search engines for automated research",
+          "level_id": 2,
+          "dimension_id": 2,
+          "textPassages": [],
+          "practiceInstances": [
+            {
+              "id": 66,
+              "description": "Use ACM and IEEE digital libraries for automated research",
+              "keypractice_id": 71,
+              "textPassages": [
+                {
+                  "id": 135,
+                  "study_id": 9,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 66,
+                  "text": "Whereas, by observing the most reported SLRs, IEEE Xplore and ACM Digital Library become the must-have literature portals that are recommended for consideration of any automated search of future SLRs in SE.",
+                  "study_title": "On Searching Relevant Studies in Software Engineering",
+                  "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
+                  "study_bibtex_key": "S6"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -243,7 +352,7 @@
       "keyPractices": [
         {
           "id": 7,
-          "description": "Conduct data analysis rigorously",
+          "description": "Conduct a comprehensive and rigorous process of data analysis",
           "level_id": 2,
           "dimension_id": 3,
           "textPassages": [
@@ -292,6 +401,23 @@
                   "study_bibtex_key": "S1"
                 }
               ]
+            },
+            {
+              "id": 62,
+              "description": "Advance beyond simply summarizing articles, evaluate their quality and relevance using explicit criteria",
+              "keypractice_id": 7,
+              "textPassages": [
+                {
+                  "id": 114,
+                  "study_id": 7,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 62,
+                  "text": "Instead of simply summarising the content of each article, try to evaluate them in order to decide whether they are good pieces of research and helpful to you and your research question.\n“Try to summarise & critically evaluate each article studied as well as synthesising the full collection.”\"",
+                  "study_title": "Preliminary Reporting Guidelines for Experience Papers",
+                  "study_authors": "Budgen,  David and Zhang,  Cheng",
+                  "study_bibtex_key": "S4"
+                }
+              ]
             }
           ]
         },
@@ -330,6 +456,16 @@
               "study_title": "Systematic literature reviews in software engineering: Preliminary results from interviews with researchers",
               "study_authors": "Babar,  Muhammad Ali and Zhang,  He",
               "study_bibtex_key": "S5"
+            },
+            {
+              "id": 146,
+              "study_id": 10,
+              "keypractice_id": 20,
+              "practiceinstance_id": null,
+              "text": "Three situations that might explain the low percentage of quality assessment of the primary reviews were observed. First, some researchers appear to have confused quality assessment with explicitly stating the inclusion/exclusion criteria of the primary studies and may therefore have thought that no further quality assessment was necessary (e.g., [SE42]). Second, in some cases, quality assessment was thought to be unnecessary because the primary studies were retrieved from ‘‘trustworthy sources’’ (e.g., peer-reviewed journals), and this was considered to be sufficient to guarantee the quality of the primary studies (e.g., [SE43]). Third, in other cases, the search process found so few relevant studies that the researchers may have feared that applying quality criteria would leave them with no studies to analyse (e.g., [SE39]). Researchers performing systematic reviews should attempt to address these situations, as none are acceptable explanations for not performing quality assessment.",
+              "study_title": "Six years of systematic literature reviews in software engineering: An updated tertiary study",
+              "study_authors": "da Silva,  Fabio Q.B. and Santos,  André L.M. and Soares,  Sérgio and Fran\\c{c",
+              "study_bibtex_key": "S7"
             }
           ],
           "practiceInstances": [
@@ -772,6 +908,23 @@
                   "study_bibtex_key": "S1"
                 }
               ]
+            },
+            {
+              "id": 68,
+              "description": "Examine the introduction and conclustions or even the full text when selection decisions cannot be made",
+              "keypractice_id": 21,
+              "textPassages": [
+                {
+                  "id": 137,
+                  "study_id": 9,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 68,
+                  "text": "If selection decision could not be made, the other fields (like conclusion or even full text) need to be further examined.",
+                  "study_title": "On Searching Relevant Studies in Software Engineering",
+                  "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
+                  "study_bibtex_key": "S6"
+                }
+              ]
             }
           ]
         },
@@ -947,23 +1100,47 @@
           "practiceInstances": []
         },
         {
-          "id": 57,
-          "description": "Advance beyond simply summarizing articles, evaluate their quality and relevance using explicit criteria",
+          "id": 73,
+          "description": "Establish clear parameters to configure SLR sensitivity",
           "level_id": 2,
           "dimension_id": 3,
-          "textPassages": [
+          "textPassages": [],
+          "practiceInstances": [
             {
-              "id": 114,
-              "study_id": 7,
-              "keypractice_id": 57,
-              "practiceinstance_id": null,
-              "text": "\"“Instead of simply summarising the content of each article, try to evaluate them in order to decide whether they are good pieces of research and helpful to you and your research question.”\n“Try to summarise & critically evaluate each article studied as well as synthesising the full collection.”\"",
-              "study_title": "Preliminary Reporting Guidelines for Experience Papers",
-              "study_authors": "Budgen,  David and Zhang,  Cheng",
-              "study_bibtex_key": "S4"
+              "id": 72,
+              "description": "Use a sensitivity threshold between 75% and 85% for performance evaluation",
+              "keypractice_id": 73,
+              "textPassages": [
+                {
+                  "id": 143,
+                  "study_id": 9,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 72,
+                  "text": "we suggest a threshold between 75% and 85% as a reference for sensitivity evaluation of search performance. If the search performance is considered acceptable (quasi-sensitivity ≥ 80%), the results from the automated search can be merged with the ‘quasi-gold standard’, and the search process terminates.",
+                  "study_title": "On Searching Relevant Studies in Software Engineering",
+                  "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
+                  "study_bibtex_key": "S6"
+                }
+              ]
+            },
+            {
+              "id": 73,
+              "description": "Prioritize high sensitivity over high precision for SLR goals",
+              "keypractice_id": 73,
+              "textPassages": [
+                {
+                  "id": 142,
+                  "study_id": 9,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 73,
+                  "text": "a high sensitivity is usually more desired than a high precision in terms of the goals of SLRs.",
+                  "study_title": "On Searching Relevant Studies in Software Engineering",
+                  "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
+                  "study_bibtex_key": "S6"
+                }
+              ]
             }
-          ],
-          "practiceInstances": []
+          ]
         }
       ]
     },
@@ -1105,6 +1282,23 @@
                   "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
                   "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
                   "study_bibtex_key": "S1"
+                }
+              ]
+            },
+            {
+              "id": 65,
+              "description": "Evaluate nominated manual sources with independent experts",
+              "keypractice_id": 23,
+              "textPassages": [
+                {
+                  "id": 134,
+                  "study_id": 9,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 65,
+                  "text": "In order to improve the efficiency of manual search, as well as to secure the quality of QGS, the nominated sources for manual search also need to be evaluated by independent experts in this domain, and any emerging disagreements must be resolved before the next step.",
+                  "study_title": "On Searching Relevant Studies in Software Engineering",
+                  "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
+                  "study_bibtex_key": "S6"
                 }
               ]
             }
@@ -1598,6 +1792,16 @@
                   "study_title": "Experiences Using Systematic Review Guidelines",
                   "study_authors": "Staples,  Mark and Niazi,  Mahmood",
                   "study_bibtex_key": "S2"
+                },
+                {
+                  "id": 139,
+                  "study_id": 9,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 29,
+                  "text": "This step uses the strings for automated search, which are (subjectively) defined or (objectively) elicited. As the search syntax varies between search engines, the search strings need to be coded correspondingly in advance by following the specific syntax and criteria of each search engine (library). Given the capability limitations of some search engines (for example ACM Dyba et al. (2007)), the automated search sometimes has to be implemented by splitting the combination of search terms into multiple simple ones. Note that due to the overlapping (such as between IEEE and ACM), the duplicate studies retrieved from different search engines also need to be identified and removed in this step.",
+                  "study_title": "On Searching Relevant Studies in Software Engineering",
+                  "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
+                  "study_bibtex_key": "S6"
                 }
               ]
             },
@@ -1651,6 +1855,23 @@
                   "study_bibtex_key": "S2"
                 }
               ]
+            },
+            {
+              "id": 70,
+              "description": "Split complex search strings into multiple simpler ones if necessary",
+              "keypractice_id": 30,
+              "textPassages": [
+                {
+                  "id": 140,
+                  "study_id": 9,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 70,
+                  "text": "the automated search sometimes has to be implemented by splitting the combination of search terms into multiple simple ones.",
+                  "study_title": "On Searching Relevant Studies in Software Engineering",
+                  "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
+                  "study_bibtex_key": "S6"
+                }
+              ]
             }
           ]
         },
@@ -1690,7 +1911,25 @@
               "study_bibtex_key": "S2"
             }
           ],
-          "practiceInstances": []
+          "practiceInstances": [
+            {
+              "id": 71,
+              "description": "Remove and keep record of duplicate studies retrieved from different search engines",
+              "keypractice_id": 46,
+              "textPassages": [
+                {
+                  "id": 141,
+                  "study_id": 9,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 71,
+                  "text": "the duplicate studies retrieved from different search engines also need to be identified and removed in this step.",
+                  "study_title": "On Searching Relevant Studies in Software Engineering",
+                  "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
+                  "study_bibtex_key": "S6"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": 50,
@@ -1804,10 +2043,20 @@
         },
         {
           "id": 11,
-          "description": "Apply search strategy aligned with research aims",
+          "description": "Use research design appropriate to the study aims",
           "level_id": 2,
           "dimension_id": 6,
           "textPassages": [
+            {
+              "id": 16,
+              "study_id": 1,
+              "keypractice_id": 11,
+              "practiceinstance_id": null,
+              "text": "Was the research design appropriate to address the aims of the research?",
+              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
+              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
+              "study_bibtex_key": "S1"
+            },
             {
               "id": 17,
               "study_id": 1,
@@ -1817,30 +2066,11 @@
               "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
               "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
               "study_bibtex_key": "S1"
-            }
-          ],
-          "practiceInstances": []
-        },
-        {
-          "id": 12,
-          "description": "Use research design appropriate to the study aims",
-          "level_id": 2,
-          "dimension_id": 6,
-          "textPassages": [
-            {
-              "id": 16,
-              "study_id": 1,
-              "keypractice_id": 12,
-              "practiceinstance_id": null,
-              "text": "Was the research design appropriate to address the aims of the research?",
-              "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
-              "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
-              "study_bibtex_key": "S1"
             },
             {
               "id": 18,
               "study_id": 1,
-              "keypractice_id": 12,
+              "keypractice_id": 11,
               "practiceinstance_id": null,
               "text": "Is the methodology (design) used suitable to address the stated research questions?",
               "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
@@ -1867,7 +2097,25 @@
               "study_bibtex_key": "S1"
             }
           ],
-          "practiceInstances": []
+          "practiceInstances": [
+            {
+              "id": 76,
+              "description": "Provide clear guidelines for practitioners to enhance the relevance and quality of SLR",
+              "keypractice_id": 17,
+              "textPassages": [
+                {
+                  "id": 148,
+                  "study_id": 10,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 76,
+                  "text": "SLRs that explicitly provided guidelines for practitioners had higher mean quality scores (Mean = 2.85, r = 0.91) than those that did not provide guidelines (Mean = 2.38, r = 0.83).",
+                  "study_title": "Six years of systematic literature reviews in software engineering: An updated tertiary study",
+                  "study_authors": "da Silva,  Fabio Q.B. and Santos,  André L.M. and Soares,  Sérgio and Fran\\c{c",
+                  "study_bibtex_key": "S7"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": 29,
@@ -2021,7 +2269,42 @@
               "study_bibtex_key": "S2"
             }
           ],
-          "practiceInstances": []
+          "practiceInstances": [
+            {
+              "id": 64,
+              "description": "Integrate manual and automated searches effectively",
+              "keypractice_id": 33,
+              "textPassages": [
+                {
+                  "id": 133,
+                  "study_id": 9,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 64,
+                  "text": "To avoid the possible limitations of applying single search method (automated or manual) in SLR and to provide a practical and relatively rigorous method for search string evaluation, we propose a systematic literature search approach, as complement to SLR guidelines, in support of retrieval of relevant studies. It recommends that an optimum search strategy should be an effective integration of manual and automated searches, which support each other'",
+                  "study_title": "On Searching Relevant Studies in Software Engineering",
+                  "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
+                  "study_bibtex_key": "S6"
+                }
+              ]
+            },
+            {
+              "id": 75,
+              "description": "Use reference list–based search as an additional retrieval strategy (a.k.a snowballing)",
+              "keypractice_id": 33,
+              "textPassages": [
+                {
+                  "id": 145,
+                  "study_id": 9,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 75,
+                  "text": "reference list based search strategy can be another option for retrieving relevant studies.",
+                  "study_title": "On Searching Relevant Studies in Software Engineering",
+                  "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
+                  "study_bibtex_key": "S6"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": 42,
@@ -2144,7 +2427,7 @@
         },
         {
           "id": 59,
-          "description": "Read general guidelines as a starting point and use more detailed ones for specific research areas",
+          "description": "Use general guidelines as a starting point and use more detailed ones for specific research areas",
           "level_id": 2,
           "dimension_id": 6,
           "textPassages": [
@@ -2169,6 +2452,14 @@
               "study_bibtex_key": "S5"
             }
           ],
+          "practiceInstances": []
+        },
+        {
+          "id": 74,
+          "description": "Refine search strings iteratively if performance is unacceptable",
+          "level_id": 3,
+          "dimension_id": 6,
+          "textPassages": [],
           "practiceInstances": []
         }
       ]
@@ -2248,6 +2539,63 @@
               "study_title": "Systematic literature reviews in software engineering: Preliminary results from interviews with researchers",
               "study_authors": "Babar,  Muhammad Ali and Zhang,  He",
               "study_bibtex_key": "S5"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 70,
+          "description": "Ballance high sensitivity and precise research to retrieve the most relevant studies but also reduce the number of unwanted articles",
+          "level_id": 2,
+          "dimension_id": 7,
+          "textPassages": [
+            {
+              "id": 132,
+              "study_id": 9,
+              "keypractice_id": 70,
+              "practiceinstance_id": null,
+              "text": "A highly sensitive search strategy will retrieve most of the studies in gold standard, but may also retrieve many unwanted articles. A highly precise search strategy will retrieve only a small portion of irrelevant articles, but may miss a large number of papers in gold standard. Researchers must select and justify a search strategy that is appropriate for their research questions",
+              "study_title": "On Searching Relevant Studies in Software Engineering",
+              "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
+              "study_bibtex_key": "S6"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 72,
+          "description": "Inspect search strategies with experts to reduce iterations and effort",
+          "level_id": 4,
+          "dimension_id": 7,
+          "textPassages": [
+            {
+              "id": 138,
+              "study_id": 9,
+              "keypractice_id": 72,
+              "practiceinstance_id": null,
+              "text": "Subjective search string definition. Most previously reported SLRs in SE performed automated search in a subjective form. The reviewers defined their search strings based on their domain knowledge and past experiences. Though the strings they choose can be evaluated later by QGS, in the subjective approach, it would be inspected by experts in the subject to reduce the number of possible iterations and further save effort.",
+              "study_title": "On Searching Relevant Studies in Software Engineering",
+              "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
+              "study_bibtex_key": "S6"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 75,
+          "description": "Keep the number of primary studies manageable to ensure proper quality assessment and synthesis",
+          "level_id": 4,
+          "dimension_id": 7,
+          "textPassages": [
+            {
+              "id": 149,
+              "study_id": 10,
+              "keypractice_id": 75,
+              "practiceinstance_id": null,
+              "text": "SLRs addressing larger numbers of primary studies had lower quality scores than those with fewer primary studies. A possible explanation is that when faced with too many studies to analyse, researchers may opt not to perform quality assessment, and they may also have more difficulties in presenting a good synthesis and summary of evidence for each paper.",
+              "study_title": "Six years of systematic literature reviews in software engineering: An updated tertiary study",
+              "study_authors": "da Silva,  Fabio Q.B. and Santos,  André L.M. and Soares,  Sérgio and Fran\\c{c",
+              "study_bibtex_key": "S7"
             }
           ],
           "practiceInstances": []
