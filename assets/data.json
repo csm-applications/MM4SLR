@@ -1,7 +1,7 @@
 {
   "MaturityModel": "MM4SLR",
   "ModelVersion": "1.0",
-  "LastUpdate": "2025-10-20",
+  "LastUpdate": "2025-10-21",
   "ModelAuthors": [
     "Vinicius dos Santos",
     "Rick Kazman",
@@ -15,7 +15,7 @@
       "keyPractices": [
         {
           "id": 4,
-          "description": "Provide basis for the paper on actual research",
+          "description": "Provide a basis for the paper using actual research",
           "level_id": 2,
           "dimension_id": 1,
           "textPassages": [
@@ -352,7 +352,7 @@
       "keyPractices": [
         {
           "id": 7,
-          "description": "Conduct a comprehensive and rigorous process of data analysis",
+          "description": "Conduct a comprehensive and rigorous process of data extraction and analysis",
           "level_id": 2,
           "dimension_id": 3,
           "textPassages": [
@@ -416,6 +416,57 @@
                   "study_title": "Preliminary Reporting Guidelines for Experience Papers",
                   "study_authors": "Budgen,  David and Zhang,  Cheng",
                   "study_bibtex_key": "S4"
+                }
+              ]
+            },
+            {
+              "id": 79,
+              "description": "Record distinguishing features of each study, such as sample size, to help identify studies that use the same data sets",
+              "keypractice_id": 7,
+              "textPassages": [
+                {
+                  "id": 152,
+                  "study_id": 12,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 79,
+                  "text": "Where possible, some distinguishing feature(s) of each study should be recorded, e.g., sample size. Kitchenham et al. [16] also needed to review sample sizes to detect studies that used the same data sets, even though their SLR only included 10 studies",
+                  "study_title": "Lessons Learnt Undertaking a Large-scale Systematic Literature Review",
+                  "study_authors": "Turner,  Mark and Kitchenham,  Barbara and Budgen,  David and Brereton,  Pearl",
+                  "study_bibtex_key": "S8"
+                }
+              ]
+            },
+            {
+              "id": 80,
+              "description": "Use the most complete or most recent report when extracting data from duplicate studies",
+              "keypractice_id": 7,
+              "textPassages": [
+                {
+                  "id": 153,
+                  "study_id": 12,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 80,
+                  "text": "With respect to extracting data from duplicate studies, standards advise using the most complete or the latest report [13, 15]. In fact, we found it necessary to use different reports of the same study to extract all the necessary data. However, when the same data are reported in different reports, the data must be extracted from the most recent one.",
+                  "study_title": "Lessons Learnt Undertaking a Large-scale Systematic Literature Review",
+                  "study_authors": "Turner,  Mark and Kitchenham,  Barbara and Budgen,  David and Brereton,  Pearl",
+                  "study_bibtex_key": "S8"
+                }
+              ]
+            },
+            {
+              "id": 81,
+              "description": "Ensure that data checkers understand how extracted data were generated and verify the correctness of the data, not just numerical consistency",
+              "keypractice_id": 7,
+              "textPassages": [
+                {
+                  "id": 154,
+                  "study_id": 12,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 81,
+                  "text": "if the data being extracted are the outcome of some mathematical or statistical analysis and the extraction form is being checked by a different person, it is important to ensure that checkers understand the meaning of the data (i.e. how the data items are generated), or, at least, are aware that they need to check that the correct data have been extracted rather than simply checking that the figures in the extraction form match those in the paper.",
+                  "study_title": "Lessons Learnt Undertaking a Large-scale Systematic Literature Review",
+                  "study_authors": "Turner,  Mark and Kitchenham,  Barbara and Budgen,  David and Brereton,  Pearl",
+                  "study_bibtex_key": "S8"
                 }
               ]
             }
@@ -819,7 +870,7 @@
         },
         {
           "id": 21,
-          "description": "Address search & selection bias",
+          "description": "Identify and mitigate the search & selection bias",
           "level_id": 2,
           "dimension_id": 3,
           "textPassages": [],
@@ -930,7 +981,7 @@
         },
         {
           "id": 34,
-          "description": "Address publication bias",
+          "description": "Identify and mitigate the publication bias",
           "level_id": 3,
           "dimension_id": 3,
           "textPassages": [
@@ -1027,7 +1078,7 @@
         },
         {
           "id": 36,
-          "description": "Address the researcher's bias",
+          "description": "Identify and mitigate the researcher's bias",
           "level_id": 3,
           "dimension_id": 3,
           "textPassages": [],
@@ -1355,6 +1406,23 @@
                   "study_bibtex_key": "S2"
                 }
               ]
+            },
+            {
+              "id": 83,
+              "description": "Use two independent extractors whenever possible to improve data extraction reliability.",
+              "keypractice_id": 24,
+              "textPassages": [
+                {
+                  "id": 157,
+                  "study_id": 12,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 83,
+                  "text": "The use of an extractor and checker seems to be a means of reducing some of the overheads associated with performing an SLR; however, there is clearly a problem with this approach. We advise researchers undertaking an SLR to use two independent extractors whenever possible. The SLR guidelines [15] should be adapted to reflect this advice.  We suggest that researcher teams revert to the use of two independent extractors and single researchers (such as post-graduate students) use the procedure of re-extracting the data from a subset of papers and checking for internal consistency",
+                  "study_title": "Lessons Learnt Undertaking a Large-scale Systematic Literature Review",
+                  "study_authors": "Turner,  Mark and Kitchenham,  Barbara and Budgen,  David and Brereton,  Pearl",
+                  "study_bibtex_key": "S8"
+                }
+              ]
             }
           ]
         },
@@ -1385,7 +1453,25 @@
               "study_bibtex_key": "S2"
             }
           ],
-          "practiceInstances": []
+          "practiceInstances": [
+            {
+              "id": 82,
+              "description": "Specify in the protocol the responsibilities of data checkers and clarify expectations for verifying extracted data",
+              "keypractice_id": 44,
+              "textPassages": [
+                {
+                  "id": 155,
+                  "study_id": 12,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 82,
+                  "text": "Therefore, if the data being extracted are the outcome of some mathematical or statisticalanalysis and the extraction form is being checked by a different person, it is important to ensurethat checkers understand the meaning of the data (i.e. how the data items are generated), or, atleast, are aware that they need to check that the correct data have been extracted rather thansimply checking that the figures in the extraction form match those in the paper. This should be set out clearly in the protocol so that checkers are aware of their responsibilities.",
+                  "study_title": "Lessons Learnt Undertaking a Large-scale Systematic Literature Review",
+                  "study_authors": "Turner,  Mark and Kitchenham,  Barbara and Budgen,  David and Brereton,  Pearl",
+                  "study_bibtex_key": "S8"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": 51,
@@ -1440,6 +1526,44 @@
               "study_title": "Systematic literature reviews in software engineering: Preliminary results from interviews with researchers",
               "study_authors": "Babar,  Muhammad Ali and Zhang,  He",
               "study_bibtex_key": "S5"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 76,
+          "description": "If any problem in data extraction is identified, pause the process until they are resolved, document the resolution, and inform all involved staff.",
+          "level_id": 3,
+          "dimension_id": 4,
+          "textPassages": [
+            {
+              "id": 156,
+              "study_id": 12,
+              "keypractice_id": 76,
+              "practiceinstance_id": null,
+              "text": "The data extraction process must be halted until the problem is resolved. Furthermore, the resolution must be documented, and all staff involved in the data extraction process need to be informed of the changes.",
+              "study_title": "Lessons Learnt Undertaking a Large-scale Systematic Literature Review",
+              "study_authors": "Turner,  Mark and Kitchenham,  Barbara and Budgen,  David and Brereton,  Pearl",
+              "study_bibtex_key": "S8"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 78,
+          "description": "Provide support and guidance to novice researchers (students and research assistants) when they first apply the SLR method",
+          "level_id": 3,
+          "dimension_id": 4,
+          "textPassages": [
+            {
+              "id": 158,
+              "study_id": 12,
+              "keypractice_id": 78,
+              "practiceinstance_id": null,
+              "text": "Supervisors or lead researchers need to provide a good deal of support and help when students and RAs first start to use the method.",
+              "study_title": "Lessons Learnt Undertaking a Large-scale Systematic Literature Review",
+              "study_authors": "Turner,  Mark and Kitchenham,  Barbara and Budgen,  David and Brereton,  Pearl",
+              "study_bibtex_key": "S8"
             }
           ],
           "practiceInstances": []
@@ -1870,6 +1994,40 @@
                   "study_title": "On Searching Relevant Studies in Software Engineering",
                   "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
                   "study_bibtex_key": "S6"
+                }
+              ]
+            },
+            {
+              "id": 77,
+              "description": "Define procedures in the protocol to detect duplicate studies and specify how papers reporting the same study will be identified",
+              "keypractice_id": 30,
+              "textPassages": [
+                {
+                  "id": 150,
+                  "study_id": 12,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 77,
+                  "text": "The main problem here was that we had not specified a procedure to check for duplicates other than finding exactly the same paper by searching different digital libraries. We suggest the need for each protocol to detail the procedures that will be put in place to detect papers that report the same study: If the task of organising a large-scale research question-based SLR necessitates splitting the tasks among different researchers, the split should ensure that all papers by the same authors are handled by a single researcher",
+                  "study_title": "Lessons Learnt Undertaking a Large-scale Systematic Literature Review",
+                  "study_authors": "Turner,  Mark and Kitchenham,  Barbara and Budgen,  David and Brereton,  Pearl",
+                  "study_bibtex_key": "S8"
+                }
+              ]
+            },
+            {
+              "id": 78,
+              "description": "Use a consistent coding technique reporting it in the protocol",
+              "keypractice_id": 30,
+              "textPassages": [
+                {
+                  "id": 151,
+                  "study_id": 12,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 78,
+                  "text": "If primary studies are identified by codes, the coding standards must be set out in the protocol to ensure they are used consistently",
+                  "study_title": "Lessons Learnt Undertaking a Large-scale Systematic Literature Review",
+                  "study_authors": "Turner,  Mark and Kitchenham,  Barbara and Budgen,  David and Brereton,  Pearl",
+                  "study_bibtex_key": "S8"
                 }
               ]
             }
@@ -2346,7 +2504,7 @@
         },
         {
           "id": 53,
-          "description": "Modify EBSE guidance for students and novice researchers to include developing a well-defined research question",
+          "description": "Provide guidance for students and novice researchers to include developing a well-defined research question",
           "level_id": 2,
           "dimension_id": 6,
           "textPassages": [
