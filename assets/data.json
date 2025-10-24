@@ -1,7 +1,7 @@
 {
   "MaturityModel": "MM4SLR",
   "ModelVersion": "1.0",
-  "LastUpdate": "2025-10-21",
+  "LastUpdate": "2025-10-24",
   "ModelAuthors": [
     "Vinicius dos Santos",
     "Rick Kazman",
@@ -167,6 +167,25 @@
             }
           ],
           "practiceInstances": []
+        },
+        {
+          "id": 81,
+          "description": "Decodify aggregated data into textual descriptions to make the results understandable to readers",
+          "level_id": 2,
+          "dimension_id": 1,
+          "textPassages": [
+            {
+              "id": 172,
+              "study_id": 13,
+              "keypractice_id": 81,
+              "practiceinstance_id": null,
+              "text": "The codification of treatments, response variables and results is useful to perform the aggregation. However, the aggregations in codified form are hard to read and understand. Therefore, the last step of the proposed SR process is the de-codification of aggregations in order to obtain a textual description understandable by any reader.",
+              "study_title": "Comparative analysis of meta-analysis methods: when to use which?",
+              "study_authors": "Dieste,  O. and Fernandez,  E. and Garcia Martinez,  R. and Juristo,  N.",
+              "study_bibtex_key": "S9"
+            }
+          ],
+          "practiceInstances": []
         }
       ]
     },
@@ -296,6 +315,23 @@
                   "study_bibtex_key": "S3"
                 }
               ]
+            },
+            {
+              "id": 86,
+              "description": "Assess the quality of each study using the evidence hierarchy proposed by Kitchenham",
+              "keypractice_id": 52,
+              "textPassages": [
+                {
+                  "id": 165,
+                  "study_id": 13,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 86,
+                  "text": "Quality was assessed by assigning each study to a level in the evidence hierarchy proposed by Kitchenham (B.A. Kitchenham. Procedures for performing\nsystematic reviews, Keele University TR/SE-0401,\n2004).",
+                  "study_title": "Comparative analysis of meta-analysis methods: when to use which?",
+                  "study_authors": "Dieste,  O. and Fernandez,  E. and Garcia Martinez,  R. and Juristo,  N.",
+                  "study_bibtex_key": "S9"
+                }
+              ]
             }
           ]
         },
@@ -339,6 +375,87 @@
                   "study_title": "On Searching Relevant Studies in Software Engineering",
                   "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
                   "study_bibtex_key": "S6"
+                }
+              ]
+            },
+            {
+              "id": 98,
+              "description": "Use multiple well-established digital libraries (e.g., IEEE, ACM) and at least two general indexing systems (e.g., SCOPUS, EI Compendex, Web of Science) when performing automated searches with search strings.",
+              "keypractice_id": 71,
+              "textPassages": [
+                {
+                  "id": 189,
+                  "study_id": 16,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 98,
+                  "text": "If researchers plan an automated search using search strings (as opposed to a citation analysis methods such as forward snowballing), we recommend searching IEEE, ACM which ensures good coverage of important journals and conferences and at least two general indexing systems such as SCOPUS, EI Compendix or Web of Science (P9, P23).",
+                  "study_title": "A systematic review of systematic review process research in software engineering",
+                  "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+                  "study_bibtex_key": "S11"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 84,
+          "description": "Use Delphi processes or groupware software systems to reduce negative effects of face-to-face meetings",
+          "level_id": 3,
+          "dimension_id": 2,
+          "textPassages": [
+            {
+              "id": 179,
+              "study_id": 14,
+              "keypractice_id": 84,
+              "practiceinstance_id": null,
+              "text": "The contrasting results of Study 2 might be because we did not rely on face-to-face meetings. The Delphi process and groupware software systems are believed to deliver value because they are designed to avoid some of the negative effects of faceto-face team meetings such as:  domination of the conversation by one or more members,  individuals fearing criticism or negative evaluation,  members failing to participate because they perceive that their input is not required, and  pressure to conform with senior members of the team.",
+              "study_title": "Three empirical studies on the agreement of reviewers about the quality of software engineering experiments",
+              "study_authors": "Kitchenham,  Barbara Ann and Sjøberg,  Dag I.K. and Dybå,  Tore and Pfahl,  Dietmar and Brereton,  Pearl and Budgen,  David and H\\",
+              "study_bibtex_key": "S10"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 85,
+          "description": "Use text analysis tools to support specific stages of systematic reviews — such as refining search strings, identifying similar papers, classifying articles, and extracting data",
+          "level_id": 3,
+          "dimension_id": 2,
+          "textPassages": [
+            {
+              "id": 181,
+              "study_id": 16,
+              "keypractice_id": 85,
+              "practiceinstance_id": null,
+              "text": "\"The general approach of studies proposing the use of text analysis tools is to use a text analysis tool to identify words or phrases that describe individual articles and count the frequency of important words or phrases in each article. Other analysis tools (such as visual display tools) can then be used to identify whether articles that are similar with respect to the frequency of those words or phrases are treated similarly in the SR. This approach can be used:\n\n1. To refine automated search strings, P29. \n2. To identify similar papers as part of the paper selection process, P11, P26, P28, P46, P50, P57. These studies offer a different approach to those discussed in Section 5.3.2. They use the tools to investigate whether included and excluded studies are similar with respect to studies’ most important keywords and rely on SR researchers to interpret the information provided. The studies discussed in Section 5.3.2 provide a quantitative assessment of the search process effectiveness (although the SR researchers still need to decide whether the achieved effectiveness is sufficient). \n3. To categorize and classify articles for a mapping study, P27. \n4. To select articles that address a specific research question, P50, P56. \n5. To extract the data needed to answer specific research questions P56, P68\"",
+              "study_title": "A systematic review of systematic review process research in software engineering",
+              "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+              "study_bibtex_key": "S11"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 88,
+          "description": "Use tools to manage the full SLR process and monitor their progress",
+          "level_id": 3,
+          "dimension_id": 2,
+          "textPassages": [],
+          "practiceInstances": [
+            {
+              "id": 97,
+              "description": "Use SluRP or SLR-tool to manage SLR team colaboration, especially in large scale SLRs working with distributed research team",
+              "keypractice_id": 88,
+              "textPassages": [
+                {
+                  "id": 188,
+                  "study_id": 16,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 97,
+                  "text": "P64 reports the SLuRp tool which can be compared with the SLR-TOOL reported in P29. Both tools aim to address all the SR processes and manage the problems associated with multiple researchers interacting with many primary studies. SLuRp emphasizes the importance of managing large-scale SRs involving a large distributed research team and providing a means of reliably monitoring the progress of the SR.",
+                  "study_title": "A systematic review of systematic review process research in software engineering",
+                  "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+                  "study_bibtex_key": "S11"
                 }
               ]
             }
@@ -469,6 +586,121 @@
                   "study_bibtex_key": "S8"
                 }
               ]
+            },
+            {
+              "id": 84,
+              "description": "Capture data and study details in structured forms, using tables to map treatments and responses and group similar items for aggregation",
+              "keypractice_id": 7,
+              "textPassages": [
+                {
+                  "id": 163,
+                  "study_id": 13,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 84,
+                  "text": "Due to this, and with the objective of formalizing the later aggregations, we extract the information into two forms: a data collection form and empirical study collection form.",
+                  "study_title": "Comparative analysis of meta-analysis methods: when to use which?",
+                  "study_authors": "Dieste,  O. and Fernandez,  E. and Garcia Martinez,  R. and Juristo,  N.",
+                  "study_bibtex_key": "S9"
+                },
+                {
+                  "id": 166,
+                  "study_id": 13,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 84,
+                  "text": "They are called ‘supporting tables’ because these tables will be a temporal storage of the results in order to facilitate the later aggregation. With these tables, traceability of the experiments, treatments and response variables can be implemented and maintained all over the review.",
+                  "study_title": "Comparative analysis of meta-analysis methods: when to use which?",
+                  "study_authors": "Dieste,  O. and Fernandez,  E. and Garcia Martinez,  R. and Juristo,  N.",
+                  "study_bibtex_key": "S9"
+                },
+                {
+                  "id": 168,
+                  "study_id": 13,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 84,
+                  "text": "Sometimes this mapping could be a complex task because we can find several treatments (or response variables) with which the current treatment (or response variable) can be mapped. In those cases, we suggest to write down all the mapping combinations in the supporting tables, bounding the search space until finding out the most suitable option.",
+                  "study_title": "Comparative analysis of meta-analysis methods: when to use which?",
+                  "study_authors": "Dieste,  O. and Fernandez,  E. and Garcia Martinez,  R. and Juristo,  N.",
+                  "study_bibtex_key": "S9"
+                },
+                {
+                  "id": 170,
+                  "study_id": 13,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 84,
+                  "text": "The generalization step is aimed at creating groups of similar treatments or variable responses to make aggregation of results more productive. There are several approaches to perform this step, depending mainly on the quantity of information extracted from the primary studies. If we had many experiments, generalization would not be necessary because it is likely that we already have compatible results to aggregate. However, since in SE there are not a lot of published experiments and data is scarce, we follow the strategy in [10]. This strategy consists of grouping together similar treatments or response variables. This makes easier to later generate a greater number of pieces of knowledge.",
+                  "study_title": "Comparative analysis of meta-analysis methods: when to use which?",
+                  "study_authors": "Dieste,  O. and Fernandez,  E. and Garcia Martinez,  R. and Juristo,  N.",
+                  "study_bibtex_key": "S9"
+                }
+              ]
+            },
+            {
+              "id": 85,
+              "description": "Design customized data collection forms specific to the field of knowledge under review",
+              "keypractice_id": 7,
+              "textPassages": [
+                {
+                  "id": 164,
+                  "study_id": 13,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 85,
+                  "text": "It is not possible to make generic forms applicable to all fields of knowledge",
+                  "study_title": "Comparative analysis of meta-analysis methods: when to use which?",
+                  "study_authors": "Dieste,  O. and Fernandez,  E. and Garcia Martinez,  R. and Juristo,  N.",
+                  "study_bibtex_key": "S9"
+                }
+              ]
+            },
+            {
+              "id": 87,
+              "description": "Develop a glossary of treatments and response variables to support consistent terminology",
+              "keypractice_id": 7,
+              "textPassages": [
+                {
+                  "id": 167,
+                  "study_id": 13,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 87,
+                  "text": "During this step, it is also desirable to set-up glossary of treatments and response variables to ease the subsequent activities of the proposed process. Once a new treatment (or response variable) can be mapped to an existing one, use the same code for both of them. Avoid duplications.",
+                  "study_title": "Comparative analysis of meta-analysis methods: when to use which?",
+                  "study_authors": "Dieste,  O. and Fernandez,  E. and Garcia Martinez,  R. and Juristo,  N.",
+                  "study_bibtex_key": "S9"
+                }
+              ]
+            },
+            {
+              "id": 89,
+              "description": "Aggregate extracted evidence using suitable methods (e.g., comparative analysis, content analysis, meta-analysis) to produce codified pieces of knowledge that summarize consistent findings",
+              "keypractice_id": 7,
+              "textPassages": [
+                {
+                  "id": 171,
+                  "study_id": 13,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 89,
+                  "text": "Once the new evidences are extracted, in this step we will aggregate them. As mentioned before, in this work we used a variation of the comparative analysis. However, reviewers can consider other approaches. In the literature there are several procedures available, either interpretative procedures, such as content analysis or meta-ethnography, or non interpretative such as meta-analysis, case surveys or vote-counting techniques. The final output of the aggregation will be a set of codified pieces of knowledge, as shown in Table 1. Based on those aggregations, we will obtain pieces of knowledge which will be the final results of the SR. More concretely, the pieces of knowledge will be the conclusive aggregations, that is, those aggregations in which several studies find the same relationship among techniques. If we are running an updating review, we have to apply the same procedure used in previous reviews.",
+                  "study_title": "Comparative analysis of meta-analysis methods: when to use which?",
+                  "study_authors": "Dieste,  O. and Fernandez,  E. and Garcia Martinez,  R. and Juristo,  N.",
+                  "study_bibtex_key": "S9"
+                }
+              ]
+            },
+            {
+              "id": 94,
+              "description": "Use contextual information to cluster studies into groups of comparable studies",
+              "keypractice_id": 7,
+              "textPassages": [
+                {
+                  "id": 184,
+                  "study_id": 16,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 94,
+                  "text": "Studies addressing the problem of data analysis and synthesis are shown in Table 17. P10 suggests the use of contextual information to cluster studies into groups of comparable studies. This is quite a common strategy for aggregating studies in an SR and, for example, in this paper we have grouped some studies according to the SR process they address and others we grouped according to the methodology they used.",
+                  "study_title": "A systematic review of systematic review process research in software engineering",
+                  "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+                  "study_bibtex_key": "S11"
+                }
+              ]
             }
           ]
         },
@@ -517,6 +749,16 @@
               "study_title": "Six years of systematic literature reviews in software engineering: An updated tertiary study",
               "study_authors": "da Silva,  Fabio Q.B. and Santos,  André L.M. and Soares,  Sérgio and Fran\\c{c",
               "study_bibtex_key": "S7"
+            },
+            {
+              "id": 174,
+              "study_id": 14,
+              "keypractice_id": 20,
+              "practiceinstance_id": null,
+              "text": "With respect to RQ3, these results also suggest that using a quality checklist to provide a total score is preferable to using a simple subjective assessment.",
+              "study_title": "Three empirical studies on the agreement of reviewers about the quality of software engineering experiments",
+              "study_authors": "Kitchenham,  Barbara Ann and Sjøberg,  Dag I.K. and Dybå,  Tore and Pfahl,  Dietmar and Brereton,  Pearl and Budgen,  David and H\\",
+              "study_bibtex_key": "S10"
             }
           ],
           "practiceInstances": [
@@ -571,6 +813,26 @@
                   "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
                   "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
                   "study_bibtex_key": "S3"
+                },
+                {
+                  "id": 183,
+                  "study_id": 16,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 2,
+                  "text": "P39 notes that a generic checklist might be a useful starting point for quality checklists for human-based experiments and that researchers should work together to construct appropriate tailored checklists.",
+                  "study_title": "A systematic review of systematic review process research in software engineering",
+                  "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+                  "study_bibtex_key": "S11"
+                },
+                {
+                  "id": 198,
+                  "study_id": 16,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 2,
+                  "text": "Use a checklist similar to the one proposed in P23 and apply it to all types of empirical study (even if some checklist elements are not applicable to some types of study) but to include consideration of the empirical study type and its size/scope. However, if you are concentrating on only a few different study types, it might be preferable to have tailored checklists for each type. For example, the checklist reported in P23 is not ideally suited for formal experiments, since it does not explicitly consider whether random allocation to treatment took place and whether the allocation to treatment was concealed [36].",
+                  "study_title": "A systematic review of systematic review process research in software engineering",
+                  "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+                  "study_bibtex_key": "S11"
                 }
               ]
             },
@@ -673,6 +935,16 @@
                   "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
                   "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
                   "study_bibtex_key": "S3"
+                },
+                {
+                  "id": 200,
+                  "study_id": 16,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 44,
+                  "text": "With two researchers assess quality of primary studies, apply the checklists independently and use discussion to arrive at agreement.",
+                  "study_title": "A systematic review of systematic review process research in software engineering",
+                  "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+                  "study_bibtex_key": "S11"
                 }
               ]
             },
@@ -863,6 +1135,23 @@
                   "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
                   "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
                   "study_bibtex_key": "S3"
+                }
+              ]
+            },
+            {
+              "id": 100,
+              "description": "Use three independent assessors and take the mean score for quality assessment, but ensure checklist items are validated and avoid summing numerical values into overall scores",
+              "keypractice_id": 20,
+              "textPassages": [
+                {
+                  "id": 202,
+                  "study_id": 16,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 100,
+                  "text": "With more researchers use three independent assessors and take the mean score. It should also be noted that P22 disputed the value of checklists unless composed of validated items and, in particular, recommended against summing numerical values of checklist elements to form overall scores.",
+                  "study_title": "A systematic review of systematic review process research in software engineering",
+                  "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+                  "study_bibtex_key": "S11"
                 }
               ]
             }
@@ -1146,6 +1435,16 @@
               "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
               "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
               "study_bibtex_key": "S3"
+            },
+            {
+              "id": 199,
+              "study_id": 16,
+              "keypractice_id": 49,
+              "practiceinstance_id": null,
+              "text": "Ensure that all researchers understand how to apply the quality checklist.",
+              "study_title": "A systematic review of systematic review process research in software engineering",
+              "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+              "study_bibtex_key": "S11"
             }
           ],
           "practiceInstances": []
@@ -1188,6 +1487,58 @@
                   "study_title": "On Searching Relevant Studies in Software Engineering",
                   "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
                   "study_bibtex_key": "S6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 82,
+          "description": "Identify and mitigate data extraction bias",
+          "level_id": 3,
+          "dimension_id": 3,
+          "textPassages": [],
+          "practiceInstances": [
+            {
+              "id": 91,
+              "description": "Incorporate a period of discussion or use more reviewers to increase reliability",
+              "keypractice_id": 82,
+              "textPassages": [
+                {
+                  "id": 175,
+                  "study_id": 14,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 91,
+                  "text": "Generally, the results support RQ2 by suggesting that incorporating a period of discussion increases reliability but they also show that using more reviewers without discussion will also improve reliability.",
+                  "study_title": "Three empirical studies on the agreement of reviewers about the quality of software engineering experiments",
+                  "study_authors": "Kitchenham,  Barbara Ann and Sjøberg,  Dag I.K. and Dybå,  Tore and Pfahl,  Dietmar and Brereton,  Pearl and Budgen,  David and H\\",
+                  "study_bibtex_key": "S10"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 86,
+          "description": "Select appropriate formal methods to perform data analysis",
+          "level_id": 3,
+          "dimension_id": 3,
+          "textPassages": [],
+          "practiceInstances": [
+            {
+              "id": 96,
+              "description": "Use the thematic analysis technique to synthesize data",
+              "keypractice_id": 86,
+              "textPassages": [
+                {
+                  "id": 185,
+                  "study_id": 16,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 96,
+                  "text": "Cruzes and colleagues have provided guidelines for thematic synthesis (P13).",
+                  "study_title": "A systematic review of systematic review process research in software engineering",
+                  "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+                  "study_bibtex_key": "S11"
                 }
               ]
             }
@@ -1299,6 +1650,16 @@
                   "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
                   "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
                   "study_bibtex_key": "S1"
+                },
+                {
+                  "id": 160,
+                  "study_id": 13,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 10,
+                  "text": "Each identified empirical study will be evaluated by at least two work review members to decide on whether or not it should be selected. Any discrepancies were settled by consensus.",
+                  "study_title": "Comparative analysis of meta-analysis methods: when to use which?",
+                  "study_authors": "Dieste,  O. and Fernandez,  E. and Garcia Martinez,  R. and Juristo,  N.",
+                  "study_bibtex_key": "S9"
                 }
               ]
             },
@@ -1370,6 +1731,16 @@
               "study_title": "Quality assessment of systematic reviews in software engineering: a tertiary study",
               "study_authors": "Zhou,  You and Zhang,  He and Huang,  Xin and Yang,  Song and Babar,  Muhammad Ali and Tang,  Hao",
               "study_bibtex_key": "S1"
+            },
+            {
+              "id": 182,
+              "study_id": 16,
+              "keypractice_id": 24,
+              "practiceinstance_id": null,
+              "text": "Use three or more researchers to independently score studies using numerical checklists, then aggregate scores by averaging rather than relying on extended discussions",
+              "study_title": "A systematic review of systematic review process research in software engineering",
+              "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+              "study_bibtex_key": "S11"
             }
           ],
           "practiceInstances": [
@@ -1392,7 +1763,7 @@
             },
             {
               "id": 33,
-              "description": "Assign one reader as data extractor and another as data checker when reviewing large numbers of papers",
+              "description": "Use with caution the technique of assigning a reader as a data extractor and another as a data checker when reviewing large numbers of papers",
               "keypractice_id": 24,
               "textPassages": [
                 {
@@ -1404,6 +1775,16 @@
                   "study_title": "Experiences Using Systematic Review Guidelines",
                   "study_authors": "Staples,  Mark and Niazi,  Mahmood",
                   "study_bibtex_key": "S2"
+                },
+                {
+                  "id": 196,
+                  "study_id": 16,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 33,
+                  "text": "Remove the reference to using a data extractor and a data checker.",
+                  "study_title": "A systematic review of systematic review process research in software engineering",
+                  "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+                  "study_bibtex_key": "S11"
                 }
               ]
             },
@@ -1421,6 +1802,33 @@
                   "study_title": "Lessons Learnt Undertaking a Large-scale Systematic Literature Review",
                   "study_authors": "Turner,  Mark and Kitchenham,  Barbara and Budgen,  David and Brereton,  Pearl",
                   "study_bibtex_key": "S8"
+                }
+              ]
+            },
+            {
+              "id": 90,
+              "description": "Use two judges to obtain reliable evaluation regarding empirical experiments or quasi-experiments in software engineering",
+              "keypractice_id": 24,
+              "textPassages": [
+                {
+                  "id": 173,
+                  "study_id": 14,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 90,
+                  "text": "Fig. 1 shows that the weighted Kappa values obtained in Study 1 were better than chance and were usually in the range slight to fair, although some were non-existent and some were substantial or almost perfect. That is on average the reliability of the judges is significantly better than random, but for some pairs of judges, for every paper, agreement was no better than random. With respect to RQ1, the results suggest that two judges are insufficient to obtain reliable evaluations. This was why we undertook Study 2 to investigate whether allowing judges to discuss their assessments would improve the reliability.",
+                  "study_title": "Three empirical studies on the agreement of reviewers about the quality of software engineering experiments",
+                  "study_authors": "Kitchenham,  Barbara Ann and Sjøberg,  Dag I.K. and Dybå,  Tore and Pfahl,  Dietmar and Brereton,  Pearl and Budgen,  David and H\\",
+                  "study_bibtex_key": "S10"
+                },
+                {
+                  "id": 177,
+                  "study_id": 14,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 90,
+                  "text": "For Study 1 a more detailed analysis shown in Table 6 using the sum of the individual questions (i.e. the total score), indicates that two judges are sufficient to obtain substantial reliability, although 10–14 judges would be necessary to achieve comparable reliability if a single overall subjective assessment were used.",
+                  "study_title": "Three empirical studies on the agreement of reviewers about the quality of software engineering experiments",
+                  "study_authors": "Kitchenham,  Barbara Ann and Sjøberg,  Dag I.K. and Dybå,  Tore and Pfahl,  Dietmar and Brereton,  Pearl and Budgen,  David and H\\",
+                  "study_bibtex_key": "S10"
                 }
               ]
             }
@@ -1490,7 +1898,25 @@
               "study_bibtex_key": "S3"
             }
           ],
-          "practiceInstances": []
+          "practiceInstances": [
+            {
+              "id": 92,
+              "description": "Construct a quality checklist that is acceptable to many judges and applicable to different types of scientific papers",
+              "keypractice_id": 51,
+              "textPassages": [
+                {
+                  "id": 178,
+                  "study_id": 14,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 92,
+                  "text": "Our results concerning the use of a quality checklist to improve reliability are also consistent with those from other researchers, but it is clear from comments made by participants in Study 3 that constructing a checklist that is acceptable to a large number of judges and applicable to a large number of different types of scientific research paper is far from being an easy task.",
+                  "study_title": "Three empirical studies on the agreement of reviewers about the quality of software engineering experiments",
+                  "study_authors": "Kitchenham,  Barbara Ann and Sjøberg,  Dag I.K. and Dybå,  Tore and Pfahl,  Dietmar and Brereton,  Pearl and Budgen,  David and H\\",
+                  "study_bibtex_key": "S10"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": 54,
@@ -1564,6 +1990,25 @@
               "study_title": "Lessons Learnt Undertaking a Large-scale Systematic Literature Review",
               "study_authors": "Turner,  Mark and Kitchenham,  Barbara and Budgen,  David and Brereton,  Pearl",
               "study_bibtex_key": "S8"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 79,
+          "description": "Familiarize reviewers with the specific terminology of the field and ensure they understand the review process and activities",
+          "level_id": 2,
+          "dimension_id": 4,
+          "textPassages": [
+            {
+              "id": 159,
+              "study_id": 13,
+              "keypractice_id": 79,
+              "practiceinstance_id": null,
+              "text": "In this first step we will pursue: 1) to familiarize reviewers with the specific terminology of the field of knowledge in which the review will take place and 2) to make sure that the review process and activities are known to the reviewers. In order to guarantee and facilitate the later update of the review, it is desirable a thorough understanding of all topics related with the review.",
+              "study_title": "Comparative analysis of meta-analysis methods: when to use which?",
+              "study_authors": "Dieste,  O. and Fernandez,  E. and Garcia Martinez,  R. and Juristo,  N.",
+              "study_bibtex_key": "S9"
             }
           ],
           "practiceInstances": []
@@ -2011,6 +2456,16 @@
                   "study_title": "Lessons Learnt Undertaking a Large-scale Systematic Literature Review",
                   "study_authors": "Turner,  Mark and Kitchenham,  Barbara and Budgen,  David and Brereton,  Pearl",
                   "study_bibtex_key": "S8"
+                },
+                {
+                  "id": 162,
+                  "study_id": 13,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 77,
+                  "text": "It is also important to realize that the results of several experiments can be used in different papers and, therefore, it is advisable to pay attention to duplicated empirical studies.",
+                  "study_title": "Comparative analysis of meta-analysis methods: when to use which?",
+                  "study_authors": "Dieste,  O. and Fernandez,  E. and Garcia Martinez,  R. and Juristo,  N.",
+                  "study_bibtex_key": "S9"
                 }
               ]
             },
@@ -2067,6 +2522,16 @@
               "study_title": "Experiences Using Systematic Review Guidelines",
               "study_authors": "Staples,  Mark and Niazi,  Mahmood",
               "study_bibtex_key": "S2"
+            },
+            {
+              "id": 197,
+              "study_id": 16,
+              "keypractice_id": 46,
+              "practiceinstance_id": null,
+              "text": "Emphasize the need to keep records of the conduct of the study",
+              "study_title": "A systematic review of systematic review process research in software engineering",
+              "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+              "study_bibtex_key": "S11"
             }
           ],
           "practiceInstances": [
@@ -2142,6 +2607,72 @@
               "study_title": "Systematic literature reviews in software engineering: Preliminary results from interviews with researchers",
               "study_authors": "Babar,  Muhammad Ali and Zhang,  He",
               "study_bibtex_key": "S5"
+            },
+            {
+              "id": 161,
+              "study_id": 13,
+              "keypractice_id": 68,
+              "practiceinstance_id": null,
+              "text": "The review team has to specify the conditions that the studies have to meet in order to be included in the SR.",
+              "study_title": "Comparative analysis of meta-analysis methods: when to use which?",
+              "study_authors": "Dieste,  O. and Fernandez,  E. and Garcia Martinez,  R. and Juristo,  N.",
+              "study_bibtex_key": "S9"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 80,
+          "description": "Provide documentation and external materials that enable researchers to keep track of SLR procedures (study selection, data extraction, quality assessment etc.)",
+          "level_id": 3,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 187,
+              "study_id": 16,
+              "keypractice_id": 80,
+              "practiceinstance_id": null,
+              "text": "SRs should always provide full traceability to the source papers.",
+              "study_title": "A systematic review of systematic review process research in software engineering",
+              "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+              "study_bibtex_key": "S11"
+            }
+          ],
+          "practiceInstances": [
+            {
+              "id": 88,
+              "description": "Propagate all ID modifications consistently across subsequent steps to maintain data integrity",
+              "keypractice_id": 80,
+              "textPassages": [
+                {
+                  "id": 169,
+                  "study_id": 13,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 88,
+                  "text": "If for any reason the ids are modified in subsequent steps, make sure that all changes are propagated adequately.",
+                  "study_title": "Comparative analysis of meta-analysis methods: when to use which?",
+                  "study_authors": "Dieste,  O. and Fernandez,  E. and Garcia Martinez,  R. and Juristo,  N.",
+                  "study_bibtex_key": "S9"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 87,
+          "description": "Choose the most appropriate reporting format—such as graphs or tables—to effectively present the findings",
+          "level_id": 2,
+          "dimension_id": 5,
+          "textPassages": [
+            {
+              "id": 186,
+              "study_id": 16,
+              "keypractice_id": 87,
+              "practiceinstance_id": null,
+              "text": "Researchers should use the most appropriate mechanism to answer the research question which in some cases may be graphs and in others tables.",
+              "study_title": "A systematic review of systematic review process research in software engineering",
+              "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+              "study_bibtex_key": "S11"
             }
           ],
           "practiceInstances": []
@@ -2442,6 +2973,26 @@
                   "study_title": "On Searching Relevant Studies in Software Engineering",
                   "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
                   "study_bibtex_key": "S6"
+                },
+                {
+                  "id": 190,
+                  "study_id": 16,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 64,
+                  "text": "Using the ‘‘quasi-gold standard’’ the search process strategy proposed by Zhang and colleagues (P62 and P63) which is supported by results from two high-quality multi-case case studies and several other studies and provides a useful means of integrating manual and automated searches. Manual searches B. Kitchenham, P. Brereton / Information and Software Technology 55 (2013) 2049–2075 2067 should be based mainly on topic specific conferences and journals over a specified time period.",
+                  "study_title": "A systematic review of systematic review process research in software engineering",
+                  "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+                  "study_bibtex_key": "S11"
+                },
+                {
+                  "id": 191,
+                  "study_id": 16,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 64,
+                  "text": "However, to act as a quasigold standard, it is also useful to include some more general SE journal and conference sources (e.g. IEEE Transactions and the International Conference on Software Engineering). If the sources searched manually are not indexed by the current digital libraries (as was the case of the EASE conference before 2010), they cannot act as gold standard for automated searches.",
+                  "study_title": "A systematic review of systematic review process research in software engineering",
+                  "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+                  "study_bibtex_key": "S11"
                 }
               ]
             },
@@ -2459,6 +3010,16 @@
                   "study_title": "On Searching Relevant Studies in Software Engineering",
                   "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
                   "study_bibtex_key": "S6"
+                },
+                {
+                  "id": 192,
+                  "study_id": 16,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 75,
+                  "text": "Considering the use of citation analysis (i.e. snowballing) which can be useful in certain circumstances (P53 and this study) although the evidence also confirms that it is sometimes ineffective.",
+                  "study_title": "A systematic review of systematic review process research in software engineering",
+                  "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+                  "study_bibtex_key": "S11"
                 }
               ]
             }
@@ -2754,6 +3315,98 @@
               "study_title": "Six years of systematic literature reviews in software engineering: An updated tertiary study",
               "study_authors": "da Silva,  Fabio Q.B. and Santos,  André L.M. and Soares,  Sérgio and Fran\\c{c",
               "study_bibtex_key": "S7"
+            }
+          ],
+          "practiceInstances": []
+        },
+        {
+          "id": 83,
+          "description": "Allocate extra reviewers and aggregate their scores if discussion among two reviewers is time-consuming",
+          "level_id": 4,
+          "dimension_id": 7,
+          "textPassages": [
+            {
+              "id": 176,
+              "study_id": 14,
+              "keypractice_id": 83,
+              "practiceinstance_id": null,
+              "text": "If discussion among two reviewers takes a long time, then it may be more cost effective to allocate extra reviewers and take a simple arithmetic aggregate of the individual reviewers.",
+              "study_title": "Three empirical studies on the agreement of reviewers about the quality of software engineering experiments",
+              "study_authors": "Kitchenham,  Barbara Ann and Sjøberg,  Dag I.K. and Dybå,  Tore and Pfahl,  Dietmar and Brereton,  Pearl and Budgen,  David and H\\",
+              "study_bibtex_key": "S10"
+            }
+          ],
+          "practiceInstances": [
+            {
+              "id": 93,
+              "description": "Evaluate cost effectiveness when choosing between discussions or increasing the number of judges",
+              "keypractice_id": 83,
+              "textPassages": [
+                {
+                  "id": 180,
+                  "study_id": 14,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 93,
+                  "text": "The choice between introducing discussions or increasing the number of judges may need to be based on an assessment of cost effectiveness.",
+                  "study_title": "Three empirical studies on the agreement of reviewers about the quality of software engineering experiments",
+                  "study_authors": "Kitchenham,  Barbara Ann and Sjøberg,  Dag I.K. and Dybå,  Tore and Pfahl,  Dietmar and Brereton,  Pearl and Budgen,  David and H\\",
+                  "study_bibtex_key": "S10"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 89,
+          "description": "Use tools to support and automatize SLR tasks",
+          "level_id": 4,
+          "dimension_id": 7,
+          "textPassages": [],
+          "practiceInstances": [
+            {
+              "id": 99,
+              "description": "Use textual analysis tools to assist elements of the SR process, but avoid fully automatic extraction of results without double checking the results",
+              "keypractice_id": 89,
+              "textPassages": [
+                {
+                  "id": 193,
+                  "study_id": 16,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 99,
+                  "text": "Other researchers have proposed the use of tools (particularly textual analysis tools) to assist specific elements of the SR process (see Table 14). The appeal of textual analysis tools is that scientific articles are textual in nature, so tools that analyse text should be able to assist the SR process. There is substantial evidence of the feasibility of using such tools but we need more high quality large-scale studies that consider their impact in practice, highlighting any limitations as well as reporting benefits. In particular, we distrust the idea of automatic extraction of results from primary studies unless our ability to evaluate the quality of different studies improves.",
+                  "study_title": "A systematic review of systematic review process research in software engineering",
+                  "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+                  "study_bibtex_key": "S11"
+                },
+                {
+                  "id": 194,
+                  "study_id": 16,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 99,
+                  "text": "Textual analysis tools can be used in parallel with human intensive methods to evaluate the consistency of the decisions made by the SR team.",
+                  "study_title": "A systematic review of systematic review process research in software engineering",
+                  "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+                  "study_bibtex_key": "S11"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 90,
+          "description": "Researchers should trial textual analysis tools during SRs and report their findings",
+          "level_id": 4,
+          "dimension_id": 7,
+          "textPassages": [
+            {
+              "id": 195,
+              "study_id": 16,
+              "keypractice_id": 90,
+              "practiceinstance_id": null,
+              "text": "We would advise researchers undertaking SRs to trial such tools and report their findings.",
+              "study_title": "A systematic review of systematic review process research in software engineering",
+              "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+              "study_bibtex_key": "S11"
             }
           ],
           "practiceInstances": []
