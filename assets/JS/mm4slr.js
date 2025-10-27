@@ -271,7 +271,7 @@ function openTextModal(textString, titleString, authorsString = '') {
         div.innerHTML = `
             <p class="mb-1"><strong>📖 Title:</strong> ${title}</p>
             <p class="mb-2"><strong>🧑‍🔬 Authors:</strong> ${author}</p>
-            <p class="fst-italic text-secondary">${t}</p>
+            <p class="fst-italic text-secondary">"${t}"</p>
         `;
         modalBody.appendChild(div);
     });
