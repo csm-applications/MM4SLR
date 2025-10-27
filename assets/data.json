@@ -1,7 +1,7 @@
 {
   "MaturityModel": "MM4SLR",
   "ModelVersion": "1.0",
-  "LastUpdate": "2025-10-24",
+  "LastUpdate": "2025-10-27",
   "ModelAuthors": [
     "Vinicius dos Santos",
     "Rick Kazman",
@@ -52,7 +52,7 @@
         },
         {
           "id": 41,
-          "description": "Make the data generated while conducting SLR available",
+          "description": "Make the raw data generated while conducting SLR available",
           "level_id": 3,
           "dimension_id": 1,
           "textPassages": [],
@@ -76,7 +76,7 @@
             },
             {
               "id": 41,
-              "description": "Make data supporting reported claims available upon request for synthesis in systematic reviews",
+              "description": "Make the data that supports the paper's claims available (in the paper itself, upon request, or external files)",
               "keypractice_id": 41,
               "textPassages": [
                 {
@@ -186,6 +186,32 @@
             }
           ],
           "practiceInstances": []
+        },
+        {
+          "id": 92,
+          "description": "Adopt strategies to share knowledge inside/outside the research groups",
+          "level_id": 4,
+          "dimension_id": 1,
+          "textPassages": [],
+          "practiceInstances": [
+            {
+              "id": 112,
+              "description": "Adopt ontologies to enhance information exchange among different research groups",
+              "keypractice_id": 92,
+              "textPassages": [
+                {
+                  "id": 204,
+                  "study_id": 17,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 112,
+                  "text": "Second, ontology structure enables sharing knowledge between different research groups to enhance communication. With the help of ontology, small scale research groups lacking resource could conduct SLRs easily and worry less about paying too many efforts.",
+                  "study_title": "Towards evidence-based ontology for supporting systematic literature review",
+                  "study_authors": "Yueming Sun and Ye Yang and He Zhang and Wen Zhang and Qing Wang",
+                  "study_bibtex_key": "S12"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -289,6 +315,23 @@
                   "study_bibtex_key": "S6"
                 }
               ]
+            },
+            {
+              "id": 102,
+              "description": "Use Delphi processes or groupware software systems to reduce negative effects of face-to-face meetings",
+              "keypractice_id": 47,
+              "textPassages": [
+                {
+                  "id": 179,
+                  "study_id": 14,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 102,
+                  "text": "The contrasting results of Study 2 might be because we did not rely on face-to-face meetings. The Delphi process and groupware software systems are believed to deliver value because they are designed to avoid some of the negative effects of faceto-face team meetings such as:  domination of the conversation by one or more members,  individuals fearing criticism or negative evaluation,  members failing to participate because they perceive that their input is not required, and  pressure to conform with senior members of the team.",
+                  "study_title": "Three empirical studies on the agreement of reviewers about the quality of software engineering experiments",
+                  "study_authors": "Kitchenham,  Barbara Ann and Sjøberg,  Dag I.K. and Dybå,  Tore and Pfahl,  Dietmar and Brereton,  Pearl and Budgen,  David and H\\",
+                  "study_bibtex_key": "S10"
+                }
+              ]
             }
           ]
         },
@@ -336,25 +379,6 @@
           ]
         },
         {
-          "id": 69,
-          "description": "Evaluate search engines to check their capability of executing search strings",
-          "level_id": 3,
-          "dimension_id": 2,
-          "textPassages": [
-            {
-              "id": 130,
-              "study_id": 9,
-              "keypractice_id": 69,
-              "practiceinstance_id": null,
-              "text": "Biolchini et al. suggest evaluating search engines to verify if they are capable of executing search strings during the planning phase Biolchini et al. (2005)",
-              "study_title": "On Searching Relevant Studies in Software Engineering",
-              "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
-              "study_bibtex_key": "S6"
-            }
-          ],
-          "practiceInstances": []
-        },
-        {
           "id": 71,
           "description": "Adopt reliable and efficient digital libraries or search engines for automated research",
           "level_id": 2,
@@ -394,53 +418,69 @@
                   "study_bibtex_key": "S11"
                 }
               ]
+            },
+            {
+              "id": 101,
+              "description": "Evaluate search engines to check their capability of executing search strings",
+              "keypractice_id": 71,
+              "textPassages": [
+                {
+                  "id": 130,
+                  "study_id": 9,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 101,
+                  "text": "Biolchini et al. suggest evaluating search engines to verify if they are capable of executing search strings during the planning phase Biolchini et al. (2005)",
+                  "study_title": "On Searching Relevant Studies in Software Engineering",
+                  "study_authors": "Zhang,  He and Babar,  Muhammad Ali",
+                  "study_bibtex_key": "S6"
+                }
+              ]
             }
           ]
         },
         {
-          "id": 84,
-          "description": "Use Delphi processes or groupware software systems to reduce negative effects of face-to-face meetings",
-          "level_id": 3,
-          "dimension_id": 2,
-          "textPassages": [
-            {
-              "id": 179,
-              "study_id": 14,
-              "keypractice_id": 84,
-              "practiceinstance_id": null,
-              "text": "The contrasting results of Study 2 might be because we did not rely on face-to-face meetings. The Delphi process and groupware software systems are believed to deliver value because they are designed to avoid some of the negative effects of faceto-face team meetings such as:  domination of the conversation by one or more members,  individuals fearing criticism or negative evaluation,  members failing to participate because they perceive that their input is not required, and  pressure to conform with senior members of the team.",
-              "study_title": "Three empirical studies on the agreement of reviewers about the quality of software engineering experiments",
-              "study_authors": "Kitchenham,  Barbara Ann and Sjøberg,  Dag I.K. and Dybå,  Tore and Pfahl,  Dietmar and Brereton,  Pearl and Budgen,  David and H\\",
-              "study_bibtex_key": "S10"
-            }
-          ],
-          "practiceInstances": []
-        },
-        {
           "id": 85,
-          "description": "Use text analysis tools to support specific stages of systematic reviews — such as refining search strings, identifying similar papers, classifying articles, and extracting data",
+          "description": "Use text analysis tools to support specific stages of systematic reviews",
           "level_id": 3,
           "dimension_id": 2,
-          "textPassages": [
+          "textPassages": [],
+          "practiceInstances": [
             {
-              "id": 181,
-              "study_id": 16,
+              "id": 103,
+              "description": "Use text analysis (e.g., VTM) to refine search strings, identify similar papers, classify articles, and extract data",
               "keypractice_id": 85,
-              "practiceinstance_id": null,
-              "text": "\"The general approach of studies proposing the use of text analysis tools is to use a text analysis tool to identify words or phrases that describe individual articles and count the frequency of important words or phrases in each article. Other analysis tools (such as visual display tools) can then be used to identify whether articles that are similar with respect to the frequency of those words or phrases are treated similarly in the SR. This approach can be used:\n\n1. To refine automated search strings, P29. \n2. To identify similar papers as part of the paper selection process, P11, P26, P28, P46, P50, P57. These studies offer a different approach to those discussed in Section 5.3.2. They use the tools to investigate whether included and excluded studies are similar with respect to studies’ most important keywords and rely on SR researchers to interpret the information provided. The studies discussed in Section 5.3.2 provide a quantitative assessment of the search process effectiveness (although the SR researchers still need to decide whether the achieved effectiveness is sufficient). \n3. To categorize and classify articles for a mapping study, P27. \n4. To select articles that address a specific research question, P50, P56. \n5. To extract the data needed to answer specific research questions P56, P68\"",
-              "study_title": "A systematic review of systematic review process research in software engineering",
-              "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
-              "study_bibtex_key": "S11"
+              "textPassages": [
+                {
+                  "id": 181,
+                  "study_id": 16,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 103,
+                  "text": "\"The general approach of studies proposing the use of text analysis tools is to use a text analysis tool to identify words or phrases that describe individual articles and count the frequency of important words or phrases in each article. Other analysis tools (such as visual display tools) can then be used to identify whether articles that are similar with respect to the frequency of those words or phrases are treated similarly in the SR. This approach can be used:\n\n1. To refine automated search strings, P29. \n2. To identify similar papers as part of the paper selection process, P11, P26, P28, P46, P50, P57. These studies offer a different approach to those discussed in Section 5.3.2. They use the tools to investigate whether included and excluded studies are similar with respect to studies’ most important keywords and rely on SR researchers to interpret the information provided. The studies discussed in Section 5.3.2 provide a quantitative assessment of the search process effectiveness (although the SR researchers still need to decide whether the achieved effectiveness is sufficient). \n3. To categorize and classify articles for a mapping study, P27. \n4. To select articles that address a specific research question, P50, P56. \n5. To extract the data needed to answer specific research questions P56, P68\"",
+                  "study_title": "A systematic review of systematic review process research in software engineering",
+                  "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+                  "study_bibtex_key": "S11"
+                }
+              ]
             }
-          ],
-          "practiceInstances": []
+          ]
         },
         {
           "id": 88,
           "description": "Use tools to manage the full SLR process and monitor their progress",
           "level_id": 3,
           "dimension_id": 2,
-          "textPassages": [],
+          "textPassages": [
+            {
+              "id": 216,
+              "study_id": 18,
+              "keypractice_id": 88,
+              "practiceinstance_id": null,
+              "text": "Adopt tools that support and facilitate organization and management of information in SLR",
+              "study_title": "A tertiary study: experiences of conducting systematic literature reviews in software engineering",
+              "study_authors": "Imtiaz,  Salma and Bano,  Muneera and Ikram,  Naveed and Niazi,  Mahmood",
+              "study_bibtex_key": "S13"
+            }
+          ],
           "practiceInstances": [
             {
               "id": 97,
@@ -460,6 +500,51 @@
               ]
             }
           ]
+        },
+        {
+          "id": 91,
+          "description": "Use structured knowledge representations to support knowledge-intensive and time-consuming tasks",
+          "level_id": 4,
+          "dimension_id": 2,
+          "textPassages": [],
+          "practiceInstances": [
+            {
+              "id": 111,
+              "description": "Adopt ontologies to represent knowledge from papers to aid in selection / data extraction tasks",
+              "keypractice_id": 91,
+              "textPassages": [
+                {
+                  "id": 203,
+                  "study_id": 17,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 111,
+                  "text": "First, ontology has multiple advantages in supporting knowledge intensive tasks, such as knowledge expansion, knowledge reuse and machine reasoning. Though extra efforts may be cost in building ontology, the benefits of ontology are profound and profitable in the long run.",
+                  "study_title": "Towards evidence-based ontology for supporting systematic literature review",
+                  "study_authors": "Yueming Sun and Ye Yang and He Zhang and Wen Zhang and Qing Wang",
+                  "study_bibtex_key": "S12"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 94,
+          "description": "Adopt tools agnostic of electronic database or search engine that enables managing references from studies",
+          "level_id": 3,
+          "dimension_id": 2,
+          "textPassages": [
+            {
+              "id": 215,
+              "study_id": 18,
+              "keypractice_id": 94,
+              "practiceinstance_id": null,
+              "text": "Tool support that facilitates in organizing and managing SLR information is also required.",
+              "study_title": "A tertiary study: experiences of conducting systematic literature reviews in software engineering",
+              "study_authors": "Imtiaz,  Salma and Bano,  Muneera and Ikram,  Naveed and Niazi,  Mahmood",
+              "study_bibtex_key": "S13"
+            }
+          ],
+          "practiceInstances": []
         }
       ]
     },
@@ -1388,6 +1473,23 @@
                   "study_bibtex_key": "S2"
                 }
               ]
+            },
+            {
+              "id": 118,
+              "description": "Perform data extraction and quality assessment independently by at least two researchers to reduce personal bias",
+              "keypractice_id": 36,
+              "textPassages": [
+                {
+                  "id": 212,
+                  "study_id": 18,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 118,
+                  "text": "Data extraction and quality assessment have been performed independently by two researchers to remove personal bias.",
+                  "study_title": "A tertiary study: experiences of conducting systematic literature reviews in software engineering",
+                  "study_authors": "Imtiaz,  Salma and Bano,  Muneera and Ikram,  Naveed and Niazi,  Mahmood",
+                  "study_bibtex_key": "S13"
+                }
+              ]
             }
           ]
         },
@@ -1513,6 +1615,23 @@
                   "study_title": "Three empirical studies on the agreement of reviewers about the quality of software engineering experiments",
                   "study_authors": "Kitchenham,  Barbara Ann and Sjøberg,  Dag I.K. and Dybå,  Tore and Pfahl,  Dietmar and Brereton,  Pearl and Budgen,  David and H\\",
                   "study_bibtex_key": "S10"
+                }
+              ]
+            },
+            {
+              "id": 119,
+              "description": "Resolve conflicts in data extraction or assessment through discussion with a third researcher",
+              "keypractice_id": 82,
+              "textPassages": [
+                {
+                  "id": 213,
+                  "study_id": 18,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 119,
+                  "text": "Conflicts were resolved via discussion with third researcher",
+                  "study_title": "A tertiary study: experiences of conducting systematic literature reviews in software engineering",
+                  "study_authors": "Imtiaz,  Salma and Bano,  Muneera and Ikram,  Naveed and Niazi,  Mahmood",
+                  "study_bibtex_key": "S13"
                 }
               ]
             }
@@ -1718,7 +1837,7 @@
         },
         {
           "id": 24,
-          "description": "Perform cross-checks with reviewers (independent, supervisors, team-members) for data extraction",
+          "description": "Cross-check results from data extraction and analysis with team members",
           "level_id": 3,
           "dimension_id": 4,
           "textPassages": [
@@ -1883,21 +2002,10 @@
         },
         {
           "id": 51,
-          "description": "Construct quality checklists individually, then discuss similarities and differences to produce a team checklist",
+          "description": "Develop SLR artifacts (e.g., quality checklists, selection criteria) in consensus with research team",
           "level_id": 3,
           "dimension_id": 4,
-          "textPassages": [
-            {
-              "id": 104,
-              "study_id": 6,
-              "keypractice_id": 51,
-              "practiceinstance_id": null,
-              "text": "We found the process of constructing quality checklists individually and then discussing the similarities and differences in order to produce a team checklist was very useful. We would recommend such a process to other researchers.",
-              "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
-              "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
-              "study_bibtex_key": "S3"
-            }
-          ],
+          "textPassages": [],
           "practiceInstances": [
             {
               "id": 92,
@@ -1915,27 +2023,25 @@
                   "study_bibtex_key": "S10"
                 }
               ]
+            },
+            {
+              "id": 105,
+              "description": "Develop the quality checklists individually, then discuss similarities and differences to produce a team checklist",
+              "keypractice_id": 51,
+              "textPassages": [
+                {
+                  "id": 104,
+                  "study_id": 6,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 105,
+                  "text": "We found the process of constructing quality checklists individually and then discussing the similarities and differences in order to produce a team checklist was very useful. We would recommend such a process to other researchers.",
+                  "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
+                  "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
+                  "study_bibtex_key": "S3"
+                }
+              ]
             }
           ]
-        },
-        {
-          "id": 54,
-          "description": "Provide feedback for students that includes forward-looking advice for improvement",
-          "level_id": 2,
-          "dimension_id": 4,
-          "textPassages": [
-            {
-              "id": 111,
-              "study_id": 7,
-              "keypractice_id": 54,
-              "practiceinstance_id": null,
-              "text": "Such feedback should not just tell students what they have done well or poorly, but also “feed forward”, that is provide advice for how the students can improve in their next piece of work",
-              "study_title": "Preliminary Reporting Guidelines for Experience Papers",
-              "study_authors": "Budgen,  David and Zhang,  Cheng",
-              "study_bibtex_key": "S4"
-            }
-          ],
-          "practiceInstances": []
         },
         {
           "id": 65,
@@ -1958,22 +2064,29 @@
         },
         {
           "id": 76,
-          "description": "If any problem in data extraction is identified, pause the process until they are resolved, document the resolution, and inform all involved staff.",
+          "description": "Develop an efficient and clear communication strategy with the research team to preserve the research pace",
           "level_id": 3,
           "dimension_id": 4,
-          "textPassages": [
+          "textPassages": [],
+          "practiceInstances": [
             {
-              "id": 156,
-              "study_id": 12,
+              "id": 106,
+              "description": "If any problem in data extraction is identified, pause the process until they are resolved, document the resolution, and inform all involved staff",
               "keypractice_id": 76,
-              "practiceinstance_id": null,
-              "text": "The data extraction process must be halted until the problem is resolved. Furthermore, the resolution must be documented, and all staff involved in the data extraction process need to be informed of the changes.",
-              "study_title": "Lessons Learnt Undertaking a Large-scale Systematic Literature Review",
-              "study_authors": "Turner,  Mark and Kitchenham,  Barbara and Budgen,  David and Brereton,  Pearl",
-              "study_bibtex_key": "S8"
+              "textPassages": [
+                {
+                  "id": 156,
+                  "study_id": 12,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 106,
+                  "text": "The data extraction process must be halted until the problem is resolved. Furthermore, the resolution must be documented, and all staff involved in the data extraction process need to be informed of the changes.",
+                  "study_title": "Lessons Learnt Undertaking a Large-scale Systematic Literature Review",
+                  "study_authors": "Turner,  Mark and Kitchenham,  Barbara and Budgen,  David and Brereton,  Pearl",
+                  "study_bibtex_key": "S8"
+                }
+              ]
             }
-          ],
-          "practiceInstances": []
+          ]
         },
         {
           "id": 78,
@@ -1992,7 +2105,25 @@
               "study_bibtex_key": "S8"
             }
           ],
-          "practiceInstances": []
+          "practiceInstances": [
+            {
+              "id": 104,
+              "description": "Provide feedback for students that includes forward-looking advice for improvement",
+              "keypractice_id": 78,
+              "textPassages": [
+                {
+                  "id": 111,
+                  "study_id": 7,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 104,
+                  "text": "Such feedback should not just tell students what they have done well or poorly, but also “feed forward”, that is provide advice for how the students can improve in their next piece of work",
+                  "study_title": "Preliminary Reporting Guidelines for Experience Papers",
+                  "study_authors": "Budgen,  David and Zhang,  Cheng",
+                  "study_bibtex_key": "S4"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": 79,
@@ -2012,6 +2143,25 @@
             }
           ],
           "practiceInstances": []
+        },
+        {
+          "id": 90,
+          "description": "Researchers should trial textual analysis tools during SRs and report their findings",
+          "level_id": 4,
+          "dimension_id": 4,
+          "textPassages": [
+            {
+              "id": 195,
+              "study_id": 16,
+              "keypractice_id": 90,
+              "practiceinstance_id": null,
+              "text": "We would advise researchers undertaking SRs to trial such tools and report their findings.",
+              "study_title": "A systematic review of systematic review process research in software engineering",
+              "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+              "study_bibtex_key": "S11"
+            }
+          ],
+          "practiceInstances": []
         }
       ]
     },
@@ -2021,7 +2171,7 @@
       "keyPractices": [
         {
           "id": 2,
-          "description": "Ensure a clear statement of research aims and objectives",
+          "description": "Ensure that report include a clear statement of research aims and objectives",
           "level_id": 2,
           "dimension_id": 5,
           "textPassages": [
@@ -2184,7 +2334,25 @@
               "study_bibtex_key": "S1"
             }
           ],
-          "practiceInstances": []
+          "practiceInstances": [
+            {
+              "id": 117,
+              "description": "Evaluate the quality of abstracts, recognizing that poor or missing abstracts can hinder the retrieval of relevant studies.",
+              "keypractice_id": 14,
+              "textPassages": [
+                {
+                  "id": 211,
+                  "study_id": 18,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 117,
+                  "text": "Search results also depend on quality of abstracts:- Poor quality of abstracts and absence of abstracts create problems in the search.",
+                  "study_title": "A tertiary study: experiences of conducting systematic literature reviews in software engineering",
+                  "study_authors": "Imtiaz,  Salma and Bano,  Muneera and Ikram,  Naveed and Niazi,  Mahmood",
+                  "study_bibtex_key": "S13"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": 16,
@@ -2555,25 +2723,6 @@
           ]
         },
         {
-          "id": 50,
-          "description": "Concentrate on checklist items that relate to good reporting rather than good experimental procedures",
-          "level_id": 2,
-          "dimension_id": 5,
-          "textPassages": [
-            {
-              "id": 97,
-              "study_id": 6,
-              "keypractice_id": 50,
-              "practiceinstance_id": null,
-              "text": "Concentrate on checklist items that relate to good reporting rather than good experimental procedures",
-              "study_title": "An Evaluation of Quality Checklist Proposals - A participant-observer case study",
-              "study_authors": "Kitchenham,  Barbara A. and Brereton,  O. Pearl and Budgen,  David and Li,  Zhi",
-              "study_bibtex_key": "S3"
-            }
-          ],
-          "practiceInstances": []
-        },
-        {
           "id": 67,
           "description": "Justify every action taken in the review and think critically about the process",
           "level_id": 2,
@@ -2594,7 +2743,7 @@
         },
         {
           "id": 68,
-          "description": "Clarify search, selection, and quality criteria as thoroughly as possible",
+          "description": "Present the search strategy and quality criteria as thoroughly as possible",
           "level_id": 3,
           "dimension_id": 5,
           "textPassages": [
@@ -2660,22 +2809,29 @@
         },
         {
           "id": 87,
-          "description": "Choose the most appropriate reporting format—such as graphs or tables—to effectively present the findings",
+          "description": "Choose the most appropriate reporting format to effectively present the findings",
           "level_id": 2,
           "dimension_id": 5,
-          "textPassages": [
+          "textPassages": [],
+          "practiceInstances": [
             {
-              "id": 186,
-              "study_id": 16,
+              "id": 107,
+              "description": "Use charts or tables to represent synthesized data",
               "keypractice_id": 87,
-              "practiceinstance_id": null,
-              "text": "Researchers should use the most appropriate mechanism to answer the research question which in some cases may be graphs and in others tables.",
-              "study_title": "A systematic review of systematic review process research in software engineering",
-              "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
-              "study_bibtex_key": "S11"
+              "textPassages": [
+                {
+                  "id": 186,
+                  "study_id": 16,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 107,
+                  "text": "Researchers should use the most appropriate mechanism to answer the research question which in some cases may be graphs and in others tables.",
+                  "study_title": "A systematic review of systematic review process research in software engineering",
+                  "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
+                  "study_bibtex_key": "S11"
+                }
+              ]
             }
-          ],
-          "practiceInstances": []
+          ]
         }
       ]
     },
@@ -2808,26 +2964,16 @@
         },
         {
           "id": 29,
-          "description": "Define complementary research questions to clarify the main questions",
+          "description": "Revise research questions during protocol development as understanding increases",
           "level_id": 2,
           "dimension_id": 6,
           "textPassages": [
             {
-              "id": 44,
+              "id": 81,
               "study_id": 4,
               "keypractice_id": 29,
               "practiceinstance_id": null,
-              "text": "We suggest that complementary research questions can help clarify the main questions and define selection criteria.",
-              "study_title": "Experiences Using Systematic Review Guidelines",
-              "study_authors": "Staples,  Mark and Niazi,  Mahmood",
-              "study_bibtex_key": "S2"
-            },
-            {
-              "id": 77,
-              "study_id": 4,
-              "keypractice_id": 29,
-              "practiceinstance_id": null,
-              "text": "We also found that it was very helpful to define complementary research questions that were not being investigated, so as to clarify the boundaries of our research question of interest.",
+              "text": "Expect to revise your questions during protocol development, as your understanding of the problem increases experiences with the revision of research questions during systematic review.",
               "study_title": "Experiences Using Systematic Review Guidelines",
               "study_authors": "Staples,  Mark and Niazi,  Mahmood",
               "study_bibtex_key": "S2"
@@ -2845,6 +2991,33 @@
                   "keypractice_id": null,
                   "practiceinstance_id": 37,
                   "text": "an instance of our recommendation to define complementary research questions is to clearly identify the unit of analysis for the research question, i.e. to be explicitly clear whether you are studying organizations, teams, or individuals.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood",
+                  "study_bibtex_key": "S2"
+                }
+              ]
+            },
+            {
+              "id": 110,
+              "description": "Define complementary research questions to clarify the main questions",
+              "keypractice_id": 29,
+              "textPassages": [
+                {
+                  "id": 44,
+                  "study_id": 4,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 110,
+                  "text": "We suggest that complementary research questions can help clarify the main questions and define selection criteria.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood",
+                  "study_bibtex_key": "S2"
+                },
+                {
+                  "id": 77,
+                  "study_id": 4,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 110,
+                  "text": "We also found that it was very helpful to define complementary research questions that were not being investigated, so as to clarify the boundaries of our research question of interest.",
                   "study_title": "Experiences Using Systematic Review Guidelines",
                   "study_authors": "Staples,  Mark and Niazi,  Mahmood",
                   "study_bibtex_key": "S2"
@@ -2943,7 +3116,7 @@
         },
         {
           "id": 33,
-          "description": "Use a formal search strategy to identify all relevant publications",
+          "description": "Use a formal and well-experimented search strategy to identify all relevant publications",
           "level_id": 3,
           "dimension_id": 6,
           "textPassages": [
@@ -2993,6 +3166,16 @@
                   "study_title": "A systematic review of systematic review process research in software engineering",
                   "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
                   "study_bibtex_key": "S11"
+                },
+                {
+                  "id": 209,
+                  "study_id": 18,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 64,
+                  "text": "A two phased search strategy has positive influence on coverage of the evidence. Online databases, indexing systems and specific conferences and journals serve as reference points to start the search. Scanning references of included studies will increase coverage.",
+                  "study_title": "A tertiary study: experiences of conducting systematic literature reviews in software engineering",
+                  "study_authors": "Imtiaz,  Salma and Bano,  Muneera and Ikram,  Naveed and Niazi,  Mahmood",
+                  "study_bibtex_key": "S13"
                 }
               ]
             },
@@ -3045,25 +3228,6 @@
           "practiceInstances": []
         },
         {
-          "id": 45,
-          "description": "Revise research questions during protocol development as understanding increases",
-          "level_id": 3,
-          "dimension_id": 6,
-          "textPassages": [
-            {
-              "id": 81,
-              "study_id": 4,
-              "keypractice_id": 45,
-              "practiceinstance_id": null,
-              "text": "Expect to revise your questions during protocol development, as your understanding of the problem increases experiences with the revision of research questions during systematic review.",
-              "study_title": "Experiences Using Systematic Review Guidelines",
-              "study_authors": "Staples,  Mark and Niazi,  Mahmood",
-              "study_bibtex_key": "S2"
-            }
-          ],
-          "practiceInstances": []
-        },
-        {
           "id": 53,
           "description": "Provide guidance for students and novice researchers to include developing a well-defined research question",
           "level_id": 2,
@@ -3075,25 +3239,6 @@
               "keypractice_id": 53,
               "practiceinstance_id": null,
               "text": "The EBSE guidance should be modified for students and novice researchers to incorporate the process of developing a well-defined research question.",
-              "study_title": "Preliminary Reporting Guidelines for Experience Papers",
-              "study_authors": "Budgen,  David and Zhang,  Cheng",
-              "study_bibtex_key": "S4"
-            }
-          ],
-          "practiceInstances": []
-        },
-        {
-          "id": 56,
-          "description": "Define a search strategy early, but allow for its adjustment and reporting during the review",
-          "level_id": 2,
-          "dimension_id": 6,
-          "textPassages": [
-            {
-              "id": 113,
-              "study_id": 7,
-              "keypractice_id": 56,
-              "practiceinstance_id": null,
-              "text": "EBSE guidelines state that the review protocol should be defined in advance (Kitchenham 2004), but in practice this is also often very difficult to achieve. The search strategy is likely to be adjusted as the results are inspected and the research question evolves, so that the process of adjustment and refinement should be included in the reporting of the systematic review",
               "study_title": "Preliminary Reporting Guidelines for Experience Papers",
               "study_authors": "Budgen,  David and Zhang,  Cheng",
               "study_bibtex_key": "S4"
@@ -3175,10 +3320,108 @@
         },
         {
           "id": 74,
-          "description": "Refine search strings iteratively if performance is unacceptable",
+          "description": "Refine the search strategy iteratively until it is acceptable",
           "level_id": 3,
           "dimension_id": 6,
           "textPassages": [],
+          "practiceInstances": [
+            {
+              "id": 108,
+              "description": "Define a search strategy (including search string) early, but allow the adjustment and reporting of elements during the review adopting an iterative approach",
+              "keypractice_id": 74,
+              "textPassages": [
+                {
+                  "id": 113,
+                  "study_id": 7,
+                  "keypractice_id": "",
+                  "practiceinstance_id": 108,
+                  "text": "EBSE guidelines state that the review protocol should be defined in advance (Kitchenham 2004), but in practice this is also often very difficult to achieve. The search strategy is likely to be adjusted as the results are inspected and the research question evolves, so that the process of adjustment and refinement should be included in the reporting of the systematic review",
+                  "study_title": "Preliminary Reporting Guidelines for Experience Papers",
+                  "study_authors": "Budgen,  David and Zhang,  Cheng",
+                  "study_bibtex_key": "S4"
+                },
+                {
+                  "id": 206,
+                  "study_id": 18,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 108,
+                  "text": "Conduct pilot testing of search strings to validate their effectiveness.",
+                  "study_title": "A tertiary study: experiences of conducting systematic literature reviews in software engineering",
+                  "study_authors": "Imtiaz,  Salma and Bano,  Muneera and Ikram,  Naveed and Niazi,  Mahmood",
+                  "study_bibtex_key": "S13"
+                }
+              ]
+            },
+            {
+              "id": 113,
+              "description": "Define and select keywords, synonyms, and alternative terms carefully to ensure relevant and comprehensive search results",
+              "keypractice_id": 74,
+              "textPassages": [
+                {
+                  "id": 205,
+                  "study_id": 18,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 113,
+                  "text": "Careful selection of keywords, synonyms and alternative terms is required to identify relevant results and to make good quality search strings.",
+                  "study_title": "A tertiary study: experiences of conducting systematic literature reviews in software engineering",
+                  "study_authors": "Imtiaz,  Salma and Bano,  Muneera and Ikram,  Naveed and Niazi,  Mahmood",
+                  "study_bibtex_key": "S13"
+                }
+              ]
+            },
+            {
+              "id": 114,
+              "description": "Study known articles and scan their references to identify alternative terms and useful synonyms",
+              "keypractice_id": 74,
+              "textPassages": [
+                {
+                  "id": 207,
+                  "study_id": 18,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 114,
+                  "text": "Studying of known articles and scanning the references to identify alternative terms and useful synonyms etc.",
+                  "study_title": "A tertiary study: experiences of conducting systematic literature reviews in software engineering",
+                  "study_authors": "Imtiaz,  Salma and Bano,  Muneera and Ikram,  Naveed and Niazi,  Mahmood",
+                  "study_bibtex_key": "S13"
+                }
+              ]
+            },
+            {
+              "id": 115,
+              "description": "Balance between generic and specific search strings through pilot testing to optimize recall and precision",
+              "keypractice_id": 74,
+              "textPassages": [
+                {
+                  "id": 208,
+                  "study_id": 18,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 115,
+                  "text": "Tradeoff between generic and specific search strings (search strings that are too general broadens the search but it is very difficult to miss important evidence as well as they require more effort to filter out noise. Specific search strings may omit relevant evidence but requires less effort and have high precision. Pilot testing helps in making this tradeoff.",
+                  "study_title": "A tertiary study: experiences of conducting systematic literature reviews in software engineering",
+                  "study_authors": "Imtiaz,  Salma and Bano,  Muneera and Ikram,  Naveed and Niazi,  Mahmood",
+                  "study_bibtex_key": "S13"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 93,
+          "description": "Consider the limitations and constraints of online databases when designing and executing search strategies",
+          "level_id": 4,
+          "dimension_id": 6,
+          "textPassages": [
+            {
+              "id": 210,
+              "study_id": 18,
+              "keypractice_id": 93,
+              "practiceinstance_id": null,
+              "text": "Limitations and constraints of online databases also hinder the search process of SLRs. The constraints such as number of words allowed, number of operators allowed and ability to limit search to a specific criteria etc. determines the effort and time spent on this phase.",
+              "study_title": "A tertiary study: experiences of conducting systematic literature reviews in software engineering",
+              "study_authors": "Imtiaz,  Salma and Bano,  Muneera and Ikram,  Naveed and Niazi,  Mahmood",
+              "study_bibtex_key": "S13"
+            }
+          ],
           "practiceInstances": []
         }
       ]
@@ -3264,7 +3507,7 @@
         },
         {
           "id": 70,
-          "description": "Ballance high sensitivity and precise research to retrieve the most relevant studies but also reduce the number of unwanted articles",
+          "description": "Balance high sensitivity and precise research to retrieve the most relevant studies but also reduce the number of unwanted articles",
           "level_id": 2,
           "dimension_id": 7,
           "textPassages": [
@@ -3358,7 +3601,7 @@
         },
         {
           "id": 89,
-          "description": "Use tools to support and automatize SLR tasks",
+          "description": "Adopt strategies to automatize SLR tasks",
           "level_id": 4,
           "dimension_id": 7,
           "textPassages": [],
@@ -3389,27 +3632,25 @@
                   "study_bibtex_key": "S11"
                 }
               ]
+            },
+            {
+              "id": 120,
+              "description": "Use automated tools to customize search strings for different databases to save time and effort",
+              "keypractice_id": 89,
+              "textPassages": [
+                {
+                  "id": 214,
+                  "study_id": 18,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 120,
+                  "text": "Automated tool support for customization of the search strings for different databases can help in saving time and effort.",
+                  "study_title": "A tertiary study: experiences of conducting systematic literature reviews in software engineering",
+                  "study_authors": "Imtiaz,  Salma and Bano,  Muneera and Ikram,  Naveed and Niazi,  Mahmood",
+                  "study_bibtex_key": "S13"
+                }
+              ]
             }
           ]
-        },
-        {
-          "id": 90,
-          "description": "Researchers should trial textual analysis tools during SRs and report their findings",
-          "level_id": 4,
-          "dimension_id": 7,
-          "textPassages": [
-            {
-              "id": 195,
-              "study_id": 16,
-              "keypractice_id": 90,
-              "practiceinstance_id": null,
-              "text": "We would advise researchers undertaking SRs to trial such tools and report their findings.",
-              "study_title": "A systematic review of systematic review process research in software engineering",
-              "study_authors": "Kitchenham,  Barbara and Brereton,  Pearl",
-              "study_bibtex_key": "S11"
-            }
-          ],
-          "practiceInstances": []
         }
       ]
     }
