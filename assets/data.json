@@ -1,7 +1,7 @@
 {
   "MaturityModel": "MM4SLR",
   "ModelVersion": "1.0",
-  "LastUpdate": "2025-10-27",
+  "LastUpdate": "2025-10-28",
   "ModelAuthors": [
     "Vinicius dos Santos",
     "Rick Kazman",
@@ -242,6 +242,43 @@
                   "study_bibtex_key": "S1"
                 }
               ]
+            },
+            {
+              "id": 121,
+              "description": "Adopt 5w+2h to help novice researchers to define goals that capture the landscape of research topic",
+              "keypractice_id": 25,
+              "textPassages": [
+                {
+                  "id": 217,
+                  "study_id": 19,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 121,
+                  "text": "The 5W+1H model has been widely employed in the journalism domain to completely report a story. Applying it to report our SLR, we found that the use of 5W+1H model does help new researchers to get the overall landscape of a research topic.",
+                  "study_title": "Using the 5W+1H Model in Reporting Systematic Literature Review: A Case Study on Software Testing for Cloud Computing",
+                  "study_authors": "Jia,  Changjiang and Yu,  Yuen Tak",
+                  "study_bibtex_key": "S14"
+                },
+                {
+                  "id": 218,
+                  "study_id": 19,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 121,
+                  "text": "Dimension Mapping from 5W+1H to SLR: Researchers who are new to a research topic can benefit greatly by being informed of the representative researchers (Who) and important publication venues (Where) of this new topic. This information enables them to quickly assess the state of the art (When) of this topic. It is easy to extract the metadata of the three dimensions from published articles. The researchers will also need to understand the research issues or problems (What), the motivations or opportunities (Why), and the relationships (How) of these pieces of work. These tasks are relatively time-consuming and difficult to get a clear and consistent result. Multiple investigators need to cooperate to resolve the inconsistencies among individual judgments.",
+                  "study_title": "Using the 5W+1H Model in Reporting Systematic Literature Review: A Case Study on Software Testing for Cloud Computing",
+                  "study_authors": "Jia,  Changjiang and Yu,  Yuen Tak",
+                  "study_bibtex_key": "S14"
+                },
+                {
+                  "id": 219,
+                  "study_id": 19,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 121,
+                  "text": "Traditional SLR vs 5W+1H Model: We can distinguish two categories of SLRs: one is to address specific research questions (e.g., concurrency testing techniques, web service testing) while another is to identify the research trend of a new topic (e.g., a mapping study). For the first type of SLR, the investigators define the research questions precisely to reflect exactly what they want to know. The traditional SLR process is designed to guide the review process to be tightly centered on those defined research questions. In this situation, our experience is that following the traditional SLR rather than using the general 5W+1H model can be more effective. For the second type of SLR, investigators may have less prior knowledge on the topic and, hence, find it challenging initially to propose effective research questions to capture what they want to know about this topic. Then it is better to apply the 5W+1H model as a good starting point to define the research questions first. One may later gradually add more topic-specific contexts to refine the research questions to guide the review process. To this end, the 5W+1H model provides an exploratory framework to shape a SLR.",
+                  "study_title": "Using the 5W+1H Model in Reporting Systematic Literature Review: A Case Study on Software Testing for Cloud Computing",
+                  "study_authors": "Jia,  Changjiang and Yu,  Yuen Tak",
+                  "study_bibtex_key": "S14"
+                }
+              ]
             }
           ]
         },
@@ -268,7 +305,7 @@
               "practiceinstance_id": null,
               "text": "The use of guidelines and citations to the EBSE papers in the reviews increased in the SE with respect to the OS/FE studies… The increase in the use of guidelines significantly correlated with quality of the SLRs by Kitchenham et al",
               "study_title": "Six years of systematic literature reviews in software engineering: An updated tertiary study",
-              "study_authors": "da Silva,  Fabio Q.B. and Santos,  André L.M. and Soares,  Sérgio and Fran\\c{c",
+              "study_authors": "da Silva,  Fabio Q.B. and Santos,  André L.M. and Soares,  Sérgio and Franca, César C. and Monteiro, Cleviton V.F. and Maciel, Felipe Farias ",
               "study_bibtex_key": "S7"
             }
           ],
@@ -832,7 +869,7 @@
               "practiceinstance_id": null,
               "text": "Three situations that might explain the low percentage of quality assessment of the primary reviews were observed. First, some researchers appear to have confused quality assessment with explicitly stating the inclusion/exclusion criteria of the primary studies and may therefore have thought that no further quality assessment was necessary (e.g., [SE42]). Second, in some cases, quality assessment was thought to be unnecessary because the primary studies were retrieved from ‘‘trustworthy sources’’ (e.g., peer-reviewed journals), and this was considered to be sufficient to guarantee the quality of the primary studies (e.g., [SE43]). Third, in other cases, the search process found so few relevant studies that the researchers may have feared that applying quality criteria would leave them with no studies to analyse (e.g., [SE39]). Researchers performing systematic reviews should attempt to address these situations, as none are acceptable explanations for not performing quality assessment.",
               "study_title": "Six years of systematic literature reviews in software engineering: An updated tertiary study",
-              "study_authors": "da Silva,  Fabio Q.B. and Santos,  André L.M. and Soares,  Sérgio and Fran\\c{c",
+              "study_authors": "da Silva,  Fabio Q.B. and Santos,  André L.M. and Soares,  Sérgio and Franca, César C. and Monteiro, Cleviton V.F. and Maciel, Felipe Farias ",
               "study_bibtex_key": "S7"
             },
             {
@@ -1350,6 +1387,182 @@
                   "study_bibtex_key": "S6"
                 }
               ]
+            },
+            {
+              "id": 122,
+              "description": "Use Google Scholar to identify a good start set to avoid bias toward any specific publisher",
+              "keypractice_id": 21,
+              "textPassages": [
+                {
+                  "id": 220,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 122,
+                  "text": "A good start set may be identified by using, for example, Google Scholar. It is a good alternative to avoid bias in favour of any specific publisher.",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
+                }
+              ]
+            },
+            {
+              "id": 123,
+              "description": "Formulate a reliable start set to calibrate the search string or perform the snowballing",
+              "keypractice_id": 21,
+              "textPassages": [
+                {
+                  "id": 221,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 123,
+                  "text": "If relevant papers may come from different communities, then it is important to have these covered in the start set.",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
+                },
+                {
+                  "id": 224,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 123,
+                  "text": "The start set should cover several different publishers, years and authors. The important issue here is diversity.",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
+                },
+                {
+                  "id": 225,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 123,
+                  "text": "The start set ought to be formulated from keywords in the research question, while preferably also taking synonyms into account.",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
+                },
+                {
+                  "id": 226,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 123,
+                  "text": "One possibility in snowballing is to identify a seminal and highly cited paper in the area of the systematic literature study.",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
+                }
+              ]
+            },
+            {
+              "id": 124,
+              "description": "Include a sufficient number of papers in the start set to avoid it being too small",
+              "keypractice_id": 21,
+              "textPassages": [
+                {
+                  "id": 222,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 124,
+                  "text": "The number of papers in the start set should not be too small.",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
+                }
+              ]
+            },
+            {
+              "id": 129,
+              "description": "Include papers regardless of the author’s prominence, but consider authors with regular publications in the area more likely for inclusion",
+              "keypractice_id": 21,
+              "textPassages": [
+                {
+                  "id": 228,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 129,
+                  "text": "Papers cannot be excluded based on, for example, that the author is not known for publishing in the area, but a paper may be more likely to be included if the author regularly publishes in the area.",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
+                }
+              ]
+            },
+            {
+              "id": 130,
+              "description": "Browse papers and read the most relevant parts before deciding on inclusion or exclusion",
+              "keypractice_id": 21,
+              "textPassages": [
+                {
+                  "id": 229,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 130,
+                  "text": "It is recommended not to start reading the paper from the beginning to end directly, instead it is recommended to browse through the paper and read the most relevant parts of the paper to be able to make a decision about inclusion of exclusion in an efficient way.",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
+                }
+              ]
+            },
+            {
+              "id": 131,
+              "description": "Contact authors of included papers to identify additional relevant papers",
+              "keypractice_id": 21,
+              "textPassages": [
+                {
+                  "id": 230,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 131,
+                  "text": "To complement the snowballing, it is recommended to contact the authors of included papers to potentially identify some additional papers.",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
+                }
+              ]
+            },
+            {
+              "id": 133,
+              "description": "Avoid being overly restrictive when screening only titles (in electronic database search or snowballing)",
+              "keypractice_id": 21,
+              "textPassages": [
+                {
+                  "id": 232,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 133,
+                  "text": "However, it must be noted that it is a delicate balance to not be too restrictive on titles.",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
+                }
+              ]
+            },
+            {
+              "id": 138,
+              "description": "Use visual strategies to identify if papers are missing",
+              "keypractice_id": 21,
+              "textPassages": [
+                {
+                  "id": 237,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 138,
+                  "text": "It is recommended to create a citation matrix, since it provides information about citation patterns. A citation matrix with many blank cells is an indication that other papers may have been missed. This analysis does not help if an independent cluster of papers exists",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
+                },
+                {
+                  "id": 238,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 138,
+                  "text": "A timeline helps in establishing possibilities for citations and it also gives some indications on the activities in relation to the area studied in the systematic literature study.",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
+                }
+              ]
             }
           ]
         },
@@ -1399,49 +1612,6 @@
                   "keypractice_id": null,
                   "practiceinstance_id": 28,
                   "text": "multiple reports of the same study should be identified, and missing or unpublished data should be sought from the publications’ authors.",
-                  "study_title": "Experiences Using Systematic Review Guidelines",
-                  "study_authors": "Staples,  Mark and Niazi,  Mahmood",
-                  "study_bibtex_key": "S2"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 35,
-          "description": "Follow the process described in the protocol",
-          "level_id": 2,
-          "dimension_id": 3,
-          "textPassages": [],
-          "practiceInstances": [
-            {
-              "id": 25,
-              "description": "Perform data extraction according to the systematic review protocol",
-              "keypractice_id": 35,
-              "textPassages": [
-                {
-                  "id": 60,
-                  "study_id": 4,
-                  "keypractice_id": null,
-                  "practiceinstance_id": 25,
-                  "text": "Data extraction should be performed as indicated in the systematic review protocol.",
-                  "study_title": "Experiences Using Systematic Review Guidelines",
-                  "study_authors": "Staples,  Mark and Niazi,  Mahmood",
-                  "study_bibtex_key": "S2"
-                }
-              ]
-            },
-            {
-              "id": 26,
-              "description": "Follow the selection process described in the protocol",
-              "keypractice_id": 35,
-              "textPassages": [
-                {
-                  "id": 61,
-                  "study_id": 4,
-                  "keypractice_id": null,
-                  "practiceinstance_id": 26,
-                  "text": "the selection process should follow the plan described in the protocol.",
                   "study_title": "Experiences Using Systematic Review Guidelines",
                   "study_authors": "Staples,  Mark and Niazi,  Mahmood",
                   "study_bibtex_key": "S2"
@@ -1991,7 +2161,7 @@
                   "study_id": 12,
                   "keypractice_id": null,
                   "practiceinstance_id": 82,
-                  "text": "Therefore, if the data being extracted are the outcome of some mathematical or statisticalanalysis and the extraction form is being checked by a different person, it is important to ensurethat checkers understand the meaning of the data (i.e. how the data items are generated), or, atleast, are aware that they need to check that the correct data have been extracted rather thansimply checking that the figures in the extraction form match those in the paper. This should be set out clearly in the protocol so that checkers are aware of their responsibilities.",
+                  "text": "Therefore, if the data being extracted are the outcome of some mathematical or statistical analysis and the extraction form is being checked by a different person, it is important to ensurethat checkers understand the meaning of the data (i.e. how the data items are generated), or, at least, are aware that they need to check that the correct data have been extracted rather than simply checking that the figures in the extraction form match those in the paper. This should be set out clearly in the protocol so that checkers are aware of their responsibilities.",
                   "study_title": "Lessons Learnt Undertaking a Large-scale Systematic Literature Review",
                   "study_authors": "Turner,  Mark and Kitchenham,  Barbara and Budgen,  David and Brereton,  Pearl",
                   "study_bibtex_key": "S8"
@@ -2657,6 +2827,49 @@
           ]
         },
         {
+          "id": 35,
+          "description": "Define the SLR process in the protocol, follow it, and update it continuously if necessary",
+          "level_id": 2,
+          "dimension_id": 5,
+          "textPassages": [],
+          "practiceInstances": [
+            {
+              "id": 25,
+              "description": "Perform data extraction according to the systematic review protocol",
+              "keypractice_id": 35,
+              "textPassages": [
+                {
+                  "id": 60,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 25,
+                  "text": "Data extraction should be performed as indicated in the systematic review protocol.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood",
+                  "study_bibtex_key": "S2"
+                }
+              ]
+            },
+            {
+              "id": 26,
+              "description": "Follow the selection process described in the protocol",
+              "keypractice_id": 35,
+              "textPassages": [
+                {
+                  "id": 61,
+                  "study_id": 4,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 26,
+                  "text": "the selection process should follow the plan described in the protocol.",
+                  "study_title": "Experiences Using Systematic Review Guidelines",
+                  "study_authors": "Staples,  Mark and Niazi,  Mahmood",
+                  "study_bibtex_key": "S2"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "id": 43,
           "description": "Publish a full report separately from a journal overview paper when reporting systematic reviews",
           "level_id": 3,
@@ -2804,6 +3017,23 @@
                   "study_bibtex_key": "S9"
                 }
               ]
+            },
+            {
+              "id": 136,
+              "description": "The frequency of papers identified in each step (Start set, Iteration 1, Iteration 2 and so forth) should be tracked",
+              "keypractice_id": 80,
+              "textPassages": [
+                {
+                  "id": 235,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 136,
+                  "text": "Track the frequency of papers identified in each snowballing iteration step.",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
+                }
+              ]
             }
           ]
         },
@@ -2832,6 +3062,14 @@
               ]
             }
           ]
+        },
+        {
+          "id": 95,
+          "description": "Use formal guidelines and specific strategies to report SLR",
+          "level_id": 3,
+          "dimension_id": 5,
+          "textPassages": [],
+          "practiceInstances": []
         }
       ]
     },
@@ -2955,7 +3193,7 @@
                   "practiceinstance_id": 76,
                   "text": "SLRs that explicitly provided guidelines for practitioners had higher mean quality scores (Mean = 2.85, r = 0.91) than those that did not provide guidelines (Mean = 2.38, r = 0.83).",
                   "study_title": "Six years of systematic literature reviews in software engineering: An updated tertiary study",
-                  "study_authors": "da Silva,  Fabio Q.B. and Santos,  André L.M. and Soares,  Sérgio and Fran\\c{c",
+                  "study_authors": "da Silva,  Fabio Q.B. and Santos,  André L.M. and Soares,  Sérgio and Franca, César C. and Monteiro, Cleviton V.F. and Maciel, Felipe Farias ",
                   "study_bibtex_key": "S7"
                 }
               ]
@@ -3402,6 +3640,23 @@
                   "study_bibtex_key": "S13"
                 }
               ]
+            },
+            {
+              "id": 137,
+              "description": "When snowballing is applied, the rate of new papers should decrease in each iteration; if not, conduct a new search using synonyms from the research question",
+              "keypractice_id": 74,
+              "textPassages": [
+                {
+                  "id": 236,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 137,
+                  "text": "If having a good start set, the number of new papers to be included ought to decrease for each step. If the frequency of detecting new papers is not decreasing substantially consider doing a new search with synonyms to the words used from the research question, since it may indicate that a cluster of papers has been missed",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
+                }
+              ]
             }
           ]
         },
@@ -3556,7 +3811,7 @@
               "practiceinstance_id": null,
               "text": "SLRs addressing larger numbers of primary studies had lower quality scores than those with fewer primary studies. A possible explanation is that when faced with too many studies to analyse, researchers may opt not to perform quality assessment, and they may also have more difficulties in presenting a good synthesis and summary of evidence for each paper.",
               "study_title": "Six years of systematic literature reviews in software engineering: An updated tertiary study",
-              "study_authors": "da Silva,  Fabio Q.B. and Santos,  André L.M. and Soares,  Sérgio and Fran\\c{c",
+              "study_authors": "da Silva,  Fabio Q.B. and Santos,  André L.M. and Soares,  Sérgio and Franca, César C. and Monteiro, Cleviton V.F. and Maciel, Felipe Farias ",
               "study_bibtex_key": "S7"
             }
           ],
@@ -3647,6 +3902,109 @@
                   "study_title": "A tertiary study: experiences of conducting systematic literature reviews in software engineering",
                   "study_authors": "Imtiaz,  Salma and Bano,  Muneera and Ikram,  Naveed and Niazi,  Mahmood",
                   "study_bibtex_key": "S13"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 96,
+          "description": "Adopt reliable strategies to filter when a large number of studies",
+          "level_id": 4,
+          "dimension_id": 7,
+          "textPassages": [],
+          "practiceInstances": [
+            {
+              "id": 126,
+              "description": "Select relevant and highly cited papers when search terms yield too many results",
+              "keypractice_id": 96,
+              "textPassages": [
+                {
+                  "id": 223,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 126,
+                  "text": "If too many papers are found, for example due to having very general search terms in Google Scholar, then identifying a number of relevant and highly cited papers may be an alternative.",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 97,
+          "description": "Adopt strategies to minimize wasting efforts and optimize in SLR tasks",
+          "level_id": 4,
+          "dimension_id": 7,
+          "textPassages": [],
+          "practiceInstances": [
+            {
+              "id": 128,
+              "description": "Make sure that a paper accomplish the selection criteria, since rollback the inclusion of other papers (due to snowballing) is very time-consuming",
+              "keypractice_id": 97,
+              "textPassages": [
+                {
+                  "id": 227,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 128,
+                  "text": "Once the start set is decided, including only papers that will be included in the final analysis, it is time to start the first iteration conducting backward and forward snowballing. To finally decide to include a paper means that the full paper should be examined before deciding to use it as a paper in the snowballing. If not doing this, a rollback is needed if other papers are included based on a paper that later is excluded. Thus, it is important to be certain on inclusion before using the paper for snowballing at all.",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
+                }
+              ]
+            },
+            {
+              "id": 132,
+              "description": "Conduct data extraction while deciding on inclusion to improve efficiency",
+              "keypractice_id": 97,
+              "textPassages": [
+                {
+                  "id": 231,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 132,
+                  "text": "Given that the full papers have to be investigated before they go into the snowballing procedure, it may be considered to conduct the data extraction at the same time as deciding whether the paper should be included or not.",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
+                }
+              ]
+            },
+            {
+              "id": 134,
+              "description": "Direct exclusion in reference lists (in snowballing) based on basic criteria such as language, publication year, and type of publication",
+              "keypractice_id": 97,
+              "textPassages": [
+                {
+                  "id": 233,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 134,
+                  "text": "Direct exclusion in reference lists are very quickly done when it comes to basic criteria such as, for example, language, publication year and type of publication. The extra work from these is negligible.",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
+                }
+              ]
+            },
+            {
+              "id": 135,
+              "description": "Avoid overinclusion of papers based on titles, abstracts and keywords since it generates a lot of work and effort in the next stages",
+              "keypractice_id": 97,
+              "textPassages": [
+                {
+                  "id": 234,
+                  "study_id": 20,
+                  "keypractice_id": null,
+                  "practiceinstance_id": 135,
+                  "text": "It is very difficult to decide whether or not to exclude a paper or evaluate it on the next level, for example, to exclude a paper based on its title, or read the abstract or even read the full paper. This is an important balance. On the one hand, it generates a lot of work to read the full text of papers that are excluded, but on the other hand, it is important to not exclude papers early that actually should be included.",
+                  "study_title": "Guidelines for snowballing in systematic literature studies and a replication in software engineering",
+                  "study_authors": "Wohlin,  Claes",
+                  "study_bibtex_key": "S15"
                 }
               ]
             }
