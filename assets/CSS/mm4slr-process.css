@@ -1,0 +1,70 @@
+ body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+  }
+
+  h1 {
+    text-align: center;
+    color: #2f3640;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .etapa {
+    background-color: #ffffff;
+    border: 2px solid #00a8ff;
+    border-radius: 16px;
+    padding: 1rem;
+    margin: 2rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+
+  .etapa:hover {
+    transform: translateY(-4px);
+  }
+
+  .etapa h2 {
+    color: #0097e6;
+    text-align: center;
+  }
+
+  .subtarefa {
+    margin-top: 1rem;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .subtarefa:hover {
+    background-color: #dff9fb;
+  }
+
+  .praticas {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    display: none;
+    animation: expand 0.3s ease;
+  }
+
+  @keyframes expand {
+    from { opacity: 0; transform: scaleY(0.95); }
+    to { opacity: 1; transform: scaleY(1); }
+  }
+
+  .praticas ul {
+    list-style-type: circle;
+    padding-left: 1rem;
+  }
+
+  .subtarefa.open .praticas {
+    display: block;
+  }
